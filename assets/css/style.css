@@ -429,16 +429,23 @@ h1, h2, h3, h4 {
 
 .hero__image {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
+  padding-top: 48px;
 }
 
 .hero__image-eyebrow {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   z-index: 1;
   margin-bottom: 0;
+}
+
+.about__gif {
+  display: block;
+  width: 100%;
+  margin-top: 28px;
 }
 
 .hero__image img {
