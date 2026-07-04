@@ -80,7 +80,7 @@ h1, h2, h3, h4 {
 .eyebrow {
   font-family: var(--font-mono);
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 0.14em;
   color: var(--color-muted);
   display: inline-flex;
@@ -134,6 +134,14 @@ h1, h2, h3, h4 {
 .framed {
   position: relative;
   border: var(--border);
+}
+
+.capacity__gif {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 44px;
+  background: var(--color-bg);
 }
 
 /* ---------- Buttons ---------- */
@@ -196,8 +204,8 @@ h1, h2, h3, h4 {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: #111111;
-  background-image: radial-gradient(circle, #828282 1px, transparent 1.5px);
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle, #111111 1px, transparent 1.5px);
   background-size: 26px 26px;
   z-index: -1;
 }
@@ -324,6 +332,7 @@ h1, h2, h3, h4 {
 /* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
   overflow: hidden;
   background-color: var(--color-bg);
   background-image: radial-gradient(circle, #c4c4c4 1px, transparent 1.5px);
@@ -331,7 +340,31 @@ h1, h2, h3, h4 {
   border-bottom: var(--border);
 }
 
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #808080;
+  background-image: radial-gradient(circle, #ffffff 1px, transparent 1.5px);
+  background-size: 26px 26px;
+  z-index: 0;
+}
+
+.hero::before {
+  left: 0;
+  right: calc(50% + (var(--max-width) / 2));
+}
+
+.hero::after {
+  left: calc(50% + (var(--max-width) / 2));
+  right: 0;
+}
+
 .hero > .wrap {
+  position: relative;
+  z-index: 1;
   padding-top: var(--section-pad);
   padding-bottom: var(--section-pad);
 }
@@ -344,7 +377,7 @@ h1, h2, h3, h4 {
 }
 
 .hero__text h1 {
-  font-size: clamp(36px, 5.4vw, 68px);
+  font-size: clamp(36px, 5.4vw, 54px);
   margin-bottom: 24px;
 }
 
@@ -372,7 +405,8 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 14.5px;
+  font-family: var(--font-mono);
+  font-size: 16px;
 }
 
 .hero__focus-list .dot {
@@ -394,8 +428,17 @@ h1, h2, h3, h4 {
 }
 
 .hero__image {
+  position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+.hero__image-eyebrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  margin-bottom: 0;
 }
 
 .hero__image img {
@@ -414,6 +457,12 @@ h1, h2, h3, h4 {
 
 .about__copy p + p {
   margin-top: 1em;
+}
+
+.about__subheading {
+  font-size: 20px;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
 }
 
 .about__list {
@@ -500,6 +549,14 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-muted);
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+}
+
+a.card-meta:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
 }
 
 /* ---------- Capacity building ---------- */
@@ -549,7 +606,7 @@ h1, h2, h3, h4 {
 /* Partners strip */
 
 .partners {
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 .partners .mono-label {
@@ -561,7 +618,7 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   border-top: var(--border);
-  padding-top: 28px;
+  padding-top: 56px;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
   mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
 }
@@ -807,10 +864,33 @@ h1, h2, h3, h4 {
 /* ---------- Footer ---------- */
 
 .site-footer {
+  position: relative;
   padding: 40px 0;
   background: var(--color-bg);
   border-top: var(--border);
   border-bottom: var(--border);
+}
+
+.site-footer::before,
+.site-footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle, #111111 1px, transparent 1.5px);
+  background-size: 26px 26px;
+  z-index: -1;
+}
+
+.site-footer::before {
+  left: 0;
+  right: calc(50% + (var(--max-width) / 2));
+}
+
+.site-footer::after {
+  left: calc(50% + (var(--max-width) / 2));
+  right: 0;
 }
 
 .site-footer__inner {
@@ -819,6 +899,7 @@ h1, h2, h3, h4 {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+  background: var(--color-bg);
 }
 
 .site-footer .mono-label {

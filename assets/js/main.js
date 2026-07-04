@@ -47,4 +47,59 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // Play-once GIFs: start the animation only once scrolled into view,
+  // then freeze on the final frame after it completes a single loop.
+  var playOnceGifs = document.querySelectorAll("[data-gif-src]");
+  if (playOnceGifs.length && "IntersectionObserver" in window) {
+    var gifObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+
+          var img = entry.target;
+          var gifSrc = img.getAttribute("data-gif-src");
+          var freezeSrc = img.getAttribute("data-freeze-src");
+          var duration = parseInt(img.getAttribute("data-gif-duration"), 10) || 10000;
+
+          // Preload the freeze frame ahead of time so the swap is instant
+          // (no blank gap while the browser fetches/decodes it).
+          var preloadedFreeze = null;
+          if (freezeSrc) {
+            preloadedFreeze = new Image();
+            preloadedFreeze.src = freezeSrc;
+          }
+
+          // Time the countdown from when the GIF has actually loaded and
+          // started rendering, not from when we merely set `src` — network
+          // + decode latency otherwise makes the freeze-frame swap land
+          // mid-animation instead of after it truly completes.
+          var startTimer = function () {
+            window.setTimeout(function () {
+              if (freezeSrc) {
+                img.src = freezeSrc;
+              }
+            }, duration);
+          };
+
+          img.addEventListener(
+            "load",
+            function () {
+              startTimer();
+            },
+            { once: true }
+          );
+
+          img.src = gifSrc;
+
+          observer.unobserve(img);
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    playOnceGifs.forEach(function (img) {
+      gifObserver.observe(img);
+    });
+  }
 });
