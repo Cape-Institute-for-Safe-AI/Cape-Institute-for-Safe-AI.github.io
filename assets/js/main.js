@@ -1,7 +1,27 @@
 // Cape Institute for Safe AI — minimal interactions
 document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector(".site-header");
+  var inner = document.querySelector(".site-header__inner");
+  var logo = document.querySelector(".logo-link");
   var toggle = document.getElementById("nav-toggle");
   var nav = document.getElementById("site-nav");
+
+  // Collapse the nav into the hamburger menu based on measured overflow
+  // (i.e. as soon as the tabs would actually start being pushed off
+  // screen), rather than a guessed, fixed viewport breakpoint.
+  function updateNavCollapse() {
+    if (!header || !inner || !logo || !nav) return;
+
+    // Measure against the uncollapsed (full desktop) layout first.
+    header.classList.remove("nav-collapsed");
+
+    var available = inner.clientWidth;
+    var needed = logo.getBoundingClientRect().width + nav.scrollWidth;
+
+    if (needed > available) {
+      header.classList.add("nav-collapsed");
+    }
+  }
 
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
@@ -15,6 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
         toggle.setAttribute("aria-expanded", "false");
       });
     });
+  }
+
+  updateNavCollapse();
+  window.addEventListener("resize", updateNavCollapse);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(updateNavCollapse);
   }
 
   var yearEl = document.getElementById("year");
