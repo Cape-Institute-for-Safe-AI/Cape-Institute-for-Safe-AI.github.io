@@ -229,23 +229,23 @@ for idx in range(len(pal)//3):
     if best_dist is None or dist < best_dist:
         best_dist, best_idx = dist, idx
 
-# ---------- Tight rectangular crop across all frames ----------
-import numpy as np as _np
-minx, miny = pil_frames[0].size[0], pil_frames[0].size[1]
+# ---------- Tight rectangular crop using original RGBA data ----------
+# frames_rgba still has real alpha; pil_frames are already RGB+BG_KEY.
+orig_h, orig_w = frames_rgba[0].shape[:2]
+minx, miny = orig_w, orig_h
 maxx, maxy = 0, 0
-for f in pil_frames:
-    rgba = _np.array(f.convert("RGBA"))
-    mask = rgba[:,:,3] > 10
-    rows = _np.any(mask, axis=1)
-    cols = _np.any(mask, axis=0)
+for arr in frames_rgba:
+    mask = arr[:,:,3] > 10  # truly non-transparent pixels
+    rows = np.any(mask, axis=1)
+    cols = np.any(mask, axis=0)
     if rows.any():
-        rmin, rmax = int(_np.where(rows)[0][[0,-1]][0]), int(_np.where(rows)[0][[0,-1]][1])
-        cmin, cmax = int(_np.where(cols)[0][[0,-1]][0]), int(_np.where(cols)[0][[0,-1]][1])
+        rmin, rmax = int(np.where(rows)[0][[0,-1]][0]), int(np.where(rows)[0][[0,-1]][1])
+        cmin, cmax = int(np.where(cols)[0][[0,-1]][0]), int(np.where(cols)[0][[0,-1]][1])
         miny = min(miny, rmin); maxy = max(maxy, rmax)
         minx = min(minx, cmin); maxx = max(maxx, cmax)
 
 crop_box = (minx, miny, maxx+1, maxy+1)
-print(f"Cropping to {crop_box} (was {pil_frames[0].size})")
+print(f"Cropping to {crop_box} (was {orig_w}x{orig_h})")
 pil_frames_cropped = [f.crop(crop_box) for f in pil_frames]
 
 first_c = pil_frames_cropped[-1].convert("P", palette=Image.ADAPTIVE, colors=64)
