@@ -106,7 +106,7 @@ def ease_in_out_cubic(t):
 # ---------- Layout ----------
 DATA_W = 46.865479
 PAD = 5.0
-LEGEND_SPACE = 34.0
+LEGEND_SPACE = 32.2  # reduced by ~1.78 data units (≈25px) to tighten the gap
 XLIM = (-PAD, DATA_W+PAD)
 YLIM = (-PAD, DATA_W+PAD+LEGEND_SPACE)
 FIG_W = 8.0
@@ -177,7 +177,7 @@ def render_frame(black_alpha, red_frac, blue_frac):
         seg = reveal(poly_blue_rev, blue_frac)
         ax.plot(seg[:,0], seg[:,1], color=BLUE, linewidth=LW_MAIN, solid_capstyle="round", zorder=1)
 
-    legend_y0 = DATA_W + PAD + 4.0
+    legend_y0 = DATA_W + PAD + 2.2  # reduced gap by ~1.78 data units (≈25px)
     for i, (color, label) in enumerate(legend_layout):
         ly = legend_y0 + i * LEGEND_ROW_PITCH
         ax.add_patch(FancyBboxPatch(
@@ -229,14 +229,44 @@ for idx in range(len(pal)//3):
     if best_dist is None or dist < best_dist:
         best_dist, best_idx = dist, idx
 
-quantized[0].save(
+# ---------- Tight rectangular crop across all frames ----------
+import numpy as np as _np
+minx, miny = pil_frames[0].size[0], pil_frames[0].size[1]
+maxx, maxy = 0, 0
+for f in pil_frames:
+    rgba = _np.array(f.convert("RGBA"))
+    mask = rgba[:,:,3] > 10
+    rows = _np.any(mask, axis=1)
+    cols = _np.any(mask, axis=0)
+    if rows.any():
+        rmin, rmax = int(_np.where(rows)[0][[0,-1]][0]), int(_np.where(rows)[0][[0,-1]][1])
+        cmin, cmax = int(_np.where(cols)[0][[0,-1]][0]), int(_np.where(cols)[0][[0,-1]][1])
+        miny = min(miny, rmin); maxy = max(maxy, rmax)
+        minx = min(minx, cmin); maxx = max(maxx, cmax)
+
+crop_box = (minx, miny, maxx+1, maxy+1)
+print(f"Cropping to {crop_box} (was {pil_frames[0].size})")
+pil_frames_cropped = [f.crop(crop_box) for f in pil_frames]
+
+first_c = pil_frames_cropped[-1].convert("P", palette=Image.ADAPTIVE, colors=64)
+quantized_c = [f.quantize(palette=first_c, dither=Image.NONE) for f in pil_frames_cropped]
+
+pal_c = quantized_c[0].getpalette()
+best_idx_c, best_dist_c = 0, None
+for idx in range(len(pal_c)//3):
+    r,g,b = pal_c[idx*3], pal_c[idx*3+1], pal_c[idx*3+2]
+    dist = (r-BG_KEY[0])**2 + (g-BG_KEY[1])**2 + (b-BG_KEY[2])**2
+    if best_dist_c is None or dist < best_dist_c:
+        best_dist_c, best_idx_c = dist, idx
+
+quantized_c[0].save(
     OUT_PATH,
     save_all=True,
-    append_images=quantized[1:],
-    duration=[56]*len(quantized),
+    append_images=quantized_c[1:],
+    duration=[56]*len(quantized_c),
     loop=0,
     disposal=2,
-    transparency=best_idx,
+    transparency=best_idx_c,
     optimize=False,
 )
-print(f"Saved {OUT_PATH}  ({len(quantized)} frames)")
+print(f"Saved {OUT_PATH}  ({len(quantized_c)} frames, size={pil_frames_cropped[0].size})")
