@@ -443,6 +443,11 @@ h1, h2, h3, h4 {
   font-size: 16px;
 }
 
+body.nav-collapsed .hero__image-eyebrow {
+  text-align: left;
+  align-self: flex-start;
+}
+
 .about__gif {
   display: block;
   width: 60%;

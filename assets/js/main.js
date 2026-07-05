@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Measure against the uncollapsed (full desktop) layout first.
     header.classList.remove("nav-collapsed");
+    document.body.classList.remove("nav-collapsed");
 
     var available = inner.clientWidth;
     var needed = logo.getBoundingClientRect().width + nav.scrollWidth;
 
     if (needed > available) {
       header.classList.add("nav-collapsed");
+      document.body.classList.add("nav-collapsed");
     }
   }
 
