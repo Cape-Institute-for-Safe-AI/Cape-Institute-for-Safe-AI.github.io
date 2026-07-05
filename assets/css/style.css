@@ -1181,8 +1181,12 @@ abbr.dacc-term:hover {
   .research__visual { order: 1; }
   .research__bets  { order: 2; }
 
+  .research__main {
+    padding-bottom: 12px;
+  }
+
   .research__visual {
-    padding: clamp(16px, 4vw, 28px) var(--section-pad) 0;
+    padding: 8px var(--section-pad) 16px;
     border-top: none;
     justify-content: flex-start;
   }
