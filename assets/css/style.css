@@ -1192,10 +1192,9 @@ abbr.dacc-term:hover {
     justify-content: flex-start;
   }
 
-  /* Rotate to landscape and fill the available width */
   .research__gif {
-    width: 100%;
-    max-width: 100%;
+    width: 65%;
+    max-width: 65%;
     height: auto;
   }
 }
