@@ -563,13 +563,13 @@ h1, h2, h3, h4 {
   width: fit-content;
 }
 
-a.card-meta {
+.card a.card-meta {
   text-decoration: underline;
   text-decoration-color: var(--color-muted);
   text-underline-offset: 3px;
 }
 
-a.card-meta:hover {
+.card a.card-meta:hover {
   color: var(--color-blue);
   text-decoration-color: var(--color-blue);
 }

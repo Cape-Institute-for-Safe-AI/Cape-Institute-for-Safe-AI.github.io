@@ -256,7 +256,10 @@ crop_box = (minx, miny, maxx+1, maxy+1)
 print(f"Cropping to {crop_box} (was {orig_w}x{orig_h})")
 pil_frames_cropped = [f.crop(crop_box) for f in pil_frames]
 
-first_c = pil_frames_cropped[-1].convert("P", palette=Image.ADAPTIVE, colors=64)
+# Use a fully-opaque peak frame (just before fade) as palette basis —
+# NOT the last frame, which is fully transparent and has no colour info.
+palette_frame_idx = -(FADE_FRAMES + 5)
+first_c = pil_frames_cropped[palette_frame_idx].convert("P", palette=Image.ADAPTIVE, colors=64)
 quantized_c = [f.quantize(palette=first_c, dither=Image.NONE) for f in pil_frames_cropped]
 
 pal_c = quantized_c[0].getpalette()
