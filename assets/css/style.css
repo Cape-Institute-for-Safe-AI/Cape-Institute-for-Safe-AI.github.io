@@ -1171,16 +1171,27 @@ abbr.dacc-term:hover {
 
 @media (max-width: 700px) {
   .research__wrap {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
+
+  /* On mobile the visual column slots between body text and bets.
+     Order: main(0) → visual(1) → bets(2) */
+  .research__main  { order: 0; }
+  .research__visual { order: 1; }
+  .research__bets  { order: 2; }
 
   .research__visual {
-    padding: clamp(16px, 2vw, 28px) var(--section-pad);
-    border-top: var(--border);
+    padding: clamp(16px, 4vw, 28px) var(--section-pad) 0;
+    border-top: none;
+    justify-content: flex-start;
   }
 
+  /* Rotate to landscape and fill the available width */
   .research__gif {
-    width: 220px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 
