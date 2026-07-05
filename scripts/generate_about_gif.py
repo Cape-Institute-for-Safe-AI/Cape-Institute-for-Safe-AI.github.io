@@ -157,7 +157,9 @@ ROUNDING  = LEGEND_SQ * 0.18
 
 frames_rgba = []
 
-def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0):
+def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alpha=None):
+    if legend_alpha is None:
+        legend_alpha = overall_alpha
     ax.clear()
     ax.set_xlim(*XLIM); ax.set_ylim(*YLIM)
     ax.invert_yaxis(); ax.set_aspect("equal"); ax.axis("off")
@@ -187,9 +189,9 @@ def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0):
         ax.add_patch(FancyBboxPatch(
             (SWATCH_X0, ly), LEGEND_SQ, LEGEND_SQ,
             boxstyle=f"round,pad=0,rounding_size={ROUNDING}",
-            mutation_scale=1, linewidth=0, facecolor=color, alpha=oa, zorder=3))
+            mutation_scale=1, linewidth=0, facecolor=color, alpha=legend_alpha, zorder=3))
         ax.text(TEXT_X, ly + LEGEND_SQ/2, label, va="center", ha="left",
-                fontsize=LEGEND_FONTSIZE, family=LEGEND_FONT, color="#000000", alpha=oa, zorder=3)
+                fontsize=LEGEND_FONTSIZE, family=LEGEND_FONT, color="#000000", alpha=legend_alpha, zorder=3)
 
     fig.canvas.draw()
     frames_rgba.append(np.asarray(fig.canvas.buffer_rgba()).copy())
@@ -198,7 +200,7 @@ def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0):
 BLACK_FRAMES = 36
 BLACK_HOLD   = 12
 GROW_FRAMES  = 72
-FINAL_HOLD   = 36
+FINAL_HOLD   = 108
 FADE_FRAMES  = 28
 
 render_frame(0.0, 0.0, 0.0)
@@ -213,7 +215,7 @@ for _ in range(FINAL_HOLD):
     render_frame(1.0, 1.0, 1.0)
 for i in range(FADE_FRAMES):
     t = (i + 1) / FADE_FRAMES
-    render_frame(1.0, 1.0, 1.0, overall_alpha=1.0 - ease_in_out_cubic(t))
+    render_frame(1.0, 1.0, 1.0, overall_alpha=1.0 - ease_in_out_cubic(t), legend_alpha=1.0)
 
 plt.close(fig)
 

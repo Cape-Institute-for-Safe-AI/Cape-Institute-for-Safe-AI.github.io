@@ -498,6 +498,43 @@ h1, h2, h3, h4 {
   min-width: 3ch;
 }
 
+/* ---------- Research ---------- */
+
+/* Override the generic section padding so the wrap itself becomes a grid.
+   Padding is applied per-column instead. */
+#research > .wrap {
+  padding: 0;
+}
+
+.research__wrap {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  align-items: start;
+}
+
+.research__main {
+  padding: var(--section-pad);
+}
+
+.research__visual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: var(--section-pad);
+  padding-bottom: 0;
+}
+
+.research__bets {
+  grid-column: 1 / -1;
+  padding: 0 var(--section-pad) var(--section-pad);
+}
+
+.research__gif {
+  display: block;
+  width: 306px;
+  height: auto;
+}
+
 /* ---------- Card grids (research / capacity) ---------- */
 
 .card-grid {
@@ -506,7 +543,7 @@ h1, h2, h3, h4 {
   gap: 0;
   border-top: var(--border);
   border-left: var(--border);
-  margin-top: 44px;
+  margin-top: 22px;
 }
 
 .card {
@@ -1130,6 +1167,21 @@ abbr.dacc-term:hover {
 
 .site-header.nav-collapsed .nav-toggle {
   display: inline-flex;
+}
+
+@media (max-width: 700px) {
+  .research__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .research__visual {
+    padding: clamp(16px, 2vw, 28px) var(--section-pad);
+    border-top: var(--border);
+  }
+
+  .research__gif {
+    width: 220px;
+  }
 }
 
 @media (max-width: 700px) {

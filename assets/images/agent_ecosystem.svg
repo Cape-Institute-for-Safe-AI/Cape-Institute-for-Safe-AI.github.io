@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg1344"
+   sodipodi:docname="agent_ecosystem.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   width="184.32025"
+   height="272.61868"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1346"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.1466667"
+     inkscape:cx="65.466102"
+     inkscape:cy="126.64195"
+     inkscape:window-width="1680"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1344" />
+  <defs
+     id="defs1298">
+    <clipPath
+       id="clip-1">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1157" />
+    </clipPath>
+    <symbol
+       viewBox="-4.61088 -5.29008 9.181 11.44367"
+       id="symbol-1">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         fill-rule="nonzero"
+         stroke="#ffffff"
+         stroke-width="0.108"
+         stroke-linecap="butt"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="none"
+         stroke-dashoffset="0"
+         font-family="none"
+         font-weight="none"
+         font-size="none"
+         text-anchor="none"
+         style="mix-blend-mode:normal"
+         id="path1160" />
+    </symbol>
+    <symbol
+       viewBox="-4.61088 -5.29008 9.181 11.44367"
+       id="symbol-2">
+      <g
+         fill="none"
+         fill-rule="nonzero"
+         stroke="none"
+         stroke-width="none"
+         stroke-linecap="butt"
+         stroke-linejoin="none"
+         stroke-miterlimit="10"
+         stroke-dasharray="none"
+         stroke-dashoffset="0"
+         font-family="none"
+         font-weight="none"
+         font-size="none"
+         text-anchor="none"
+         style="mix-blend-mode:normal"
+         id="g1203">
+        <path
+           d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+           fill="#432ebe"
+           stroke="none"
+           stroke-width="0.108"
+           stroke-linejoin="round"
+           id="path1163" />
+        <g
+           clip-path="url(#clip-1)"
+           id="g1199">
+          <g
+             stroke="#ffffff"
+             stroke-linejoin="miter"
+             id="g1197">
+            <path
+               d="M 3.69978,1.71623 C 3.66433,1.52742 2.97859,0.72339 2.7625,1.03939 2.54214,1.36163 3.5343,1.70466 3.69205,1.67504"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;2&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-10.6346003679147,&quot;id&quot;:1}"
+               fill="#ffffff"
+               stroke-width="0.072"
+               id="path1165" />
+            <path
+               d="M 4.0681,1.35939 C 4.14933,1.1853 4.06069,0.13228 3.70093,0.26313 3.33406,0.39656 3.94037,1.25355 4.08582,1.32142"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:1,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:25.014181111146037,&quot;id&quot;:2}"
+               fill="#ffffff"
+               stroke-width="0.036"
+               id="path1167" />
+            <path
+               d="m 3.02461,0.42353 c 0,0 -1.28762,-0.1839 -1.82536,-0.13156 -0.4814,0.04686 -1.14126,0.23902 -1.57179,0.46222 -0.59391,0.3079 -1.84303,1.30811 -1.84303,1.30811 l -0.39078,0.34197 c 0,0 0.10573,-0.6567 1.58631,-1.70215 C 0.17297,-0.14028 -1.072,0.16897 0.73565,0.04446 2.97266,-0.10963 3.02462,0.42352 3.02462,0.42352 Z"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:4.597691254005856,&quot;id&quot;:3}"
+               fill="#b03333"
+               stroke-width="0.108"
+               id="path1169" />
+            <path
+               d="m -2.61456,2.39224 c -0.31007,0.8527 -0.03646,1.83329 -0.51254,2.62676 -0.18214,0.30356 -0.30015,0.55991 -0.3844,0.89694 -0.02802,0.11208 -0.04972,0.2245 -0.07688,0.33315 -0.00608,0.02433 0,0.14979 0,0.12813"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:4}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1171" />
+            <path
+               d="m -2.60233,2.35876 c -0.49986,0.69707 -0.50103,1.6595 -1.13688,2.26028 -0.24326,0.22984 -0.4161,0.43308 -0.57881,0.71837 -0.05411,0.09488 -0.10255,0.19167 -0.155,0.28364 -0.01174,0.02059 -0.03822,0.13635 -0.0327,0.11664"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:15.660686868736068,&quot;id&quot;:5}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1173" />
+            <path
+               d="M -2.59674,2.39571 C -3.32986,2.83385 -3.71294,3.71225 -4.53203,4.00848 -4.84539,4.12181 -5.08389,4.2388 -5.3457,4.43474 -5.43277,4.4999 -5.51542,4.56906 -5.59982,4.63223 -5.61872,4.64637 -5.68884,4.74157 -5.67597,4.72576"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:39.1529032177524,&quot;id&quot;:6}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1175" />
+            <path
+               d="M -2.58845,2.40543 C -3.2631,2.43682 -3.85831,2.90583 -4.53985,2.8062 -4.80059,2.76808 -5.01052,2.76049 -5.2662,2.7992 -5.35123,2.81208 -5.43467,2.82939 -5.5171,2.84187 -5.53555,2.84466 -5.62,2.8848 -5.60512,2.8786"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:67.35331029514829,&quot;id&quot;:7}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1177" />
+            <path
+               d="m -2.62995,2.39745 c -0.18382,0 -0.40865,-0.09654 -0.59776,-0.12356 -0.24933,-0.03562 -0.50894,-0.02004 -0.7614,-0.02004"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:8}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1179" />
+            <path
+               d="M 1.19638,1.35654 C 0.74139,1.47029 0.33482,1.71599 0.42267,2.24308 0.45091,2.41252 0.66927,3.10303 0.48715,3.1941 0.37797,3.24869 0.29023,3.07661 0.24537,3.01679 0.02571,2.72391 0.06156,2.3268 -0.09313,2.01742 -0.249,1.70568 -0.84829,1.82399 -1.14086,1.82399"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:9}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1181" />
+            <path
+               d="m 0.61934,-1.65958 c -0.56597,0.48072 -1.16379,0.82715 -1.40546,0.41748 -0.07769,-0.13169 -0.28232,-0.79238 -0.53798,-0.62623 -0.15325,0.0996 -0.13839,0.30426 -0.14879,0.39266 -0.05093,0.43279 0.24176,0.61889 0.27181,0.98318 0.03028,0.36707 -0.69505,1.01843 -1.01223,1.36975"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-47.923564213783,&quot;id&quot;:10}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1183" />
+            <path
+               d="M 0.45665,3.1803 C 0.62691,3.58891 0.69022,4.05401 0.81909,4.47744 0.95703,4.93068 1.19163,5.37512 1.4009,5.79366"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:11}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1185" />
+            <path
+               d="M 0.56648,2.9374 C 1.01294,3.4675 1.32627,4.13226 1.7179,4.70396 2.13709,5.3159 2.69649,5.86924 3.20588,6.39581"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-17.48469657294884,&quot;id&quot;:12}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1187" />
+            <path
+               d="m 0.27543,3.07538 c 0,0.7653 -0.56319,1.49652 -0.18122,2.26046"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:13}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1189" />
+            <path
+               d="m -1.33217,-1.88543 c -0.06878,-0.27513 -0.2645,-0.52124 -0.28613,-0.82407 -0.04659,-0.65227 0.2518,-1.28676 0.2518,-1.92283"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:14}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1191" />
+            <path
+               d="m -1.47868,-1.35491 c -0.91992,-0.91992 -1.464,-1.86865 -1.464,-3.18635"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:15}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1193" />
+            <path
+               d="m -0.91351,-1.51813 c 0,-1.27671 0.31152,-2.94708 1.17136,-3.80693"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:16}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1195" />
+          </g>
+        </g>
+        <use
+           x="-4.6108799"
+           y="-5.2900801"
+           xlink:href="#symbol-1"
+           width="9.1809998"
+           height="11.44367"
+           overflow="visible"
+           fill="none"
+           stroke="none"
+           stroke-width="1"
+           stroke-linejoin="miter"
+           id="use1201" />
+      </g>
+    </symbol>
+    <clipPath
+       id="clip-2">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1206" />
+    </clipPath>
+    <symbol
+       viewBox="-4.61088 -5.29008 9.181 11.44367"
+       id="symbol-3">
+      <g
+         fill="none"
+         fill-rule="nonzero"
+         stroke="none"
+         stroke-width="none"
+         stroke-linecap="butt"
+         stroke-linejoin="none"
+         stroke-miterlimit="10"
+         stroke-dasharray="none"
+         stroke-dashoffset="0"
+         font-family="none"
+         font-weight="none"
+         font-size="none"
+         text-anchor="none"
+         style="mix-blend-mode:normal"
+         id="g1249">
+        <path
+           d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+           fill="#b03333"
+           stroke="none"
+           stroke-width="0.108"
+           stroke-linejoin="round"
+           id="path1209" />
+        <g
+           clip-path="url(#clip-2)"
+           id="g1245">
+          <g
+             stroke="#ffffff"
+             stroke-linejoin="miter"
+             id="g1243">
+            <path
+               d="M 3.69978,1.71623 C 3.66433,1.52742 2.97859,0.72339 2.7625,1.03939 2.54214,1.36163 3.5343,1.70466 3.69205,1.67504"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;2&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-10.6346003679147,&quot;id&quot;:1}"
+               fill="#ffffff"
+               stroke-width="0.072"
+               id="path1211" />
+            <path
+               d="M 4.0681,1.35939 C 4.14933,1.1853 4.06069,0.13228 3.70093,0.26313 3.33406,0.39656 3.94037,1.25355 4.08582,1.32142"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:1,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:25.014181111146037,&quot;id&quot;:2}"
+               fill="#ffffff"
+               stroke-width="0.036"
+               id="path1213" />
+            <path
+               d="m 3.02461,0.42353 c 0,0 -1.28762,-0.1839 -1.82536,-0.13156 -0.4814,0.04686 -1.14126,0.23902 -1.57179,0.46222 -0.59391,0.3079 -1.84303,1.30811 -1.84303,1.30811 l -0.39078,0.34197 c 0,0 0.10573,-0.6567 1.58631,-1.70215 C 0.17297,-0.14028 -1.072,0.16897 0.73565,0.04446 2.97266,-0.10963 3.02462,0.42352 3.02462,0.42352 Z"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:4.597691254005856,&quot;id&quot;:3}"
+               fill="#353535"
+               stroke-width="0.108"
+               id="path1215" />
+            <path
+               d="m -2.61456,2.39224 c -0.31007,0.8527 -0.03646,1.83329 -0.51254,2.62676 -0.18214,0.30356 -0.30015,0.55991 -0.3844,0.89694 -0.02802,0.11208 -0.04972,0.2245 -0.07688,0.33315 -0.00608,0.02433 0,0.14979 0,0.12813"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:4}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1217" />
+            <path
+               d="m -2.60233,2.35876 c -0.49986,0.69707 -0.50103,1.6595 -1.13688,2.26028 -0.24326,0.22984 -0.4161,0.43308 -0.57881,0.71837 -0.05411,0.09488 -0.10255,0.19167 -0.155,0.28364 -0.01174,0.02059 -0.03822,0.13635 -0.0327,0.11664"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:15.660686868736068,&quot;id&quot;:5}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1219" />
+            <path
+               d="M -2.59674,2.39571 C -3.32986,2.83385 -3.71294,3.71225 -4.53203,4.00848 -4.84539,4.12181 -5.08389,4.2388 -5.3457,4.43474 -5.43277,4.4999 -5.51542,4.56906 -5.59982,4.63223 -5.61872,4.64637 -5.68884,4.74157 -5.67597,4.72576"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:39.1529032177524,&quot;id&quot;:6}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1221" />
+            <path
+               d="M -2.58845,2.40543 C -3.2631,2.43682 -3.85831,2.90583 -4.53985,2.8062 -4.80059,2.76808 -5.01052,2.76049 -5.2662,2.7992 -5.35123,2.81208 -5.43467,2.82939 -5.5171,2.84187 -5.53555,2.84466 -5.62,2.8848 -5.60512,2.8786"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:67.35331029514829,&quot;id&quot;:7}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1223" />
+            <path
+               d="m -2.62995,2.39745 c -0.18382,0 -0.40865,-0.09654 -0.59776,-0.12356 -0.24933,-0.03562 -0.50894,-0.02004 -0.7614,-0.02004"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:8}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1225" />
+            <path
+               d="M 1.19638,1.35654 C 0.74139,1.47029 0.33482,1.71599 0.42267,2.24308 0.45091,2.41252 0.66927,3.10303 0.48715,3.1941 0.37797,3.24869 0.29023,3.07661 0.24537,3.01679 0.02571,2.72391 0.06156,2.3268 -0.09313,2.01742 -0.249,1.70568 -0.84829,1.82399 -1.14086,1.82399"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:9}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1227" />
+            <path
+               d="m 0.61934,-1.65958 c -0.56597,0.48072 -1.16379,0.82715 -1.40546,0.41748 -0.07769,-0.13169 -0.28232,-0.79238 -0.53798,-0.62623 -0.15325,0.0996 -0.13839,0.30426 -0.14879,0.39266 -0.05093,0.43279 0.24176,0.61889 0.27181,0.98318 0.03028,0.36707 -0.69505,1.01843 -1.01223,1.36975"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-47.923564213783,&quot;id&quot;:10}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1229" />
+            <path
+               d="M 0.45665,3.1803 C 0.62691,3.58891 0.69022,4.05401 0.81909,4.47744 0.95703,4.93068 1.19163,5.37512 1.4009,5.79366"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:11}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1231" />
+            <path
+               d="M 0.56648,2.9374 C 1.01294,3.4675 1.32627,4.13226 1.7179,4.70396 2.13709,5.3159 2.69649,5.86924 3.20588,6.39581"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-17.48469657294884,&quot;id&quot;:12}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1233" />
+            <path
+               d="m 0.27543,3.07538 c 0,0.7653 -0.56319,1.49652 -0.18122,2.26046"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:13}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1235" />
+            <path
+               d="m -1.33217,-1.88543 c -0.06878,-0.27513 -0.2645,-0.52124 -0.28613,-0.82407 -0.04659,-0.65227 0.2518,-1.28676 0.2518,-1.92283"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:14}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1237" />
+            <path
+               d="m -1.47868,-1.35491 c -0.91992,-0.91992 -1.464,-1.86865 -1.464,-3.18635"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:15}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1239" />
+            <path
+               d="m -0.91351,-1.51813 c 0,-1.27671 0.31152,-2.94708 1.17136,-3.80693"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:16}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1241" />
+          </g>
+        </g>
+        <use
+           x="-4.6108799"
+           y="-5.2900801"
+           xlink:href="#symbol-1"
+           width="9.1809998"
+           height="11.44367"
+           overflow="visible"
+           fill="none"
+           stroke="none"
+           stroke-width="1"
+           stroke-linejoin="miter"
+           id="use1247" />
+      </g>
+    </symbol>
+    <clipPath
+       id="clip-3">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1252" />
+    </clipPath>
+    <symbol
+       viewBox="-4.61088 -5.29008 9.181 11.44367"
+       id="symbol-4">
+      <g
+         fill="none"
+         fill-rule="nonzero"
+         stroke="none"
+         stroke-width="none"
+         stroke-linecap="butt"
+         stroke-linejoin="none"
+         stroke-miterlimit="10"
+         stroke-dasharray="none"
+         stroke-dashoffset="0"
+         font-family="none"
+         font-weight="none"
+         font-size="none"
+         text-anchor="none"
+         style="mix-blend-mode:normal"
+         id="g1295">
+        <path
+           d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+           fill="#353535"
+           stroke="none"
+           stroke-width="0.108"
+           stroke-linejoin="round"
+           id="path1255" />
+        <g
+           clip-path="url(#clip-3)"
+           id="g1291">
+          <g
+             stroke="#ffffff"
+             stroke-linejoin="miter"
+             id="g1289">
+            <path
+               d="M 3.69978,1.71623 C 3.66433,1.52742 2.97859,0.72339 2.7625,1.03939 2.54214,1.36163 3.5343,1.70466 3.69205,1.67504"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;2&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-10.6346003679147,&quot;id&quot;:1}"
+               fill="#ffffff"
+               stroke-width="0.072"
+               id="path1257" />
+            <path
+               d="M 4.0681,1.35939 C 4.14933,1.1853 4.06069,0.13228 3.70093,0.26313 3.33406,0.39656 3.94037,1.25355 4.08582,1.32142"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:1,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:25.014181111146037,&quot;id&quot;:2}"
+               fill="#ffffff"
+               stroke-width="0.036"
+               id="path1259" />
+            <path
+               d="m 3.02461,0.42353 c 0,0 -1.28762,-0.1839 -1.82536,-0.13156 -0.4814,0.04686 -1.14126,0.23902 -1.57179,0.46222 -0.59391,0.3079 -1.84303,1.30811 -1.84303,1.30811 l -0.39078,0.34197 c 0,0 0.10573,-0.6567 1.58631,-1.70215 C 0.17297,-0.14028 -1.072,0.16897 0.73565,0.04446 2.97266,-0.10963 3.02462,0.42352 3.02462,0.42352 Z"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:4.597691254005856,&quot;id&quot;:3}"
+               fill="#432ebe"
+               stroke-width="0.108"
+               id="path1261" />
+            <path
+               d="m -2.61456,2.39224 c -0.31007,0.8527 -0.03646,1.83329 -0.51254,2.62676 -0.18214,0.30356 -0.30015,0.55991 -0.3844,0.89694 -0.02802,0.11208 -0.04972,0.2245 -0.07688,0.33315 -0.00608,0.02433 0,0.14979 0,0.12813"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:4}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1263" />
+            <path
+               d="m -2.60233,2.35876 c -0.49986,0.69707 -0.50103,1.6595 -1.13688,2.26028 -0.24326,0.22984 -0.4161,0.43308 -0.57881,0.71837 -0.05411,0.09488 -0.10255,0.19167 -0.155,0.28364 -0.01174,0.02059 -0.03822,0.13635 -0.0327,0.11664"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:15.660686868736068,&quot;id&quot;:5}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1265" />
+            <path
+               d="M -2.59674,2.39571 C -3.32986,2.83385 -3.71294,3.71225 -4.53203,4.00848 -4.84539,4.12181 -5.08389,4.2388 -5.3457,4.43474 -5.43277,4.4999 -5.51542,4.56906 -5.59982,4.63223 -5.61872,4.64637 -5.68884,4.74157 -5.67597,4.72576"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:39.1529032177524,&quot;id&quot;:6}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1267" />
+            <path
+               d="M -2.58845,2.40543 C -3.2631,2.43682 -3.85831,2.90583 -4.53985,2.8062 -4.80059,2.76808 -5.01052,2.76049 -5.2662,2.7992 -5.35123,2.81208 -5.43467,2.82939 -5.5171,2.84187 -5.53555,2.84466 -5.62,2.8848 -5.60512,2.8786"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:67.35331029514829,&quot;id&quot;:7}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1269" />
+            <path
+               d="m -2.62995,2.39745 c -0.18382,0 -0.40865,-0.09654 -0.59776,-0.12356 -0.24933,-0.03562 -0.50894,-0.02004 -0.7614,-0.02004"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:8}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1271" />
+            <path
+               d="M 1.19638,1.35654 C 0.74139,1.47029 0.33482,1.71599 0.42267,2.24308 0.45091,2.41252 0.66927,3.10303 0.48715,3.1941 0.37797,3.24869 0.29023,3.07661 0.24537,3.01679 0.02571,2.72391 0.06156,2.3268 -0.09313,2.01742 -0.249,1.70568 -0.84829,1.82399 -1.14086,1.82399"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:9}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1273" />
+            <path
+               d="m 0.61934,-1.65958 c -0.56597,0.48072 -1.16379,0.82715 -1.40546,0.41748 -0.07769,-0.13169 -0.28232,-0.79238 -0.53798,-0.62623 -0.15325,0.0996 -0.13839,0.30426 -0.14879,0.39266 -0.05093,0.43279 0.24176,0.61889 0.27181,0.98318 0.03028,0.36707 -0.69505,1.01843 -1.01223,1.36975"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-47.923564213783,&quot;id&quot;:10}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1275" />
+            <path
+               d="M 0.45665,3.1803 C 0.62691,3.58891 0.69022,4.05401 0.81909,4.47744 0.95703,4.93068 1.19163,5.37512 1.4009,5.79366"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:11}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1277" />
+            <path
+               d="M 0.56648,2.9374 C 1.01294,3.4675 1.32627,4.13226 1.7179,4.70396 2.13709,5.3159 2.69649,5.86924 3.20588,6.39581"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;rotation&quot;:-17.48469657294884,&quot;id&quot;:12}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1279" />
+            <path
+               d="m 0.27543,3.07538 c 0,0.7653 -0.56319,1.49652 -0.18122,2.26046"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:13}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1281" />
+            <path
+               d="m -1.33217,-1.88543 c -0.06878,-0.27513 -0.2645,-0.52124 -0.28613,-0.82407 -0.04659,-0.65227 0.2518,-1.28676 0.2518,-1.92283"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:14}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1283" />
+            <path
+               d="m -1.47868,-1.35491 c -0.91992,-0.91992 -1.464,-1.86865 -1.464,-3.18635"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:15}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1285" />
+            <path
+               d="m -0.91351,-1.51813 c 0,-1.27671 0.31152,-2.94708 1.17136,-3.80693"
+               data-paper-data="{&quot;style&quot;:{&quot;borderSpec&quot;:{&quot;algorithm&quot;:&quot;tileBorder&quot;,&quot;colors&quot;:[[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1],[&quot;Color&quot;,1,1,1]],&quot;has&quot;:true,&quot;shade&quot;:-20},&quot;borderWidth&quot;:&quot;3&quot;,&quot;fillSpec&quot;:{&quot;algorithm&quot;:&quot;rotate&quot;,&quot;colors&quot;:[[&quot;Color&quot;,0.6902,0.2,0.2],[&quot;Color&quot;,0.20784,0.20784,0.20784],[&quot;Color&quot;,0.26275,0.18039,0.7451]],&quot;has&quot;:false,&quot;shade&quot;:-20},&quot;sameForAllTiles&quot;:false,&quot;useTileColors&quot;:true},&quot;id&quot;:16}"
+               fill="none"
+               stroke-width="0.108"
+               id="path1287" />
+          </g>
+        </g>
+        <use
+           x="-4.6108799"
+           y="-5.2900801"
+           xlink:href="#symbol-1"
+           width="9.1809998"
+           height="11.44367"
+           overflow="visible"
+           fill="none"
+           stroke="none"
+           stroke-width="1"
+           stroke-linejoin="miter"
+           id="use1293" />
+      </g>
+    </symbol>
+    <clipPath
+       id="clip-1-3">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1157-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath2001">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1999" />
+    </clipPath>
+    <clipPath
+       id="clip-1-5">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path1157-3" />
+    </clipPath>
+    <clipPath
+       id="clipPath2066">
+      <path
+         d="m 0.05767,-1.73029 c 0.07774,0.15622 1.18917,0.42558 1.99589,0.6616 0.78661,0.23013 1.79588,0.21675 1.98743,0.50377 0.30097,0.45099 0.47514,3.18628 0.47514,3.18628 0,0 -3.14191,-1.7597 -3.3179,-1.20324 -0.25584,0.80896 2.23833,4.6168 2.23833,4.6168 L -0.02037,5.24051 -1.06086,1.84952 c 0,0 -2.0506,4.06394 -2.8791,4.24685 -0.56991,0.12582 -0.61691,-3.47501 -0.61691,-3.47501 0,0 2.28175,-1.51848 2.52183,-2.00462 0.1528,-0.3094 -0.36343,-1.17676 -0.55743,-1.97305 -0.19896,-0.81664 -0.5214,-1.91386 -0.42498,-2.05929 0.16079,-0.24254 2.99709,-1.82048 2.99709,-1.82048 0,0 -0.05162,3.24527 0.07804,3.50579 z"
+         fill="none"
+         stroke="none"
+         stroke-width="0.108"
+         stroke-linejoin="round"
+         id="path2064" />
+    </clipPath>
+  </defs>
+  <use
+     x="-4.5701399"
+     y="5.1820798"
+     transform="matrix(-4.5385143,-0.01417583,-0.01417583,4.5385143,51.645037,55.216606)"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1300"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue7" />
+  <use
+     x="-0.04575"
+     y="2.5464001"
+     transform="matrix(-2.2815338,3.9233808,3.9233808,2.2815338,51.645037,55.216606)"
+     xlink:href="#symbol-3"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1302"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="red3" />
+  <use
+     x="-0.066119999"
+     y="-2.6896801"
+     transform="matrix(2.2569805,3.9375566,3.9375566,-2.2569805,51.645037,55.216606)"
+     xlink:href="#symbol-4"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1304"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="black12" />
+  <use
+     x="-9.1352701"
+     y="-2.6544001"
+     transform="matrix(2.2815338,-3.9233808,-3.9233808,-2.2815338,134.00092,55.473703)"
+     xlink:href="#symbol-3"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1308"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="red9" />
+  <use
+     x="-9.1148996"
+     y="2.5816801"
+     transform="matrix(-2.2569805,-3.9375566,-3.9375566,2.2569805,134.00092,55.473703)"
+     xlink:href="#symbol-4"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1310"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="black2" />
+  <use
+     x="-4.5701399"
+     y="5.1820798"
+     transform="matrix(-4.5385143,-0.01417583,-0.01417583,4.5385143,134.00092,55.473703)"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1312"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue6" />
+  <use
+     x="-4.6108799"
+     y="-5.2900801"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1316"
+     transform="matrix(4.5385143,0.01417583,0.01417583,-4.5385143,92.600305,126.66743)"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue1" />
+  <use
+     x="-9.1352701"
+     y="-2.6544001"
+     transform="matrix(2.2815338,-3.9233808,-3.9233808,-2.2815338,92.600305,126.66743)"
+     xlink:href="#symbol-3"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1318"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="red5" />
+  <use
+     x="-9.1148996"
+     y="2.5816801"
+     transform="matrix(-2.2569805,-3.9375566,-3.9375566,2.2569805,92.600305,126.66743)"
+     xlink:href="#symbol-4"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1320"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="black8" />
+  <use
+     x="-4.5701399"
+     y="5.1820798"
+     transform="matrix(-4.5385143,-0.01417583,-0.01417583,4.5385143,92.600305,126.66743)"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1322"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue10" />
+  <use
+     x="-0.04575"
+     y="2.5464001"
+     transform="matrix(-2.2815338,3.9233808,3.9233808,2.2815338,92.600305,126.66743)"
+     xlink:href="#symbol-3"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1324"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="red11" />
+  <use
+     x="-0.066119999"
+     y="-2.6896801"
+     transform="matrix(2.2569805,3.9375566,3.9375566,-2.2569805,92.600305,126.66743)"
+     xlink:href="#symbol-4"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1326"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="black4" />
+  <use
+     x="-4.6108799"
+     y="-5.2900801"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1330"
+     transform="matrix(4.5385143,0.01417583,0.01417583,-4.5385143,51.199681,197.86114)"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue18" />
+  <use
+     x="-0.066119999"
+     y="-2.6896801"
+     transform="matrix(2.2569805,3.9375566,3.9375566,-2.2569805,51.199681,197.86114)"
+     xlink:href="#symbol-4"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1332"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="black16" />
+  <use
+     x="-4.6108799"
+     y="-5.2900801"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1336"
+     transform="matrix(4.5385143,0.01417583,0.01417583,-4.5385143,133.55556,198.11825)"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue17" />
+  <use
+     x="-4.6108799"
+     y="-5.2900801"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1336-7"
+     transform="matrix(4.5385143,0.01417583,0.01417583,-4.5385143,52.114586,55.667054)"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue15" />
+  <use
+     x="-4.6108799"
+     y="-5.2900801"
+     xlink:href="#symbol-2"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1336-7-5"
+     transform="matrix(4.5385143,0.01417583,0.01417583,-4.5385143,132.40507,55.793815)"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="blue13" />
+  <use
+     x="-9.1352701"
+     y="-2.6544001"
+     transform="matrix(2.2815338,-3.9233808,-3.9233808,-2.2815338,133.55556,198.11825)"
+     xlink:href="#symbol-3"
+     width="9.1809998"
+     height="11.44367"
+     overflow="visible"
+     id="use1338"
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:label="red14" />
+</svg>
