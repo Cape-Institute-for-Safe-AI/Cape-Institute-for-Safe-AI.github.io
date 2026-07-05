@@ -1209,6 +1209,11 @@ abbr.dacc-term:hover {
     border-right: var(--border);
   }
 
+  /* Restore borders stripped by the desktop last-row rule */
+  .capacity__stats div:nth-last-child(-n+2) {
+    border-bottom: var(--border);
+  }
+
   .capacity__stats div:last-child {
     border-bottom: none;
   }
