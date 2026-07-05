@@ -444,8 +444,10 @@ h1, h2, h3, h4 {
 
 .about__gif {
   display: block;
-  width: 100%;
-  margin-top: 28px;
+  width: 60%;
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__image img {
@@ -561,9 +563,15 @@ h1, h2, h3, h4 {
   width: fit-content;
 }
 
+a.card-meta {
+  text-decoration: underline;
+  text-decoration-color: var(--color-muted);
+  text-underline-offset: 3px;
+}
+
 a.card-meta:hover {
   color: var(--color-blue);
-  text-decoration: underline;
+  text-decoration-color: var(--color-blue);
 }
 
 /* ---------- Capacity building ---------- */
@@ -866,6 +874,132 @@ a.card-meta:hover {
 
 .form button[type="submit"] {
   margin-top: 22px;
+}
+
+/* ---------- d/acc term + popup ---------- */
+
+abbr.dacc-term {
+  text-decoration: none;
+  color: var(--color-blue);
+  border-bottom: 1.5px solid var(--color-blue);
+  cursor: pointer;
+  font-style: normal;
+}
+
+abbr.dacc-term:hover {
+  color: var(--color-red);
+  border-bottom-color: var(--color-red);
+}
+
+.dacc-popup {
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(300px, 90vw, 560px);
+  border: 2px solid var(--color-ink);
+  background: var(--color-bg);
+  font-family: var(--font-mono);
+}
+
+.dacc-popup[hidden] {
+  display: none;
+}
+
+.dacc-popup__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #888888;
+  padding: 10px 16px;
+  border-bottom: 2px solid var(--color-ink);
+}
+
+.dacc-popup__asterisk {
+  color: var(--color-red);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.dacc-popup__title {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-bg);
+  flex: 1;
+}
+
+.dacc-popup__close {
+  background: none;
+  border: none;
+  color: var(--color-bg);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  font-family: var(--font-body);
+}
+
+.dacc-popup__close:hover {
+  opacity: 0.7;
+}
+
+.dacc-popup__body {
+  background: #f0f0f0;
+  padding: 20px 20px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-ink);
+  line-height: 1.6;
+}
+
+.dacc-popup__body > p:first-child {
+  margin: 0 0 12px;
+}
+
+.dacc-popup__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dacc-popup__list li {
+  padding-left: 14px;
+  position: relative;
+}
+
+.dacc-popup__list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-muted);
+}
+
+.dacc-popup__link {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.dacc-popup__link a {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.dacc-popup__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 199;
+  background: rgba(0,0,0,0.25);
+}
+
+.dacc-popup__backdrop[hidden] {
+  display: none;
 }
 
 /* ---------- Footer ---------- */

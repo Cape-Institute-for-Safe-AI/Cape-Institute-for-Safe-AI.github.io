@@ -48,4 +48,37 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear();
   }
 
+  // d/acc definition popup
+  var popup   = document.getElementById("dacc-popup");
+  var backdrop = document.getElementById("dacc-backdrop");
+
+  function openDacc() {
+    if (!popup) return;
+    popup.hidden   = false;
+    backdrop.hidden = false;
+    popup.focus();
+  }
+
+  function closeDacc() {
+    if (!popup) return;
+    popup.hidden   = true;
+    backdrop.hidden = true;
+  }
+
+  document.querySelectorAll("abbr.dacc-term").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      openDacc();
+    });
+  });
+
+  if (backdrop) backdrop.addEventListener("click", closeDacc);
+
+  var closeBtn = document.querySelector(".dacc-popup__close");
+  if (closeBtn) closeBtn.addEventListener("click", closeDacc);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeDacc();
+  });
+
 });

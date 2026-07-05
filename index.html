@@ -46,7 +46,7 @@
         <h1>Building societal resilience for collective flourishing.</h1>
         <p class="body-lead">
           The Cape Institute for Safe AI is a capacity-building and research
-          hub focused on developing defensive-acceleration technology in an increasingly
+          hub focused on developing <abbr class="dacc-term">d/acc</abbr> technology in an increasingly
           uncertain and systemically vulnerable world.
         </p>
         <div class="hero__focus">
@@ -84,8 +84,8 @@
       <div class="about__copy">
         <p>
           The Cape Institute for Safe AI (CISAI) is a capacity-building and research
-          hub focused on developing defensive-acceleration technology in an increasingly
-          uncertain and systemically vulnerable world. We believe that AI will be the most transformative technology of our lifetime, but that it won't necessarily be for the good. To enable the benefits of this technology, we must develop the infrastructure required to mitigate the risks from AI. We believe that the most effective way to pursue this mission is in building centers of excellence where the emerging fields of AI safety, security, and risk management can be developed, where talent can be upskilled, and where the public can engage with these topics. We believe that there are disproportionate benefits of building these hubs, as they can act as Schelling points which promote further awareness, network-building, and coordination.
+          hub focused on developing <abbr class="dacc-term">d/acc</abbr> technology in an increasingly
+          uncertain and systemically vulnerable world. We believe that AI will be the most transformative technology of our lifetime, but that it won't necessarily be for the good. To enable the benefits of this technology, we must develop the infrastructure required to mitigate the risks from AI. We believe that the most effective way to pursue this mission is in building centers of excellence where the emerging fields of AI safety, security, and risk management can be developed, where talent can be upskilled, and where the public can engage with these topics. We believe that there are disproportionate benefits of building these hubs, these hubs can act as Schelling points: natural focal points around which researchers, funders, and practitioners in the field can coordinate, even without top-down direction.
         </p>
         <h3 class="about__subheading">History</h3>
         <p>
@@ -116,7 +116,7 @@
         multi-agent settings.
       </p>
 
-      <span class="eyebrow" style="margin-top: 32px;">Our research bets.</span>
+      <span class="eyebrow" style="margin-top: 32px; margin-bottom: 0;">Our research bets.</span>
       <div class="card-grid">
         <div class="card">
           <div class="card-heading"><span class="swatch"></span><h3>Multi-agent</h3></div>
@@ -163,7 +163,7 @@
       <div class="card-grid">
         <div class="card">
           <div class="card-heading"><span class="swatch"></span><h3>Open Workspace</h3></div>
-          <p>We offer premium workspace for professionals working in defensive acceleration related fields,
+          <p>We offer premium workspace for professionals working in <abbr class="dacc-term">d/acc</abbr> related fields,
           or who are transitioning into careers in these fields. Here, you'll be able to interact with
           members of our research lab and community, providing opportunities for knowledge exchange and
           idea generation. Our workspace is located in central Cape Town, and offer discounted rates upon request.
@@ -173,7 +173,7 @@
         <div class="card">
           <div class="card-heading"><span class="swatch"></span><h3>Research Residencies</h3></div>
           <p>
-          We run structured programs for talented researchers to develop within defensive acceleration related
+          We run structured programs for talented researchers to develop within <abbr class="dacc-term">d/acc</abbr> related
           fields. Previously, we ran the Cooperative AI Research Fellowship, a 3-month in-person all-expense paid
           program where we connected fellows to senior researchers at Google Deepmind, Oxford, MIT, and more.
           </p>
@@ -192,7 +192,7 @@
       </div>
 
       <div class="partners">
-        <span class="mono-label">Partners, Collaborators, and Funders</span>
+        <span class="mono-label"><span style="color:var(--color-red);">*</span> Partners, Collaborators, and Funders</span>
         <div class="partners__carousel">
           <div class="partners__track">
             <div class="partners__row">
@@ -262,7 +262,7 @@
           </div>
           <h3>Tegan Green</h3>
           <span class="role">Operations Director</span>
-          <p>Tegan is a strong generalist who is deeply embedded in every aspect of the organisation. She uses her significant project management experience to design and run exceptional programs at CISAI, with a particular focus on the end-to-end experience of individuals interested in working in defensive acceleration, drawing on her experience as a UX designer.
+          <p>Tegan is a strong generalist who is deeply embedded in every aspect of the organisation. She uses her significant project management experience to design and run exceptional programs at CISAI, with a particular focus on the end-to-end experience of individuals interested in working in <abbr class="dacc-term">d/acc</abbr>, drawing on her experience as a UX designer.
           She has a strong interest in research too, regularly facilitating reading groups, with a particular focus on promoting human agency and understanding digital minds.
           </p>
           <a class="team-card__link" href="https://www.linkedin.com/in/tegan-green/" target="_blank" rel="noopener">LinkedIn &rarr;</a>
@@ -374,5 +374,25 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+
+<!-- d/acc definition popup -->
+<div class="dacc-popup" id="dacc-popup" role="dialog" aria-modal="true" aria-label="d/acc definition" hidden>
+  <div class="dacc-popup__header">
+    <span class="dacc-popup__asterisk">*</span>
+    <span class="dacc-popup__title">d/acc definition</span>
+    <button class="dacc-popup__close" aria-label="Close">&times;</button>
+  </div>
+  <div class="dacc-popup__body">
+    <p>D/acc stands for accelerating the following:</p>
+    <ul class="dacc-popup__list">
+      <li><strong>Differential progress:</strong> develop technologies that help society manage complexity, handle risk, and distribute benefits, rather than technologies that just scale raw capability.</li>
+      <li><strong>Defensive advantage:</strong> prioritizing tools that make it easier to defend open systems than to attack or control them.</li>
+      <li><strong>Decentralized systems:</strong> building infrastructure without central chokepoints, so local actors can still function even when global consensus fails.</li>
+      <li><strong>Democratic participation:</strong> giving more people agency in shaping and benefiting from progress, rather than concentrating power in the hands of a few.</li>
+    </ul>
+    <p class="dacc-popup__link">You can read more about d/acc <a href="https://ai-pathways.existentialhope.com/wp-content/uploads/2025/08/d_acc-pathway.pdf" target="_blank" rel="noopener">here</a>.</p>
+  </div>
+</div>
+<div class="dacc-popup__backdrop" id="dacc-backdrop" hidden></div>
 </body>
 </html>

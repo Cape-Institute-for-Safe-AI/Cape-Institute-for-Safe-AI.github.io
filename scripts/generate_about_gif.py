@@ -106,7 +106,7 @@ def ease_in_out_cubic(t):
 # ---------- Layout ----------
 DATA_W = 46.865479
 PAD = 5.0
-LEGEND_SPACE = 32.2  # reduced by ~1.78 data units (≈25px) to tighten the gap
+LEGEND_SPACE = 27.8  # gap reduced 35% further
 XLIM = (-PAD, DATA_W+PAD)
 YLIM = (-PAD, DATA_W+PAD+LEGEND_SPACE)
 FIG_W = 8.0
@@ -157,35 +157,39 @@ ROUNDING  = LEGEND_SQ * 0.18
 
 frames_rgba = []
 
-def render_frame(black_alpha, red_frac, blue_frac):
+def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0):
     ax.clear()
     ax.set_xlim(*XLIM); ax.set_ylim(*YLIM)
     ax.invert_yaxis(); ax.set_aspect("equal"); ax.axis("off")
 
+    oa = overall_alpha
+
     if black_alpha > 0.001:
-        ax.plot(poly_outer[:,0], poly_outer[:,1], color=BLACK, alpha=black_alpha,
+        ax.plot(poly_outer[:,0], poly_outer[:,1], color=BLACK, alpha=black_alpha * oa,
                 linewidth=LW_MAIN, solid_capstyle="round", zorder=1)
-        ax.plot(poly_inner[:,0], poly_inner[:,1], color=BLACK, alpha=black_alpha,
+        ax.plot(poly_inner[:,0], poly_inner[:,1], color=BLACK, alpha=black_alpha * oa,
                 linewidth=LW_HOOK, solid_capstyle="round", zorder=1)
-        ax.add_patch(plt.Circle(dot_center, DOT_R, color=BLACK, alpha=black_alpha, zorder=2))
+        ax.add_patch(plt.Circle(dot_center, DOT_R, color=BLACK, alpha=black_alpha * oa, zorder=2))
 
-    if red_frac > 0.001:
+    if red_frac > 0.001 and oa > 0.001:
         seg = reveal(poly_red, red_frac)
-        ax.plot(seg[:,0], seg[:,1], color=RED, linewidth=LW_MAIN, solid_capstyle="round", zorder=1)
+        ax.plot(seg[:,0], seg[:,1], color=RED, linewidth=LW_MAIN, solid_capstyle="round",
+                alpha=oa, zorder=1)
 
-    if blue_frac > 0.001:
+    if blue_frac > 0.001 and oa > 0.001:
         seg = reveal(poly_blue_rev, blue_frac)
-        ax.plot(seg[:,0], seg[:,1], color=BLUE, linewidth=LW_MAIN, solid_capstyle="round", zorder=1)
+        ax.plot(seg[:,0], seg[:,1], color=BLUE, linewidth=LW_MAIN, solid_capstyle="round",
+                alpha=oa, zorder=1)
 
-    legend_y0 = DATA_W + PAD + 2.2  # reduced gap by ~1.78 data units (≈25px)
+    legend_y0 = DATA_W + 2.81  # gap reduced 35% further
     for i, (color, label) in enumerate(legend_layout):
         ly = legend_y0 + i * LEGEND_ROW_PITCH
         ax.add_patch(FancyBboxPatch(
             (SWATCH_X0, ly), LEGEND_SQ, LEGEND_SQ,
             boxstyle=f"round,pad=0,rounding_size={ROUNDING}",
-            mutation_scale=1, linewidth=0, facecolor=color, zorder=3))
+            mutation_scale=1, linewidth=0, facecolor=color, alpha=oa, zorder=3))
         ax.text(TEXT_X, ly + LEGEND_SQ/2, label, va="center", ha="left",
-                fontsize=LEGEND_FONTSIZE, family=LEGEND_FONT, color="#000000", zorder=3)
+                fontsize=LEGEND_FONTSIZE, family=LEGEND_FONT, color="#000000", alpha=oa, zorder=3)
 
     fig.canvas.draw()
     frames_rgba.append(np.asarray(fig.canvas.buffer_rgba()).copy())
@@ -194,7 +198,8 @@ def render_frame(black_alpha, red_frac, blue_frac):
 BLACK_FRAMES = 36
 BLACK_HOLD   = 12
 GROW_FRAMES  = 72
-FINAL_HOLD   = 52
+FINAL_HOLD   = 36
+FADE_FRAMES  = 28
 
 render_frame(0.0, 0.0, 0.0)
 for i in range(BLACK_FRAMES):
@@ -206,6 +211,9 @@ for i in range(GROW_FRAMES):
     render_frame(1.0, te, te)
 for _ in range(FINAL_HOLD):
     render_frame(1.0, 1.0, 1.0)
+for i in range(FADE_FRAMES):
+    t = (i + 1) / FADE_FRAMES
+    render_frame(1.0, 1.0, 1.0, overall_alpha=1.0 - ease_in_out_cubic(t))
 
 plt.close(fig)
 
