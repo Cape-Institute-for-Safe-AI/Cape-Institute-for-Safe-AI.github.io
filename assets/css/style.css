@@ -464,10 +464,6 @@ h1, h2, h3, h4 {
   gap: clamp(32px, 5vw, 72px);
 }
 
-.about__copy p {
-  color: var(--color-ink);
-}
-
 .about__copy p + p {
   margin-top: 1em;
 }
@@ -622,6 +618,7 @@ h1, h2, h3, h4 {
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(32px, 5vw, 72px);
   align-items: start;
+  margin-bottom: clamp(32px, 5vw, 56px);
 }
 
 .capacity__stats {
