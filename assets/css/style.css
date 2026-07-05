@@ -464,6 +464,10 @@ h1, h2, h3, h4 {
   gap: clamp(32px, 5vw, 72px);
 }
 
+.about__copy p {
+  color: var(--color-ink);
+}
+
 .about__copy p + p {
   margin-top: 1em;
 }
@@ -1195,13 +1199,20 @@ abbr.dacc-term:hover {
   .research__bets  { order: 2; }
 
   .research__main {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
     padding-bottom: 12px;
   }
 
   .research__visual {
-    padding: 8px var(--section-pad) 16px;
+    padding: 8px var(--gutter) 16px;
     border-top: none;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .research__bets {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
 
   .research__gif {
@@ -1215,6 +1226,12 @@ abbr.dacc-term:hover {
   .card-grid,
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-card__photo {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .capacity__stats {
