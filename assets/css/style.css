@@ -1118,6 +1118,7 @@ abbr.dacc-term:hover {
     width: 100%;
     max-width: 420px;
     margin: 0 auto;
+    padding: 24px 16px;
   }
 
   .card-grid,
