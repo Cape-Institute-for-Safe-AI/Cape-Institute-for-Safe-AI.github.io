@@ -68,11 +68,15 @@ def composite(ops) -> np.ndarray:
     return out
 
 # ── Frame specs ───────────────────────────────────────────────────────────────
-reveal_end  = (N - 1) * STAGGER + FADE_FRAMES
+# Agents materialise in pairs: both birds in a pair share the same start frame.
+# Pair index = agent_idx // 2, so birds 0&1 start together, 2&3 together, etc.
+N_PAIRS    = (N + 1) // 2
+reveal_end = (N_PAIRS - 1) * STAGGER + FADE_FRAMES
 frame_specs = []
 for frame in range(reveal_end):
     ops = [
-        ease(max(0, frame - i*STAGGER) / (FADE_FRAMES - 1)) if frame >= i*STAGGER else 0.0
+        ease(max(0, frame - (i // 2)*STAGGER) / (FADE_FRAMES - 1))
+        if frame >= (i // 2)*STAGGER else 0.0
         for i in range(N)
     ]
     frame_specs.append((ops, FRAME_MS))
