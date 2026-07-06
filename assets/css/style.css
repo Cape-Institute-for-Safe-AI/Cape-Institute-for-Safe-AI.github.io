@@ -519,13 +519,13 @@ body.nav-collapsed .hero__image-eyebrow {
 }
 
 .research__main {
-  padding: var(--section-pad);
+  padding: var(--section-pad) var(--section-pad) 32px;
 }
 
 .research__visual {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding-top: var(--section-pad);
   padding-bottom: 0;
 }
@@ -537,8 +537,11 @@ body.nav-collapsed .hero__image-eyebrow {
 
 .research__gif {
   display: block;
-  width: 306px;
+  width: 338px;
   height: auto;
+  position: relative;
+  left: -80px;
+  top: 30px;
 }
 
 /* ---------- Card grids (research / capacity) ---------- */
