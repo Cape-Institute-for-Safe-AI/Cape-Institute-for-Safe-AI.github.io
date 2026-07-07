@@ -1207,7 +1207,7 @@ abbr.dacc-term:hover {
   .research__main {
     padding-left: var(--gutter);
     padding-right: var(--gutter);
-    padding-bottom: 12px;
+    padding-bottom: 2px;
   }
 
   .research__visual {
