@@ -1211,7 +1211,7 @@ abbr.dacc-term:hover {
   }
 
   .research__visual {
-    padding: 8px var(--gutter) 16px;
+    padding: 24px var(--gutter);
     border-top: none;
     justify-content: center;
   }
@@ -1225,6 +1225,9 @@ abbr.dacc-term:hover {
     width: 65%;
     max-width: 65%;
     height: auto;
+    position: static;
+    left: auto;
+    top: auto;
   }
 }
 
