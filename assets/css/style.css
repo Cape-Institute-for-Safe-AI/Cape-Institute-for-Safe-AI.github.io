@@ -870,7 +870,8 @@ body.nav-collapsed .hero__image-eyebrow {
 }
 
 .form-row + .form-row,
-.form-row + .field {
+.form-row + .field,
+.field + .field {
   margin-top: 18px;
 }
 
