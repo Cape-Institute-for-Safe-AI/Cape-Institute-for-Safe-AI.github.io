@@ -875,6 +875,10 @@ body.nav-collapsed .hero__image-eyebrow {
   margin-top: 18px;
 }
 
+.form-row .field + .field {
+  margin-top: 0;
+}
+
 .field {
   display: flex;
   flex-direction: column;
