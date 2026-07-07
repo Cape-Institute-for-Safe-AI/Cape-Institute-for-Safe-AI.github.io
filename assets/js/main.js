@@ -40,7 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   updateNavCollapse();
-  window.addEventListener("resize", updateNavCollapse);
+
+  // Only re-evaluate on width changes. On mobile, scrolling causes the
+  // browser address bar to show/hide, which fires resize with a changed
+  // height but the same width. Running updateNavCollapse then briefly
+  // removes nav-collapsed to remeasure, causing the menu to flash open.
+  var lastWidth = window.innerWidth;
+  window.addEventListener("resize", function () {
+    var currentWidth = window.innerWidth;
+    if (currentWidth !== lastWidth) {
+      lastWidth = currentWidth;
+      updateNavCollapse();
+    }
+  });
+
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(updateNavCollapse);
   }
