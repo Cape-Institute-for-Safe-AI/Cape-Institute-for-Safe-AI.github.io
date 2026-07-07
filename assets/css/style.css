@@ -451,7 +451,7 @@ body.nav-collapsed .hero__image-eyebrow {
 .about__gif {
   display: block;
   width: 60%;
-  margin-top: 44px;
+  margin-top: 52px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1128,7 +1128,7 @@ abbr.dacc-term:hover {
     width: 100%;
     max-width: 420px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 12px 16px 24px;
     display: flex;
     flex-direction: column;
   }
@@ -1211,7 +1211,7 @@ abbr.dacc-term:hover {
   }
 
   .research__visual {
-    padding: 24px var(--gutter);
+    padding: 18px var(--gutter) 42px;
     border-top: none;
     justify-content: center;
   }
