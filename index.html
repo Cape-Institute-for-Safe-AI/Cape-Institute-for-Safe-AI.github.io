@@ -9,7 +9,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
 
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -61,7 +63,10 @@
       </div>
       <div class="hero__image">
         <span class="eyebrow hero__image-eyebrow">Cape Town, South Africa</span>
-        <img src="assets/images/landing-illustration.png?v=9bd77cae" alt="Illustration of a floating island representing Cape Town, rendered in a retro-futurist style" />
+        <picture>
+          <source srcset="assets/images/landing-illustration.webp" type="image/webp">
+          <img src="assets/images/landing-illustration.png?v=9bd77cae" width="1200" height="990" alt="Illustration of a floating island representing Cape Town, rendered in a retro-futurist style" />
+        </picture>
       </div>
     </div>
   </section>
@@ -72,14 +77,9 @@
       <div>
         <span class="eyebrow">About</span>
         <h2 class="section-title">What we do.</h2>
-        <img
-          class="about__gif"
-          src="assets/images/about-history.gif"
-          data-gif-src="assets/images/about-history.gif"
-          data-freeze-src="assets/images/about-history.gif"
-          data-gif-duration="9500"
-          alt="CISAI logo reveal animation illustrating awareness, technological progress, and the need for existential security"
-        />
+        <video class="about__gif" autoplay muted loop playsinline width="630" height="928" aria-label="CISAI logo reveal animation illustrating awareness, technological progress, and the need for existential security">
+          <source src="assets/images/about-history.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="about__copy">
         <p class="body-lead">
@@ -115,11 +115,9 @@
       </div>
 
       <div class="research__visual">
-        <img
-          class="research__gif"
-          src="assets/images/agent_ecosystem.gif"
-          alt="Animation showing the CISAI agent ecosystem materialising"
-        />
+        <video class="research__gif" autoplay muted loop playsinline width="460" height="481" aria-label="Animation showing the CISAI agent ecosystem materialising">
+          <source src="assets/images/agent_ecosystem.mp4" type="video/mp4">
+        </video>
       </div>
 
       <div class="research__bets">
@@ -149,11 +147,9 @@
         <div>
           <span class="eyebrow">Capacity Building</span>
           <h2 class="section-title">How we are stewarding a movement.</h2>
-          <img
-            class="capacity__gif"
-            src="assets/images/network_growth.gif"
-            alt="Animation showing the growth of the CISAI community network over time"
-          />
+          <video class="capacity__gif" autoplay muted loop playsinline width="1000" height="471" aria-label="Animation showing the growth of the CISAI community network over time">
+            <source src="assets/images/network_growth.mp4" type="video/mp4">
+          </video>
         </div>
         <div>
           <p class="body-lead">
@@ -244,7 +240,10 @@
       <div class="team-grid">
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="assets/images/team/leo-hyams.jpeg" alt="Leo Hyams" />
+            <picture>
+              <source srcset="assets/images/team/leo-hyams.webp" type="image/webp">
+              <img src="assets/images/team/leo-hyams.jpeg" alt="Leo Hyams" width="600" height="600" loading="lazy" />
+            </picture>
           </div>
           <h3>Leo Hyams</h3>
           <span class="role">Founder, Executive Director</span>
@@ -262,7 +261,10 @@
 
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="assets/images/team/claude-formanek.jpeg" alt="Claude Formanek" />
+            <picture>
+              <source srcset="assets/images/team/claude-formanek.webp" type="image/webp">
+              <img src="assets/images/team/claude-formanek.jpeg" alt="Claude Formanek" width="600" height="600" loading="lazy" />
+            </picture>
           </div>
           <h3>Claude Formanek</h3>
           <span class="role">Research Director</span>
@@ -276,7 +278,10 @@
 
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="assets/images/team/tegan-green.jpeg" alt="Tegan Green" />
+            <picture>
+              <source srcset="assets/images/team/tegan-green.webp" type="image/webp">
+              <img src="assets/images/team/tegan-green.jpeg" alt="Tegan Green" width="600" height="600" loading="lazy" />
+            </picture>
           </div>
           <h3>Tegan Green</h3>
           <span class="role">Operations Director</span>
@@ -291,7 +296,10 @@
 
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="assets/images/team/jaco-du-toit.jpeg" alt="Jaco Du Toit" />
+            <picture>
+              <source srcset="assets/images/team/jaco-du-toit.webp" type="image/webp">
+              <img src="assets/images/team/jaco-du-toit.jpeg" alt="Jaco Du Toit" width="600" height="600" loading="lazy" />
+            </picture>
           </div>
           <h3>Jaco Du Toit</h3>
           <span class="role">Evaluations Lead</span>
@@ -305,7 +313,10 @@
 
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="assets/images/team/benjamin-sturgeon.png" alt="Benjamin Sturgeon" />
+            <picture>
+              <source srcset="assets/images/team/benjamin-sturgeon.webp" type="image/webp">
+              <img src="assets/images/team/benjamin-sturgeon.png" alt="Benjamin Sturgeon" width="600" height="600" loading="lazy" />
+            </picture>
           </div>
           <h3>Benjamin Sturgeon</h3>
           <span class="role">Strategic Advisor</span>
@@ -399,7 +410,7 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
 
 <!-- d/acc definition popup -->
 <div class="dacc-popup" id="dacc-popup" role="dialog" aria-modal="true" aria-label="d/acc definition" hidden>
