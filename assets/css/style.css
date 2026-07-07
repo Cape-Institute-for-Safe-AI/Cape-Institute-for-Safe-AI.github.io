@@ -829,6 +829,13 @@ body.nav-collapsed .hero__image-eyebrow {
   display: block;
 }
 
+.contact__rebrand-note {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
 .contact__socials {
   display: flex;
   gap: 14px;
