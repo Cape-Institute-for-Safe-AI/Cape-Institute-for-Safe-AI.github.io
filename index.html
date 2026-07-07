@@ -333,32 +333,43 @@
         </div>
       </div>
 
-      <form class="form" onsubmit="return false;">
-        <span class="ascii-corner tl">┌</span>
-        <span class="ascii-corner tr">┐</span>
-        <span class="ascii-corner bl">└</span>
-        <span class="ascii-corner br">┘</span>
+      <div class="form-wrap">
+        <div data-fs-success class="form__success">
+          <p>Message sent. We'll be in touch.</p>
+        </div>
+        <div data-fs-error class="form__error-global"></div>
 
-        <div class="form-row">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="John Doe" />
+        <form class="form" id="contact-form">
+          <span class="ascii-corner tl">┌</span>
+          <span class="ascii-corner tr">┐</span>
+          <span class="ascii-corner bl">└</span>
+          <span class="ascii-corner br">┘</span>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="John Doe" data-fs-field />
+              <span data-fs-error="name" class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="johndoe@email.com" data-fs-field />
+              <span data-fs-error="email" class="field-error"></span>
+            </div>
           </div>
           <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="johndoe@email.com" />
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Example subject." data-fs-field />
+            <span data-fs-error="subject" class="field-error"></span>
           </div>
-        </div>
-        <div class="field">
-          <label for="subject">Subject</label>
-          <input id="subject" type="text" placeholder="Example subject." />
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="Message..."></textarea>
-        </div>
-        <button type="submit" class="btn">Send message <span class="arrow">&rarr;</span></button>
-      </form>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message..." data-fs-field></textarea>
+            <span data-fs-error="message" class="field-error"></span>
+          </div>
+          <button type="submit" class="btn" data-fs-submit-btn>Send message <span class="arrow">&rarr;</span></button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -398,5 +409,10 @@
   </div>
 </div>
 <div class="dacc-popup__backdrop" id="dacc-backdrop" hidden></div>
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'mojobrdd' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
