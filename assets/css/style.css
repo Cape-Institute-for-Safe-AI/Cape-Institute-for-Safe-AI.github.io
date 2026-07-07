@@ -938,11 +938,6 @@ body.nav-collapsed .hero__image-eyebrow {
   margin-bottom: 16px;
 }
 
-.form__success[style*="block"],
-.form__success:not([style*="none"]) {
-  display: block;
-}
-
 .form__error-global {
   font-family: var(--font-mono);
   font-size: 13px;
