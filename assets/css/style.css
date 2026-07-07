@@ -139,9 +139,9 @@ h1, h2, h3, h4 {
 .capacity__gif {
   display: block;
   width: 100%;
+  height: auto;
   max-width: 480px;
   margin-top: 44px;
-  background: var(--color-bg);
 }
 
 /* ---------- Buttons ---------- */
@@ -451,6 +451,7 @@ body.nav-collapsed .hero__image-eyebrow {
 .about__gif {
   display: block;
   width: 60%;
+  height: auto;
   margin-top: 52px;
   margin-left: auto;
   margin-right: auto;
@@ -539,6 +540,7 @@ body.nav-collapsed .hero__image-eyebrow {
   display: block;
   width: 338px;
   height: auto;
+  max-width: 100%;
   position: relative;
   left: -80px;
   top: 30px;
