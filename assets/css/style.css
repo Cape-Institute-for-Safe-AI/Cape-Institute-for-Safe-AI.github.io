@@ -29,6 +29,23 @@
   --gutter: clamp(20px, 4vw, 60px);
   --section-pad: clamp(48px, 8vw, 96px);
   --max-width: 1320px;
+  --header-h: clamp(78px, 9.1vw, 109px);
+
+  --edge-fade: linear-gradient(
+    to right,
+    transparent 0,
+    rgba(255, 255, 255, 0.7) 125px,
+    rgba(255, 255, 255, 0.8) 450px,
+    var(--color-bg) 550px,
+    var(--color-bg) calc(100% - 550px),
+    rgba(255, 255, 255, 0.8) calc(100% - 450px),
+    rgba(255, 255, 255, 0.7) calc(100% - 125px),
+    transparent 100%
+  );
+
+  --hex-bg-light: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
+  --hex-tile-size: 27.28px 47.25px;
+  --hex-bg-faint: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
 }
 
 * {
@@ -41,9 +58,11 @@ html {
 
 body {
   margin: 0;
-  background-color: #111111;
-  background-image: radial-gradient(circle, #828282 1px, transparent 1.5px);
-  background-size: 26px 26px;
+  background-color: var(--color-bg);
+  background-image: var(--edge-fade), var(--hex-bg-light);
+  background-size: 100% 100%, var(--hex-tile-size);
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, repeat;
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 16px;
@@ -75,24 +94,6 @@ h1, h2, h3, h4 {
   line-height: 1.05;
   margin: 0;
   letter-spacing: -0.01em;
-}
-
-.eyebrow {
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 0.14em;
-  color: var(--color-muted);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-
-.eyebrow::before {
-  content: "*";
-  color: var(--color-red);
-  font-family: var(--font-mono);
 }
 
 .section-title {
@@ -156,8 +157,8 @@ h1, h2, h3, h4 {
   gap: 10px;
   padding: 14px 22px;
   border: var(--border);
-  background: var(--color-ink);
-  color: var(--color-bg);
+  background: var(--color-bg);
+  color: var(--color-ink);
   text-decoration: none;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
@@ -205,8 +206,6 @@ h1, h2, h3, h4 {
   top: 0;
   bottom: 0;
   background-color: var(--color-bg);
-  background-image: radial-gradient(circle, #111111 1px, transparent 1.5px);
-  background-size: 26px 26px;
   z-index: -1;
 }
 
@@ -224,7 +223,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: clamp(78px, 9.1vw, 109px);
+  height: var(--header-h);
   padding-left: 0;
   padding-right: 0;
   background: var(--color-bg);
@@ -235,8 +234,6 @@ h1, h2, h3, h4 {
   align-items: center;
   height: 100%;
   flex-shrink: 0;
-  border-left: var(--border);
-  border-right: var(--border);
   padding: clamp(1.5px, 0.175vw, 2.1px) clamp(34px, 4vw, 54px) clamp(1.5px, 0.175vw, 2.1px) clamp(26px, 3vw, 40px);
 }
 
@@ -268,7 +265,6 @@ h1, h2, h3, h4 {
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
-  border-left: var(--border);
   padding: 0 clamp(20px, 2.2vw, 30px);
   transition: background 0.15s ease, color 0.15s ease;
 }
@@ -289,16 +285,7 @@ h1, h2, h3, h4 {
 }
 
 .site-nav a:hover .nav-label::after {
-  background: var(--color-bg);
-}
-
-.site-nav a:last-child {
-  border-right: var(--border);
-}
-
-.site-nav a:hover {
-  background: var(--color-ink);
-  color: var(--color-bg);
+  background: var(--color-red);
 }
 
 .nav-toggle {
@@ -314,17 +301,31 @@ h1, h2, h3, h4 {
 
 /* ---------- Section shell ---------- */
 
-.section > .wrap {
-  border-left: var(--border);
-  border-right: var(--border);
-  border-bottom: var(--border);
-  padding-top: var(--section-pad);
-  padding-bottom: var(--section-pad);
-  background: var(--color-bg);
+.section,
+#home {
+  scroll-margin-top: var(--header-h);
 }
 
-.section:last-of-type > .wrap {
-  border-bottom: none;
+.section > .wrap {
+  position: relative;
+  padding-top: var(--section-pad);
+  padding-bottom: var(--section-pad);
+}
+
+.section > .wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent 0,
+    var(--color-line) 15%,
+    var(--color-line) 85%,
+    transparent 100%
+  );
 }
 
 /* Hero flows straight into About, so this seam is intentionally tighter
@@ -334,32 +335,6 @@ h1, h2, h3, h4 {
 .hero {
   position: relative;
   overflow: hidden;
-  background-color: var(--color-bg);
-  background-image: radial-gradient(circle, #c4c4c4 1px, transparent 1.5px);
-  background-size: 26px 26px;
-  border-bottom: var(--border);
-}
-
-.hero::before,
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background-color: #808080;
-  background-image: radial-gradient(circle, #ffffff 1px, transparent 1.5px);
-  background-size: 26px 26px;
-  z-index: 0;
-}
-
-.hero::before {
-  left: 0;
-  right: calc(50% + (var(--max-width) / 2));
-}
-
-.hero::after {
-  left: calc(50% + (var(--max-width) / 2));
-  right: 0;
 }
 
 .hero > .wrap {
@@ -398,7 +373,7 @@ h1, h2, h3, h4 {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 28px;
+  gap: 26px 28px;
 }
 
 .hero__focus-list li {
@@ -432,20 +407,7 @@ h1, h2, h3, h4 {
   overflow: visible;
   width: 100%;
   padding-top: 48px;
-}
-
-.hero__image-eyebrow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-body.nav-collapsed .hero__image-eyebrow {
-  text-align: left;
-  align-self: flex-start;
+  padding-left: 25px;
 }
 
 .about__gif {
@@ -520,20 +482,25 @@ body.nav-collapsed .hero__image-eyebrow {
 }
 
 .research__main {
-  padding: var(--section-pad) var(--section-pad) 32px;
+  padding: var(--section-pad) var(--gutter) 32px;
 }
 
 .research__visual {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding-top: var(--section-pad);
+  align-self: center;
+  padding-top: 24px;
   padding-bottom: 0;
 }
 
 .research__bets {
   grid-column: 1 / -1;
-  padding: 0 var(--section-pad) var(--section-pad);
+  padding: 0 var(--gutter) var(--section-pad);
+}
+
+.research__bets .card-grid {
+  margin-top: 44px;
 }
 
 .research__gif {
@@ -544,30 +511,6 @@ body.nav-collapsed .hero__image-eyebrow {
   position: relative;
   left: -80px;
   top: 30px;
-}
-
-.research__list {
-  list-style: none;
-  margin: 14px 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.research__list li {
-  padding-left: 18px;
-  position: relative;
-  font-size: clamp(16px, 1.4vw, 19px);
-  line-height: 1.6;
-  color: var(--color-muted);
-}
-
-.research__list li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: var(--color-blue);
 }
 
 /* ---------- Card grids (research / capacity) ---------- */
@@ -584,6 +527,7 @@ body.nav-collapsed .hero__image-eyebrow {
 .card {
   border-right: var(--border);
   border-bottom: var(--border);
+  background: var(--color-bg);
   padding: 28px;
   position: relative;
   display: flex;
@@ -623,6 +567,16 @@ body.nav-collapsed .hero__image-eyebrow {
   margin: 0;
 }
 
+.card p a {
+  color: var(--color-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card p a:hover {
+  color: var(--color-red);
+}
+
 .card .card-meta {
   margin-top: auto;
   font-family: var(--font-mono);
@@ -646,6 +600,19 @@ body.nav-collapsed .hero__image-eyebrow {
   text-decoration-color: var(--color-blue);
 }
 
+.card .card-meta.btn {
+  display: inline-flex;
+  margin-top: auto;
+  font-size: 15px;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.card a.card-meta.btn:hover {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
 /* ---------- Capacity building ---------- */
 
 .capacity__intro {
@@ -665,6 +632,7 @@ body.nav-collapsed .hero__image-eyebrow {
 
 .capacity__stats div {
   padding: 20px;
+  background: var(--color-bg);
   border-right: var(--border);
   border-bottom: var(--border);
 }
@@ -697,9 +665,9 @@ body.nav-collapsed .hero__image-eyebrow {
   margin-top: 54px;
 }
 
-.partners .mono-label {
+.partners .about__subheading {
+  margin-top: 0;
   margin-bottom: 20px;
-  display: block;
 }
 
 .partners__carousel {
@@ -776,6 +744,7 @@ body.nav-collapsed .hero__image-eyebrow {
 .team-card {
   border-right: var(--border);
   border-bottom: var(--border);
+  background: var(--color-bg);
   padding: 26px;
 }
 
@@ -880,6 +849,7 @@ body.nav-collapsed .hero__image-eyebrow {
 
 .contact__socials a {
   border: var(--border);
+  background: var(--color-bg);
   width: 40px;
   height: 40px;
   display: flex;
@@ -902,6 +872,7 @@ body.nav-collapsed .hero__image-eyebrow {
 
 .form {
   border: var(--border);
+  background: var(--color-bg);
   padding: clamp(24px, 3vw, 40px);
   position: relative;
 }
@@ -1135,28 +1106,6 @@ abbr.schelling-term:hover {
   border-bottom: var(--border);
 }
 
-.site-footer::before,
-.site-footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background-color: var(--color-bg);
-  background-image: radial-gradient(circle, #111111 1px, transparent 1.5px);
-  background-size: 26px 26px;
-  z-index: -1;
-}
-
-.site-footer::before {
-  left: 0;
-  right: calc(50% + (var(--max-width) / 2));
-}
-
-.site-footer::after {
-  left: calc(50% + (var(--max-width) / 2));
-  right: 0;
-}
-
 .site-footer__inner {
   display: flex;
   justify-content: space-between;
@@ -1192,6 +1141,17 @@ abbr.schelling-term:hover {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
+  /* Edge-fade gradient assumes a wide viewport with true margins either
+     side of the centered content column; below that it never resolves
+     to solid white and reads as an unbalanced, overly strong texture.
+     Drop it and fall back to a much fainter, uniform hex tile instead. */
+  body {
+    background-image: var(--hex-bg-faint);
+    background-size: var(--hex-tile-size);
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+
   .hero__grid,
   .about__grid,
   .capacity__intro,
@@ -1213,12 +1173,6 @@ abbr.schelling-term:hover {
     order: 0;
   }
 
-  .hero__image-eyebrow {
-    position: static;
-    order: 1;
-    margin-top: 16px;
-  }
-
   .card-grid,
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1226,6 +1180,14 @@ abbr.schelling-term:hover {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  /* The -80px/30px offset is a desktop-only decorative nudge; below
+     900px it just pushes the video into the text column since there's
+     no longer enough spare width to absorb it. */
+  .research__gif {
+    left: 0;
+    top: 0;
   }
 }
 
@@ -1290,6 +1252,7 @@ abbr.schelling-term:hover {
     padding: 18px var(--gutter) 42px;
     border-top: none;
     justify-content: center;
+    align-self: auto;
   }
 
   .research__bets {
@@ -1334,5 +1297,16 @@ abbr.schelling-term:hover {
 
   .capacity__stats div:last-child {
     border-bottom: none;
+  }
+}
+
+/* Extra breathing room for the research video only kicks in on wide
+   desktop viewports, where there's enough width for it not to crowd
+   the text column or overlap into the card grid below. */
+@media (min-width: 1150px) {
+  .research__visual {
+    padding-left: 72px;
+    margin-top: 100px;
+    margin-bottom: -100px;
   }
 }
