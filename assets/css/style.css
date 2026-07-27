@@ -546,6 +546,30 @@ body.nav-collapsed .hero__image-eyebrow {
   top: 30px;
 }
 
+.research__list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.research__list li {
+  padding-left: 18px;
+  position: relative;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.research__list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-blue);
+}
+
 /* ---------- Card grids (research / capacity) ---------- */
 
 .card-grid {
@@ -969,9 +993,10 @@ body.nav-collapsed .hero__image-eyebrow {
   min-height: 1em;
 }
 
-/* ---------- d/acc term + popup ---------- */
+/* ---------- Defined terms + popup (d/acc, Schelling point) ---------- */
 
-abbr.dacc-term {
+abbr.dacc-term,
+abbr.schelling-term {
   text-decoration: none;
   color: var(--color-blue);
   border-bottom: 1.5px solid var(--color-blue);
@@ -979,12 +1004,13 @@ abbr.dacc-term {
   font-style: normal;
 }
 
-abbr.dacc-term:hover {
+abbr.dacc-term:hover,
+abbr.schelling-term:hover {
   color: var(--color-red);
   border-bottom-color: var(--color-red);
 }
 
-.dacc-popup {
+.term-popup {
   position: fixed;
   z-index: 200;
   top: 50%;
@@ -996,11 +1022,11 @@ abbr.dacc-term:hover {
   font-family: var(--font-mono);
 }
 
-.dacc-popup[hidden] {
+.term-popup[hidden] {
   display: none;
 }
 
-.dacc-popup__header {
+.term-popup__header {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1009,13 +1035,13 @@ abbr.dacc-term:hover {
   border-bottom: 2px solid var(--color-ink);
 }
 
-.dacc-popup__asterisk {
+.term-popup__asterisk {
   color: var(--color-red);
   font-size: 18px;
   line-height: 1;
 }
 
-.dacc-popup__title {
+.term-popup__title {
   font-family: var(--font-mono);
   font-size: 13px;
   text-transform: uppercase;
@@ -1024,7 +1050,7 @@ abbr.dacc-term:hover {
   flex: 1;
 }
 
-.dacc-popup__close {
+.term-popup__close {
   background: none;
   border: none;
   color: var(--color-bg);
@@ -1035,11 +1061,11 @@ abbr.dacc-term:hover {
   font-family: var(--font-body);
 }
 
-.dacc-popup__close:hover {
+.term-popup__close:hover {
   opacity: 0.7;
 }
 
-.dacc-popup__body {
+.term-popup__body {
   background: #f0f0f0;
   padding: 20px 20px 16px;
   font-family: var(--font-mono);
@@ -1048,11 +1074,15 @@ abbr.dacc-term:hover {
   line-height: 1.6;
 }
 
-.dacc-popup__body > p:first-child {
+.term-popup__body > p:first-child {
   margin: 0 0 12px;
 }
 
-.dacc-popup__list {
+.term-popup__body > p:last-child {
+  margin: 0;
+}
+
+.term-popup__list {
   list-style: none;
   padding: 0;
   margin: 0 0 14px;
@@ -1061,37 +1091,37 @@ abbr.dacc-term:hover {
   gap: 10px;
 }
 
-.dacc-popup__list li {
+.term-popup__list li {
   padding-left: 14px;
   position: relative;
 }
 
-.dacc-popup__list li::before {
+.term-popup__list li::before {
   content: "—";
   position: absolute;
   left: 0;
   color: var(--color-muted);
 }
 
-.dacc-popup__link {
+.term-popup__link {
   margin: 0;
   font-size: 12px;
   color: var(--color-muted);
 }
 
-.dacc-popup__link a {
+.term-popup__link a {
   color: var(--color-blue);
   text-decoration: underline;
 }
 
-.dacc-popup__backdrop {
+.term-popup__backdrop {
   position: fixed;
   inset: 0;
   z-index: 199;
   background: rgba(0,0,0,0.25);
 }
 
-.dacc-popup__backdrop[hidden] {
+.term-popup__backdrop[hidden] {
   display: none;
 }
 

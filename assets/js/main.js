@@ -63,37 +63,41 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // d/acc definition popup
-  var popup   = document.getElementById("dacc-popup");
-  var backdrop = document.getElementById("dacc-backdrop");
+  // Defined-term popups (d/acc, Schelling point)
+  function initTermPopup(termSelector, popupId, backdropId) {
+    var popup    = document.getElementById(popupId);
+    var backdrop = document.getElementById(backdropId);
+    if (!popup || !backdrop) return;
 
-  function openDacc() {
-    if (!popup) return;
-    popup.hidden   = false;
-    backdrop.hidden = false;
-    popup.focus();
-  }
+    function open() {
+      popup.hidden    = false;
+      backdrop.hidden = false;
+      popup.focus();
+    }
 
-  function closeDacc() {
-    if (!popup) return;
-    popup.hidden   = true;
-    backdrop.hidden = true;
-  }
+    function close() {
+      popup.hidden    = true;
+      backdrop.hidden = true;
+    }
 
-  document.querySelectorAll("abbr.dacc-term").forEach(function (el) {
-    el.addEventListener("click", function (e) {
-      e.preventDefault();
-      openDacc();
+    document.querySelectorAll(termSelector).forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        open();
+      });
     });
-  });
 
-  if (backdrop) backdrop.addEventListener("click", closeDacc);
+    backdrop.addEventListener("click", close);
 
-  var closeBtn = document.querySelector(".dacc-popup__close");
-  if (closeBtn) closeBtn.addEventListener("click", closeDacc);
+    var closeBtn = popup.querySelector(".term-popup__close");
+    if (closeBtn) closeBtn.addEventListener("click", close);
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeDacc();
-  });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+  }
+
+  initTermPopup("abbr.dacc-term", "dacc-popup", "dacc-backdrop");
+  initTermPopup("abbr.schelling-term", "schelling-popup", "schelling-backdrop");
 
 });
