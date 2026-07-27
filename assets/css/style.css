@@ -1232,6 +1232,10 @@ abbr.schelling-term:hover {
 }
 
 @media (max-width: 700px) {
+  .section-title {
+    max-width: none;
+  }
+
   .research__wrap {
     display: flex;
     flex-direction: column;
