@@ -1250,7 +1250,7 @@ abbr.schelling-term:hover {
   }
 
   .research__visual {
-    padding: 18px var(--gutter) 42px;
+    padding: 30px var(--gutter);
     border-top: none;
     justify-content: center;
     align-self: auto;
