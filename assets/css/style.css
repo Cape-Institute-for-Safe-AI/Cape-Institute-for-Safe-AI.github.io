@@ -16,7 +16,7 @@
   --color-bg: #ffffff;
   --color-ink: #111111;
   --color-line: #111111;
-  --color-muted: #5b5b5b;
+  --color-muted: #494949;
   --color-faint: #f4f4f2;
   --color-blue: #1c23e0;
   --color-red: #d9000a;
@@ -35,12 +35,12 @@
   --edge-fade: linear-gradient(
     to right,
     transparent 0,
-    rgba(255, 255, 255, 0.7) 125px,
-    rgba(255, 255, 255, 0.8) 450px,
-    var(--color-bg) 550px,
-    var(--color-bg) calc(100% - 550px),
-    rgba(255, 255, 255, 0.8) calc(100% - 450px),
-    rgba(255, 255, 255, 0.7) calc(100% - 125px),
+    rgba(255, 255, 255, 0.85) 175px,
+    rgba(255, 255, 255, 0.9) 550px,
+    var(--color-bg) 750px,
+    var(--color-bg) calc(100% - 750px),
+    rgba(255, 255, 255, 0.9) calc(100% - 550px),
+    rgba(255, 255, 255, 0.85) calc(100% - 175px),
     transparent 100%
   );
 
@@ -360,6 +360,8 @@ h1, h2, h3, h4 {
 .hero__focus .mono-label {
   display: block;
   margin-bottom: 16px;
+  font-family: var(--font-display);
+  color: var(--color-ink);
 }
 
 .hero__focus-list {
@@ -368,15 +370,16 @@ h1, h2, h3, h4 {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px 28px;
+  gap: 16px 28px;
 }
 
 .hero__focus-list li {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-mono);
-  font-size: 16px;
+  font-family: var(--font-body);
+  font-size: clamp(16px, 1.4vw, 19px);
+  color: var(--color-muted);
 }
 
 .hero__focus-list .dot {
