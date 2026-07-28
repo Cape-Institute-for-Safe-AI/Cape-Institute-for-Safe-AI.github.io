@@ -28,6 +28,7 @@
   --border: 1px solid var(--color-line);
   --gutter: clamp(20px, 4vw, 60px);
   --section-pad: clamp(48px, 8vw, 96px);
+  --partners-gap: clamp(32px, 5vw, 56px);
   --max-width: 1320px;
   --header-h: clamp(78px, 9.1vw, 109px);
 
@@ -316,16 +317,10 @@ h1, h2, h3, h4 {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: var(--gutter);
+  right: var(--gutter);
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent 0,
-    var(--color-line) 15%,
-    var(--color-line) 85%,
-    transparent 100%
-  );
+  background: var(--color-line);
 }
 
 /* Hero flows straight into About, so this seam is intentionally tighter
@@ -671,19 +666,23 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
+#capacity > .wrap {
+  padding-bottom: var(--partners-gap);
+}
+
 .partners__carousel {
   position: relative;
   overflow: hidden;
   border-top: var(--border);
-  padding-top: 56px;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+  padding-top: var(--partners-gap);
 }
 
 .partners__track {
   display: flex;
   width: max-content;
   animation: partners-marquee 32s linear infinite;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
 }
 
 .partners__carousel:hover .partners__track {
