@@ -937,13 +937,6 @@ h1, h2, h3, h4 {
   display: block;
 }
 
-.contact__rebrand-note {
-  font-size: 16px;
-  color: var(--color-muted);
-  margin-top: 6px;
-  margin-bottom: 10px;
-}
-
 .contact__socials {
   display: flex;
   gap: 14px;
