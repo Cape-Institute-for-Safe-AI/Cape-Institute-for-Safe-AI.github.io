@@ -14,6 +14,7 @@
 
 :root {
   --color-bg: #ffffff;
+  --color-page-bg: #f7fdffff;
   --color-ink: #111111;
   --color-line: #111111;
   --color-muted: #494949;
@@ -32,21 +33,9 @@
   --max-width: 1320px;
   --header-h: clamp(78px, 9.1vw, 109px);
 
-  --edge-fade: linear-gradient(
-    to right,
-    transparent 0,
-    rgba(255, 255, 255, 0.85) 175px,
-    rgba(255, 255, 255, 0.9) 550px,
-    var(--color-bg) 750px,
-    var(--color-bg) calc(100% - 750px),
-    rgba(255, 255, 255, 0.9) calc(100% - 550px),
-    rgba(255, 255, 255, 0.85) calc(100% - 175px),
-    transparent 100%
-  );
-
-  --hex-bg-light: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23aaaaaa%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
   --hex-tile-size: 27.28px 47.25px;
-  --hex-bg-faint: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
+  --hex-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
+  --hex-gradient: linear-gradient(to right, #2f609e 0%, #ecf7ff 12%, #ecf7ff 88%, #2f609e 100%);
 }
 
 * {
@@ -59,16 +48,33 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--color-bg);
-  background-image: var(--edge-fade), var(--hex-bg-light);
-  background-size: 100% 100%, var(--hex-tile-size);
-  background-position: 0 0, 0 0;
-  background-repeat: no-repeat, repeat;
+  position: relative;
+  isolation: isolate;
+  background-color: var(--color-page-bg);
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Hexagon mesh backdrop, coloured with the gradient from the CISAI banner
+   (navy -> near-white -> maroon -> orange -> gold). Rendered as a mask over
+   a full-viewport gradient so the colour sweep is continuous across the
+   whole page, rather than resetting at every repeated tile. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--hex-gradient);
+  -webkit-mask-image: var(--hex-mask);
+  mask-image: var(--hex-mask);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  -webkit-mask-size: var(--hex-tile-size);
+  mask-size: var(--hex-tile-size);
 }
 
 img {
@@ -298,6 +304,71 @@ h1, h2, h3, h4 {
   padding: 10px 14px;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+/* ---------- Nav dropdown (Capacity Building submenu) ---------- */
+/* No visible caret: Capacity Building is a real link to its own page.
+   Desktop reveals the submenu on hover/focus; the collapsed mobile menu
+   just lists it inline, permanently expanded, since it's already a
+   scrollable vertical list with no room for a hover affordance. */
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.nav-dropdown {
+  flex-direction: column;
+}
+
+.site-header:not(.nav-collapsed) .nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  background: var(--color-bg);
+  border: var(--border);
+  z-index: 60;
+}
+
+.site-header:not(.nav-collapsed) .nav-item:hover .nav-dropdown,
+.site-header:not(.nav-collapsed) .nav-item:focus-within .nav-dropdown {
+  display: flex;
+}
+
+.site-header:not(.nav-collapsed) .nav-dropdown a {
+  height: auto;
+  min-width: 0;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  font-size: 14px;
+  border-bottom: var(--border);
+}
+
+.site-header:not(.nav-collapsed) .nav-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.site-header:not(.nav-collapsed) .nav-dropdown a:hover {
+  background: var(--color-faint);
+}
+
+.site-header.nav-collapsed .nav-item {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.site-header.nav-collapsed .nav-dropdown {
+  display: flex;
+}
+
+.site-header.nav-collapsed .nav-item .nav-dropdown a {
+  padding-left: calc(var(--gutter) + 18px);
+  background: var(--color-faint);
 }
 
 /* ---------- Section shell ---------- */
@@ -608,6 +679,37 @@ h1, h2, h3, h4 {
 .card a.card-meta.btn:hover {
   color: var(--color-bg);
   text-decoration: none;
+}
+
+/* ---------- Content page cards (Programs / Events / Get Involved) ---------- */
+
+.card__image {
+  display: block;
+  width: calc(100% + 56px);
+  height: 160px;
+  margin: -28px -28px 4px;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter 0.2s ease;
+}
+
+.card:hover .card__image {
+  filter: grayscale(0);
+}
+
+.card-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page-hero__image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.page-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ---------- Capacity building ---------- */
@@ -1142,17 +1244,6 @@ abbr.schelling-term:hover {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
-  /* Edge-fade gradient assumes a wide viewport with true margins either
-     side of the centered content column; below that it never resolves
-     to solid white and reads as an unbalanced, overly strong texture.
-     Drop it and fall back to a much fainter, uniform hex tile instead. */
-  body {
-    background-image: var(--hex-bg-faint);
-    background-size: var(--hex-tile-size);
-    background-position: 0 0;
-    background-repeat: repeat;
-  }
-
   .hero__grid,
   .about__grid,
   .capacity__intro,
@@ -1175,6 +1266,7 @@ abbr.schelling-term:hover {
   }
 
   .card-grid,
+  .card-grid--2,
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1277,6 +1369,7 @@ abbr.schelling-term:hover {
 
 @media (max-width: 700px) {
   .card-grid,
+  .card-grid--2,
   .team-grid {
     grid-template-columns: 1fr;
   }
