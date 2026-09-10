@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "cai-research-fellowship-2026",
+    "name": "Cooperative AI Research Fellowship 2026",
+    "type": "fellowship",
+    "startDate": "2026-01-01",
+    "endDate": "2026-04-01",
+    "totalParticipants": 10,
+    "description": "The fellowship was a full-time 3-month research program for participants from diverse backgrounds around the world to pursue AI safety research from a cooperative AI perspective. The fellowship ran from January to April 2026 in Cape Town, South Africa, and kicked off with a week-long retreat. While working from the AI Safety Cape Town co-working space, participants received mentorship from top researchers in the field of cooperative AI, including from organisations such as Google DeepMind, the University of Oxford, and MIT. Alongside this, participants were provided with resources for building their knowledge and network in cooperative AI, and financial support covering their living and travel expenses. The aim of this program was to prepare fellows for research careers in cooperative AI, and to support the burgeoning AI safety and cooperative AI ecosystem in South Africa. In line with this, the University of Cape Town (UCT) launched the African AI Safety Hub at the UCT AI Initiative.",
+    "websiteUrl": "https://www.cai-research-fellowship.com/",
+    "image": {
+      "url": "assets/images/programs/cai-research-fellowship-2026.webp",
+      "alt": "Cooperative AI Research Fellowship 2026 participants"
+    }
+  },
+  {
+    "slug": "intro-to-transformative-ai-apr-2025",
+    "name": "Intro Transformative AI - April 2025",
+    "type": "course",
+    "startDate": "2025-04-01",
+    "endDate": "2025-05-01",
+    "totalParticipants": 8,
+    "description": "BlueDot's Intro to Transformative AI Course. The second iteration of our Intro to TAI course, where we hosted a 5-day course in collaboration with BlueDot at our coworking offices at Innovation City. We ran multiple cohorts, with a mix of in-person and online cohorts to make the program more accessible.",
+    "websiteUrl": null,
+    "image": {
+      "url": "assets/images/programs/intro-to-transformative-ai-apr-2025.webp",
+      "alt": "Intro to Transformative AI April 2025 cohort"
+    }
+  },
+  {
+    "slug": "intro-coop-ai-2025-q2",
+    "name": "Intro to Cooperative AI - Q2 2025",
+    "type": "course",
+    "startDate": "2025-04-01",
+    "endDate": "2025-07-01",
+    "totalParticipants": 16,
+    "description": "Introduction to Cooperative AI Course by The Cooperative AI Foundation. We ran a 13 week program covering the Cooperative AI Curriculum from the Cooperative AI Foundation. This was the first official in-person cohort of the program ever.",
+    "websiteUrl": null,
+    "image": {
+      "url": "assets/images/programs/intro-coop-ai-2025-q2.webp",
+      "alt": "Intro to Cooperative AI Q2 2025 session"
+    }
+  },
+  {
+    "slug": "intro-tai-2025-feb",
+    "name": "Intro to Transformative AI - February 2025",
+    "type": "course",
+    "startDate": "2025-02-01",
+    "endDate": "2025-02-01",
+    "totalParticipants": 24,
+    "description": "BlueDot's Intro to Transformative AI Course. First official in-person cohort ever. We hosted a 5-day course in collaboration with BlueDot at our coworking offices at Innovation City. One of the participants wrote about his experience of the course, another quit his job to work on AI Safety, and another is joining our research group to work with us on a research project.",
+    "websiteUrl": null,
+    "image": {
+      "url": "assets/images/programs/intro-tai-2025-feb.webp",
+      "alt": "Intro to Transformative AI February 2025 cohort"
+    }
+  },
+  {
+    "slug": "stellies-ai-safety",
+    "name": "Stellies AI Safety",
+    "type": "volunteer_program",
+    "startDate": "2025-01-01",
+    "endDate": null,
+    "totalParticipants": 12,
+    "description": "Seeded Stellenbosch AI Safety (Stellies AI Safety). Elected community organisers - Boyd Kane (Lead), Nicholas Lombard. Hosted First Meetup.",
+    "websiteUrl": null,
+    "image": {
+      "url": "assets/images/programs/stellies-ai-safety.webp",
+      "alt": "Stellies AI Safety launch event"
+    }
+  },
+  {
+    "slug": "condor-camp-2024",
+    "name": "Condor Initiative x AI Safety Cape Town Retreat",
+    "type": "retreat",
+    "startDate": "2024-11-01",
+    "endDate": "2024-11-01",
+    "totalParticipants": 28,
+    "description": "Condor Camp aimed to deepen participants' understanding of the AI Safety (AIS) landscape, expose them to concrete career paths, and foster a sense of self-efficacy in pursuing AIS-related opportunities. By providing a low-stakes environment for exploration, the camp encouraged participants to experiment with different career directions, build connections with experts, and develop a clearer sense of their next steps.",
+    "websiteUrl": "https://www.condorinitiative.org/ccsa",
+    "image": {
+      "url": "assets/images/programs/condor-camp-2024.webp",
+      "alt": "Condor Initiative x AI Safety Cape Town Retreat"
+    }
+  },
+  {
+    "slug": "ai-safety-wits",
+    "name": "AI Safety WITS",
+    "type": "volunteer_program",
+    "startDate": "2024-01-01",
+    "endDate": null,
+    "totalParticipants": 23,
+    "description": "Seeded AI Safety University of Witwatersrand (AI Safety WITS). Hosted the first meetup: 23 people attended the event. One person provided feedback on the feedback form, rating the event 10/10.",
+    "websiteUrl": null,
+    "image": {
+      "url": "assets/images/programs/ai-safety-wits.webp",
+      "alt": "AI Safety WITS launch meetup"
+    }
+  }
+]

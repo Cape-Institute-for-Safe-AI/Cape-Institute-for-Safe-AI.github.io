@@ -1,40 +1,81 @@
 # Cape Institute for Safe AI
 
-Static one-page site for the Cape Institute for Safe AI, deployed via GitHub Pages
-straight from the repo root.
+Static site for the Cape Institute for Safe AI, deployed via GitHub Pages
+straight from the repo root. No build step: every `.html` file is served as-is.
 
 ## Structure
 
 ```
-index.html              — the entire one-pager (hero, about, research,
-                           capacity-building, team, contact)
+index.html              — landing page (hero, about, research, capacity
+                           building, team, contact)
+research.html           — worldview / research bets + research outputs table
+capacity-building.html  — intro, featured programs, highlighted events,
+                           co-working space, partners
+programs.html           — all programs (card grid)
+events.html             — highlighted events + full event archive table
+team.html, workspace.html, get-involved.html, privacy.html
 assets/css/style.css    — all styling
-assets/js/main.js       — mobile nav toggle + footer year
-assets/fonts/           — Axion.otf (display font), see fonts/README.md
-assets/images/          — logo, hero illustration, team photos, partner logos
+assets/js/main.js       — nav collapse/toggle, footer year, term popups
+assets/fonts/           — Axion.otf (display font)
+assets/images/          — logo, illustrations, team photos, partner logos,
+                           programs/ and events/ imagery
+content/                — structured data for programs, events, research
+scripts/                — content renderer + asset-generation helpers
 ```
 
-## Content status
+## Structured content (programs, events, research)
 
-This is a first-pass layout. Most body copy is placeholder **Lorem Ipsum** —
-search `index.html` for it and swap in real copy for:
+Program cards, event cards, the event archive table, and the research outputs
+table are rendered from JSON rather than hand-edited:
 
-- Hero headline & subhead
-- About section paragraphs + 3-item list
-- Research card titles/descriptions + publication links
-- Capacity Building intro, stats (`[N]`), and program cards
-- Contact email address (marked `[email@capeinstituteforsafeai.org]`)
+```
+content/programs.json
+content/events.json
+content/research.json
+```
 
-Team member names, titles, photos, and social links are real (carried over
-from the predecessor org, AI Safety South Africa) — only their bio blurbs are
-placeholder text.
+`scripts/build-content.mjs` renders these into the HTML files between marker
+comments (`<!-- content:NAME:start -->` … `<!-- content:NAME:end -->`) in
+`capacity-building.html`, `programs.html`, `events.html`, and `research.html`.
+The rendered markup is committed, so Pages needs no build step.
 
-The contact form is a **visual placeholder only** — it has no backend wired up
-yet (see the note under the form).
+To add or edit an entry, change the JSON and re-run:
+
+```
+node scripts/build-content.mjs          # rewrite the marked regions
+node scripts/build-content.mjs --check  # exit 1 if committed HTML is stale
+```
+
+Requires Node 20+. Only the marked regions are touched; everything else in
+those files is ordinary hand-edited HTML.
+
+### Images
+
+- Program images: `assets/images/programs/<slug>.webp`, referenced from
+  `programs.json` (`image.url`).
+- Event images: `assets/images/events/<slug>.webp` (card size) plus a 96px
+  square thumbnail at `assets/images/events/thumbs/<slug>.webp` for the
+  archive table. The renderer derives the thumbnail path from `image.url`, so
+  both files need to exist. Events with `"image": null` fall back to the CISAI
+  mark (`assets/images/mark.png` / `thumbs/fallback-mark.webp`).
+- Thumbnails were produced with [sharp](https://sharp.pixelplumbing.com/):
+  `resize(96, 96, { fit: "cover" }).webp({ quality: 78 })`. Any equivalent
+  tool is fine.
+
+The programs, events, and research data were carried over from the
+predecessor organisation's site (AI Safety South Africa).
+
+## Contact form
+
+The "Reach out" form on `index.html` posts to Formspree (form ID `mvzjylbw`)
+via `@formspree/ajax`, loaded from unpkg at the bottom of the page. Submissions
+are emailed to the Formspree account that owns that form. No server-side code
+in this repo is involved; to change the destination, update the form in the
+Formspree dashboard or swap the ID in `index.html`.
 
 ## Local preview
 
-No build step required — just open `index.html` in a browser, or serve the
+No build step required — open any `.html` file in a browser, or serve the
 folder with any static server, e.g.:
 
 ```

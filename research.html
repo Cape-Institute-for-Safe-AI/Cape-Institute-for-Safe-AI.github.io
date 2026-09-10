@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
 
+<link rel="preload" href="assets/fonts/Axion.otf" as="font" type="font/otf" crossorigin />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -30,7 +31,7 @@
         <div class="nav-dropdown">
           <a href="programs.html">Programs</a>
           <a href="events.html">Events</a>
-          <a href="workspace.html">Co-working Space</a>
+          <a href="https://tally.so/r/obO5q1" target="_blank" rel="noopener">Co-working Space</a>
         </div>
       </div>
       <a href="team.html"><span class="nav-label">Team</span></a>
@@ -48,42 +49,11 @@
 
 <main>
 
-  <!-- RESEARCH OUTPUTS -->
-  <section class="section" id="research-outputs">
-    <div class="wrap about__grid">
-      <div>
-        <span class="mono-label">Research</span>
-        <h1 class="section-title" style="margin-top: 12px; max-width: none;">Research projects and publications.</h1>
-        <img
-          src="assets/images/programs/cai-research-fellowship-2026.webp"
-          alt="Cooperative AI Research Fellowship cohort"
-          loading="lazy"
-          style="margin-top: 24px; border: var(--border); display: block; width: 100%; height: auto;"
-        />
-      </div>
-      <div class="card-grid" style="grid-template-columns: 1fr; margin-top: 0;">
-        <div class="card">
-          <div class="card-heading"><span class="swatch"></span><h3>AI capability evaluations</h3></div>
-          <p>Our in-house team focuses on technical AI governance methods, mainly evaluations, developed in partnership with the UK AI Security Institute.</p>
-        </div>
-        <div class="card">
-          <div class="card-heading"><span class="swatch"></span><h3>Offline multi-agent reinforcement learning</h3></div>
-          <p>Research on the unique risks of multi-agent AI systems, published at NeurIPS, ICLR, and ICML, and supported by a Cooperative AI Foundation PhD Fellowship.</p>
-        </div>
-        <div class="card">
-          <div class="card-heading"><span class="swatch"></span><h3>Cooperative AI Research Fellowship outputs</h3></div>
-          <p>The posters and outputs produced by fellows during our 3-month, in-person research fellowship, connecting them to senior researchers at Google DeepMind, Oxford, MIT, and more.</p>
-          <a class="card-meta" href="https://www.cai-research-fellowship.com/posters/" target="_blank" rel="noopener">Browse the posters page &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESEARCH BETS -->
-  <section class="section" id="research">
+  <!-- WORLDVIEW + RESEARCH BETS -->
+  <section class="section section--tight-bottom" id="research">
     <div class="wrap research__wrap">
       <div class="research__main">
-        <h2 class="section-title">Preparing for a multi-agent world.</h2>
+        <h1 class="section-title">Preparing for a multi-agent world.</h1>
         <p class="body-lead" style="margin-top: 28px;">
           AI agents are currently being deployed in vast numbers across the
           internet without regulatory oversight. We expect the number of
@@ -115,11 +85,77 @@
             <p>The frontier of AI is incredibly difficult and costly to push, and second movers appear to catch up relatively easily. Currently, it appears that no AI developer is totally dominant, especially as the frontier remains jagged, and the returns of recursive self-improvement have not materialised yet. This, combined with multi-agent dynamics, will likely result in large systems of heterogenous AI agents with distinct incentives.</p>
           </div>
           <div class="card">
-            <div class="card-heading"><span class="swatch"></span><h3>Alignment by ecosystem</h3></div>
+            <div class="card-heading"><span class="swatch"></span><h3>Decentralised defence</h3></div>
             <p>An ecosystem with multiple powerful actors may be more resilient, as they can provide checks and balances on each other. While distributing AI capabilities involves its own risks, it also enables decentralised defence against bad actors (<a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">a recent example</a>). These kinds of worlds may be more robust than relying on the benevolence of a singular AI superpower. </p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH OUTPUTS -->
+  <section class="section section--tight-top" id="research-outputs">
+    <div class="wrap">
+      <h2 class="section-title" style="max-width: none; font-size: clamp(24px, 3vw, 32px);">Research projects and publications.</h2>
+      <p class="body-lead" style="margin-top: 28px; max-width: none;">
+        These are some notable research outputs that our team and community members have produced.
+        In our in-house team, we have a focus on technical AI governance methods, mainly evaluations.
+        You can see the research outputs of the Cooperative AI Research Fellowship
+        <a href="https://www.cai-research-fellowship.com/posters/" target="_blank" rel="noopener">on their posters page</a>.
+      </p>
+
+      <!-- content:research-table:start -->
+<div class="table-shell">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Research</th>
+        <th>Status</th>
+        <th>Authors</th>
+        <th>Venue</th>
+        <th class="num">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><span class="table-title">Predicting Long-Horizon Task Performance using Proxy Evaluations</span></td>
+      <td class="nowrap"><span class="tag-badge">Under Review</span></td>
+      <td>Jaco Du Toit, Leo Hyams, Daniil Anisimov, Brendon Chikavanga, Joshua Stein, Magda Dubois, Cozmin Ududec, Samuel F. Brown</td>
+      <td>NeurIPS 2026 Main Conference, Evaluations &amp; Datasets track</td>
+      <td class="num">-</td>
+    </tr>
+    <tr>
+      <td><span class="table-title">Precursors, Proxies, and Predictive Models for Long-Horizon Tasks</span></td>
+      <td class="nowrap"><span class="tag-badge">Published</span></td>
+      <td>Jaco Du Toit, Leo Hyams, Daniil Anisimov, Samuel Brown</td>
+      <td>Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling at NeurIPS 2025</td>
+      <td class="num"><a class="table-link" href="https://openreview.net/forum?id=bfX0oa2XDr" target="_blank" rel="noopener">Open <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></td>
+    </tr>
+    <tr>
+      <td><span class="table-title">Autonomous replication and adaptation evaluations</span><ul class="table-sublist"><li>Synthetic Environment Detection Eval</li><li>Situational Awareness Eval</li><li>RL Manipulation Eval</li><li>Efficient Test-Time Chain of Thought Eval</li></ul></td>
+      <td class="nowrap"><span class="tag-badge">Accepted</span></td>
+      <td>Jaco Du Toit, Leo Hyams, Asa Strickland Cooper, Joshua Olive, Noah De Nicola, Benjamin Sturgeon, Jay Bailey, Alexandra Abbas, Celia Waggoner</td>
+      <td>UK AISI ARA Stream Bounty Programme</td>
+      <td class="num">-</td>
+    </tr>
+    <tr>
+      <td><span class="table-title">HumanAgencyBench: Do Language Models Support Human Agency?</span></td>
+      <td class="nowrap"><span class="tag-badge">Published</span></td>
+      <td>Benjamin Sturgeon, Leo Hyams, Daniel Samuelson, Ethan Vorster, Jacob Haimes, Jacy Reese Anthis</td>
+      <td>HEAL workshop at CHI 2026</td>
+      <td class="num"><a class="table-link" href="https://arxiv.org/abs/2509.08494" target="_blank" rel="noopener">Open <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></td>
+    </tr>
+    <tr>
+      <td><span class="table-title">When Role-playing, Do Models Believe What They Say?</span></td>
+      <td class="nowrap"><span class="tag-badge">Preprint</span></td>
+      <td>Benjamin Sturgeon, David Africa, Sid Black</td>
+      <td>-</td>
+      <td class="num"><a class="table-link" href="https://arxiv.org/abs/2606.11502" target="_blank" rel="noopener">Open <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<!-- content:research-table:end -->
     </div>
   </section>
 
@@ -129,10 +165,6 @@
   <div class="wrap site-footer__inner">
     <span class="mono-label">&copy; <span id="year"></span> Cape Institute for Safe AI</span>
     <div class="footer-links">
-      <a href="index.html#about">About</a>
-      <a href="capacity-building.html">Capacity Building</a>
-      <a href="research.html">Research</a>
-      <a href="team.html">Team</a>
       <a href="get-involved.html">Get Involved</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>

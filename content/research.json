@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "predicting-long-horizon-task-performance-proxy-evaluations",
+    "title": "Predicting Long-Horizon Task Performance using Proxy Evaluations",
+    "status": "under_review",
+    "authors": [
+      "Jaco Du Toit",
+      "Leo Hyams",
+      "Daniil Anisimov",
+      "Brendon Chikavanga",
+      "Joshua Stein",
+      "Magda Dubois",
+      "Cozmin Ududec",
+      "Samuel F. Brown"
+    ],
+    "acceptedVenue": "NeurIPS 2026 Main Conference, Evaluations & Datasets track",
+    "venueType": null,
+    "arxivLink": null,
+    "doi": null
+  },
+  {
+    "slug": "precursors-proxies-predictive-models",
+    "title": "Precursors, Proxies, and Predictive Models for Long-Horizon Tasks",
+    "status": "published",
+    "authors": [
+      "Jaco Du Toit",
+      "Leo Hyams",
+      "Daniil Anisimov",
+      "Samuel Brown"
+    ],
+    "acceptedVenue": "Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling at NeurIPS 2025",
+    "venueType": null,
+    "arxivLink": "https://openreview.net/forum?id=bfX0oa2XDr",
+    "doi": null
+  },
+  {
+    "slug": "uk-aisi-ara-bounty-evals",
+    "title": "Autonomous replication and adaptation evaluations",
+    "items": [
+      "Synthetic Environment Detection Eval",
+      "Situational Awareness Eval",
+      "RL Manipulation Eval",
+      "Efficient Test-Time Chain of Thought Eval"
+    ],
+    "status": "accepted",
+    "authors": [
+      "Jaco Du Toit",
+      "Leo Hyams",
+      "Asa Strickland Cooper",
+      "Joshua Olive",
+      "Noah De Nicola",
+      "Benjamin Sturgeon",
+      "Jay Bailey",
+      "Alexandra Abbas",
+      "Celia Waggoner"
+    ],
+    "acceptedVenue": "UK AISI ARA Stream Bounty Programme",
+    "venueType": null,
+    "arxivLink": null,
+    "doi": null
+  },
+  {
+    "slug": "humanagencybench",
+    "title": "HumanAgencyBench: Do Language Models Support Human Agency?",
+    "status": "published",
+    "authors": [
+      "Benjamin Sturgeon",
+      "Leo Hyams",
+      "Daniel Samuelson",
+      "Ethan Vorster",
+      "Jacob Haimes",
+      "Jacy Reese Anthis"
+    ],
+    "acceptedVenue": "HEAL workshop at CHI 2026",
+    "venueType": null,
+    "arxivLink": "https://arxiv.org/abs/2509.08494",
+    "doi": null
+  },
+  {
+    "slug": "when-role-playing-do-models-believe-what-they-say",
+    "title": "When Role-playing, Do Models Believe What They Say?",
+    "status": "preprint",
+    "authors": [
+      "Benjamin Sturgeon",
+      "David Africa",
+      "Sid Black"
+    ],
+    "acceptedVenue": null,
+    "venueType": null,
+    "arxivLink": "https://arxiv.org/abs/2606.11502",
+    "doi": null
+  }
+]

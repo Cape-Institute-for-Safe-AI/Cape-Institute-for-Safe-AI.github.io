@@ -1,0 +1,1240 @@
+[
+  {
+    "slug": "cooperative-ai-research-fellowship-closing-showcase",
+    "name": "Cooperative AI Research Fellowship Closing Showcase",
+    "type": "talk",
+    "eventDate": "2026-04-24",
+    "location": "The Hasso Plattner School of Design Thinking Afrika",
+    "attendanceCount": 113,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/cooperative-ai-research-fellowship-closing-showcase.webp",
+      "alt": "Cooperative AI Research Fellowship Closing Showcase"
+    }
+  },
+  {
+    "slug": "ai-safety-research-workshop",
+    "name": "AI Safety Research Workshop",
+    "type": "workshop",
+    "eventDate": "2026-03-27",
+    "location": "School for Data Science and Computational Thinking",
+    "attendanceCount": 15,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-research-workshop.webp",
+      "alt": "AI Safety Research Workshop"
+    }
+  },
+  {
+    "slug": "ai-safety-sa-2026-kick-off-event",
+    "name": "AI Safety SA 2026 Kick Off Event",
+    "type": "talk",
+    "eventDate": "2026-02-20",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 80,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-sa-2026-kick-off-event.webp",
+      "alt": "AI Safety SA 2026 Kick Off Event"
+    }
+  },
+  {
+    "slug": "reading-group-reasoning-models-struggle-to-control-their-cha",
+    "name": "Reading Group: Reasoning Models Struggle to Control their Chains of Thought",
+    "type": "reading_group",
+    "eventDate": "2026-05-20",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-reasoning-models-struggle-to-control-their-cha.webp",
+      "alt": "Reading Group: Reasoning Models Struggle to Control their Chains of Thought"
+    }
+  },
+  {
+    "slug": "reading-group-gradual-disempowerment",
+    "name": "Reading Group: Gradual Disempowerment",
+    "type": "reading_group",
+    "eventDate": "2026-05-13",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-gradual-disempowerment.webp",
+      "alt": "Reading Group: Gradual Disempowerment"
+    }
+  },
+  {
+    "slug": "reading-group-it-s-just-distributed-computing-rethinking-ai-",
+    "name": "Reading Group: It's just distributed computing: Rethinking AI governance",
+    "type": "reading_group",
+    "eventDate": "2026-05-06",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-it-s-just-distributed-computing-rethinking-ai-.webp",
+      "alt": "Reading Group: It's just distributed computing: Rethinking AI governance"
+    }
+  },
+  {
+    "slug": "shocklab-seminar-assessing-ai-amplified-counterfeit-medicine",
+    "name": "ShockLab Seminar: Assessing AI-Amplified Counterfeit Medicine Threats in Africa",
+    "type": "seminar",
+    "eventDate": "2026-04-29",
+    "location": "UCT Department of Mathematics and Applied Mathematics",
+    "attendanceCount": 1,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/shocklab-seminar-assessing-ai-amplified-counterfeit-medicine.webp",
+      "alt": "ShockLab Seminar: Assessing AI-Amplified Counterfeit Medicine Threats in Africa"
+    }
+  },
+  {
+    "slug": "ml4good-sa-community-social",
+    "name": "ML4Good SA Community Social 🎉",
+    "type": "meetup",
+    "eventDate": "2026-04-29",
+    "location": "Our Local Kloof Street",
+    "attendanceCount": 12,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ml4good-sa-community-social.webp",
+      "alt": "ML4Good SA Community Social 🎉"
+    }
+  },
+  {
+    "slug": "shocklab-seminar-inter-agent-influence-evaluation-embedded-a",
+    "name": "ShockLab Seminar: Inter-agent Influence Evaluation & Embedded Adversarial Agent in Multi-Agent LLM Systems",
+    "type": "seminar",
+    "eventDate": "2026-04-22",
+    "location": "UCT Department of Mathematics and Applied Mathematics",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/shocklab-seminar-inter-agent-influence-evaluation-embedded-a.webp",
+      "alt": "ShockLab Seminar: Inter-agent Influence Evaluation & Embedded Adversarial Agent in Multi-Agent LLM Systems"
+    }
+  },
+  {
+    "slug": "reading-group-emotion-concepts-and-their-function-in-a-large",
+    "name": "Reading Group: Emotion Concepts and their Function in a Large Language Model",
+    "type": "reading_group",
+    "eventDate": "2026-04-15",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-emotion-concepts-and-their-function-in-a-large.webp",
+      "alt": "Reading Group: Emotion Concepts and their Function in a Large Language Model"
+    }
+  },
+  {
+    "slug": "shocklab-seminar-strategic-vagueness-in-llms",
+    "name": "ShockLab Seminar: Strategic Vagueness in LLMS",
+    "type": "seminar",
+    "eventDate": "2026-04-15",
+    "location": "UCT Department of Mathematics and Applied Mathematics",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/shocklab-seminar-strategic-vagueness-in-llms.webp",
+      "alt": "ShockLab Seminar: Strategic Vagueness in LLMS"
+    }
+  },
+  {
+    "slug": "cairf-seminar-series-you-can-t-study-game-theoretic-dynamics",
+    "name": "CAIRF Seminar Series: You can't study game theoretic dynamics if you can't compute equilibria | Eugene Vinitsky",
+    "type": "seminar",
+    "eventDate": "2026-04-09",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 8,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/cairf-seminar-series-you-can-t-study-game-theoretic-dynamics.webp",
+      "alt": "CAIRF Seminar Series: You can't study game theoretic dynamics if you can't compute equilibria | Eugene Vinitsky"
+    }
+  },
+  {
+    "slug": "reading-group-applying-cognitive-design-patterns-to-general-",
+    "name": "Reading Group: Applying Cognitive Design Patterns to General LLM Agents",
+    "type": "reading_group",
+    "eventDate": "2026-04-08",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 3,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-applying-cognitive-design-patterns-to-general-.webp",
+      "alt": "Reading Group: Applying Cognitive Design Patterns to General LLM Agents"
+    }
+  },
+  {
+    "slug": "reading-group-symbiotic-alignment-via-collective-predictive-",
+    "name": "Reading Group: Symbiotic Alignment via Collective Predictive Coding",
+    "type": "reading_group",
+    "eventDate": "2026-04-01",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 7,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-symbiotic-alignment-via-collective-predictive-.webp",
+      "alt": "Reading Group: Symbiotic Alignment via Collective Predictive Coding"
+    }
+  },
+  {
+    "slug": "shocklab-seminar-similarity-as-a-signal-do-al-agents-coopera",
+    "name": "ShockLab Seminar: Similarity as a Signal: Do Al Agents Cooperate More When They Know They're Alike?",
+    "type": "seminar",
+    "eventDate": "2026-04-01",
+    "location": "UCT Department of Mathematics and Applied Mathematics",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/shocklab-seminar-similarity-as-a-signal-do-al-agents-coopera.webp",
+      "alt": "ShockLab Seminar: Similarity as a Signal: Do Al Agents Cooperate More When They Know They're Alike?"
+    }
+  },
+  {
+    "slug": "reading-group-the-artificial-self-characterising-the-landsca",
+    "name": "Reading Group: The Artificial Self: Characterising the landscape of AI identity",
+    "type": "reading_group",
+    "eventDate": "2026-03-25",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-the-artificial-self-characterising-the-landsca.webp",
+      "alt": "Reading Group: The Artificial Self: Characterising the landscape of AI identity"
+    }
+  },
+  {
+    "slug": "cairf-seminar-series-beyond-meditations-on-moloch-ashley-hod",
+    "name": "CAIRF Seminar Series: Beyond Meditations on Moloch | Ashley Hodgson",
+    "type": "seminar",
+    "eventDate": "2026-03-25",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/cairf-seminar-series-beyond-meditations-on-moloch-ashley-hod.webp",
+      "alt": "CAIRF Seminar Series: Beyond Meditations on Moloch | Ashley Hodgson"
+    }
+  },
+  {
+    "slug": "reading-group-words-that-make-language-models-perceive",
+    "name": "Reading Group: Words That Make Language Models Perceive",
+    "type": "reading_group",
+    "eventDate": "2026-03-18",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-words-that-make-language-models-perceive.webp",
+      "alt": "Reading Group: Words That Make Language Models Perceive"
+    }
+  },
+  {
+    "slug": "reading-group-the-persona-selection-model-why-ai-assistants-",
+    "name": "Reading Group: The Persona Selection Model: Why AI Assistants might Behave like Humans",
+    "type": "reading_group",
+    "eventDate": "2026-03-11",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-the-persona-selection-model-why-ai-assistants-.webp",
+      "alt": "Reading Group: The Persona Selection Model: Why AI Assistants might Behave like Humans"
+    }
+  },
+  {
+    "slug": "shocklab-seminar-delegating-deliberation-to-agents",
+    "name": "ShockLab Seminar: Delegating Deliberation to Agents",
+    "type": "seminar",
+    "eventDate": "2026-03-11",
+    "location": "UCT Department of Mathematics and Applied Mathematics",
+    "attendanceCount": 13,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/shocklab-seminar-delegating-deliberation-to-agents.webp",
+      "alt": "ShockLab Seminar: Delegating Deliberation to Agents"
+    }
+  },
+  {
+    "slug": "reading-group-llms-miss-the-multi-agent-mark",
+    "name": "Reading Group: LLMs Miss the Multi-Agent Mark",
+    "type": "reading_group",
+    "eventDate": "2026-03-04",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-llms-miss-the-multi-agent-mark.webp",
+      "alt": "Reading Group: LLMs Miss the Multi-Agent Mark"
+    }
+  },
+  {
+    "slug": "reading-group-governing-ai-agents",
+    "name": "Reading Group: Governing AI Agents",
+    "type": "reading_group",
+    "eventDate": "2026-02-25",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 7,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-governing-ai-agents.webp",
+      "alt": "Reading Group: Governing AI Agents"
+    }
+  },
+  {
+    "slug": "chai-connect-africans-india-ai-impact-summit-social",
+    "name": "Chai & Connect: Africans @ India AI Impact Summit Social",
+    "type": "meetup",
+    "eventDate": "2026-02-20",
+    "location": "Cafe Lota, India",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/chai-connect-africans-india-ai-impact-summit-social.webp",
+      "alt": "Chai & Connect: Africans @ India AI Impact Summit Social"
+    }
+  },
+  {
+    "slug": "toward-collective-action-roundtable-on-safe-trusted-ai-in-af",
+    "name": "Toward Collective Action: Roundtable on Safe & Trusted AI in Africa",
+    "type": "other",
+    "eventDate": "2026-02-20",
+    "location": "Bharat Mandapam, India",
+    "attendanceCount": 31,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/toward-collective-action-roundtable-on-safe-trusted-ai-in-af.webp",
+      "alt": "Toward Collective Action: Roundtable on Safe & Trusted AI in Africa"
+    }
+  },
+  {
+    "slug": "reading-group-ai-tools-for-existential-security",
+    "name": "Reading Group: AI Tools for Existential Security",
+    "type": "reading_group",
+    "eventDate": "2026-02-18",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-ai-tools-for-existential-security.webp",
+      "alt": "Reading Group: AI Tools for Existential Security"
+    }
+  },
+  {
+    "slug": "reading-group-the-assistant-axis",
+    "name": "Reading Group: The Assistant Axis",
+    "type": "reading_group",
+    "eventDate": "2026-02-11",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-the-assistant-axis.webp",
+      "alt": "Reading Group: The Assistant Axis"
+    }
+  },
+  {
+    "slug": "reading-group-safety-cases-for-frontier-ai",
+    "name": "Reading Group: Safety Cases for Frontier AI",
+    "type": "reading_group",
+    "eventDate": "2026-01-28",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-safety-cases-for-frontier-ai.webp",
+      "alt": "Reading Group: Safety Cases for Frontier AI"
+    }
+  },
+  {
+    "slug": "reading-group-llms-report-subjective-experience-under-self-r",
+    "name": "Reading Group: LLMs Report Subjective Experience Under Self-Referential Processing",
+    "type": "reading_group",
+    "eventDate": "2026-01-21",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-llms-report-subjective-experience-under-self-r.webp",
+      "alt": "Reading Group: LLMs Report Subjective Experience Under Self-Referential Processing"
+    }
+  },
+  {
+    "slug": "reading-group-lessons-from-complexity-theory-for-ai-governan",
+    "name": "Reading Group: Lessons from Complexity Theory for AI Governance",
+    "type": "reading_group",
+    "eventDate": "2026-01-14",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-lessons-from-complexity-theory-for-ai-governan.webp",
+      "alt": "Reading Group: Lessons from Complexity Theory for AI Governance"
+    }
+  },
+  {
+    "slug": "reading-group-the-evidence-for-ai-consciousness-today",
+    "name": "Reading Group: The Evidence for AI Consciousness, Today",
+    "type": "reading_group",
+    "eventDate": "2026-01-07",
+    "location": "Workshop17 Kloof Street",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-the-evidence-for-ai-consciousness-today.webp",
+      "alt": "Reading Group: The Evidence for AI Consciousness, Today"
+    }
+  },
+  {
+    "slug": "reading-group-natural-selection-favors-ais-over-humans",
+    "name": "Reading Group: Natural Selection Favors AIs over Humans",
+    "type": "reading_group",
+    "eventDate": "2025-12-17",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 8,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-natural-selection-favors-ais-over-humans.webp",
+      "alt": "Reading Group: Natural Selection Favors AIs over Humans"
+    }
+  },
+  {
+    "slug": "community-update-lightning-talks",
+    "name": "Community Update & Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-12-12",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 15,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/community-update-lightning-talks.webp",
+      "alt": "Community Update & Lightning Talks"
+    }
+  },
+  {
+    "slug": "reading-group-toward-a-safe-internet-of-agents",
+    "name": "Reading Group: Toward a Safe Internet of Agents",
+    "type": "reading_group",
+    "eventDate": "2025-12-10",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-toward-a-safe-internet-of-agents.webp",
+      "alt": "Reading Group: Toward a Safe Internet of Agents"
+    }
+  },
+  {
+    "slug": "reading-group-disrupting-the-first-ai-orchestrated-cyber-esp",
+    "name": "Reading Group: Disrupting the First AI-Orchestrated Cyber Espionage Campaign",
+    "type": "reading_group",
+    "eventDate": "2025-12-03",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-disrupting-the-first-ai-orchestrated-cyber-esp.webp",
+      "alt": "Reading Group: Disrupting the First AI-Orchestrated Cyber Espionage Campaign"
+    }
+  },
+  {
+    "slug": "aissa-community-hike",
+    "name": "AISSA Community Hike🌲",
+    "type": "other",
+    "eventDate": "2025-11-29",
+    "location": "East Fort, Chapman's Peak",
+    "attendanceCount": 10,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/aissa-community-hike.webp",
+      "alt": "AISSA Community Hike🌲"
+    }
+  },
+  {
+    "slug": "reading-group-ai-can-help-humans-find-common-ground-in-democ",
+    "name": "Reading Group: AI Can Help Humans Find Common Ground in Democratic Deliberation",
+    "type": "reading_group",
+    "eventDate": "2025-11-26",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-ai-can-help-humans-find-common-ground-in-democ.webp",
+      "alt": "Reading Group: AI Can Help Humans Find Common Ground in Democratic Deliberation"
+    }
+  },
+  {
+    "slug": "reading-group-fair-algorithms-for-selecting-citizens-assembl",
+    "name": "Reading Group: Fair Algorithms for Selecting Citizens' Assemblies",
+    "type": "reading_group",
+    "eventDate": "2025-11-19",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-fair-algorithms-for-selecting-citizens-assembl.webp",
+      "alt": "Reading Group: Fair Algorithms for Selecting Citizens' Assemblies"
+    }
+  },
+  {
+    "slug": "reading-group-weak-to-strong-generalization-under-distributi",
+    "name": "Reading Group: Weak-to-Strong Generalization under Distribution Shifts",
+    "type": "reading_group",
+    "eventDate": "2025-11-12",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-weak-to-strong-generalization-under-distributi.webp",
+      "alt": "Reading Group: Weak-to-Strong Generalization under Distribution Shifts"
+    }
+  },
+  {
+    "slug": "reading-group-collective-intelligence-as-infrastructure",
+    "name": "Reading Group: Collective Intelligence as Infrastructure",
+    "type": "reading_group",
+    "eventDate": "2025-11-05",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 3,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-collective-intelligence-as-infrastructure.webp",
+      "alt": "Reading Group: Collective Intelligence as Infrastructure"
+    }
+  },
+  {
+    "slug": "lightning-talks",
+    "name": "⚡Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-10-30",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 10,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/lightning-talks.webp",
+      "alt": "⚡Lightning Talks"
+    }
+  },
+  {
+    "slug": "reading-group-a-definition-of-agi",
+    "name": "Reading Group: A Definition of AGI",
+    "type": "reading_group",
+    "eventDate": "2025-10-29",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-a-definition-of-agi.webp",
+      "alt": "Reading Group: A Definition of AGI"
+    }
+  },
+  {
+    "slug": "post-course-social-pretoria",
+    "name": "Post-Course Social 🎉 (Pretoria)",
+    "type": "meetup",
+    "eventDate": "2025-10-25",
+    "location": "Felo Restaurant Hatfield",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/post-course-social-pretoria.webp",
+      "alt": "Post-Course Social 🎉 (Pretoria)"
+    }
+  },
+  {
+    "slug": "post-course-social-cape-town",
+    "name": "Post-Course Social 🎉 (Cape Town)",
+    "type": "meetup",
+    "eventDate": "2025-10-25",
+    "location": "Newport Market & Deli",
+    "attendanceCount": 7,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/post-course-social-cape-town.webp",
+      "alt": "Post-Course Social 🎉 (Cape Town)"
+    }
+  },
+  {
+    "slug": "post-course-social-jhb",
+    "name": "Post-Course Social 🎉 (JHB)",
+    "type": "meetup",
+    "eventDate": "2025-10-25",
+    "location": "Mugg & Bean Rosebank Mall",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/post-course-social-jhb.webp",
+      "alt": "Post-Course Social 🎉 (JHB)"
+    }
+  },
+  {
+    "slug": "reading-group-if-anyone-builds-it-everyone-dies",
+    "name": "Reading Group: If Anyone Builds It, Everyone Dies",
+    "type": "reading_group",
+    "eventDate": "2025-10-22",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 11,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-if-anyone-builds-it-everyone-dies.webp",
+      "alt": "Reading Group: If Anyone Builds It, Everyone Dies"
+    }
+  },
+  {
+    "slug": "reading-group-toward-an-african-agenda-for-ai-safety",
+    "name": "Reading Group: Toward an African Agenda for AI Safety",
+    "type": "reading_group",
+    "eventDate": "2025-10-15",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-toward-an-african-agenda-for-ai-safety.webp",
+      "alt": "Reading Group: Toward an African Agenda for AI Safety"
+    }
+  },
+  {
+    "slug": "reading-group-underwriting-superintelligence",
+    "name": "Reading Group: Underwriting Superintelligence",
+    "type": "reading_group",
+    "eventDate": "2025-10-08",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-underwriting-superintelligence.webp",
+      "alt": "Reading Group: Underwriting Superintelligence"
+    }
+  },
+  {
+    "slug": "acx-goes-climbing",
+    "name": "ACX Goes Climbing",
+    "type": "meetup",
+    "eventDate": "2025-10-05",
+    "location": "CityROCK Cape Town - Indoor Climbing Gym",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/acx-goes-climbing.webp",
+      "alt": "ACX Goes Climbing"
+    }
+  },
+  {
+    "slug": "reading-group-why-language-models-hallucinate",
+    "name": "Reading Group: Why Language Models Hallucinate",
+    "type": "reading_group",
+    "eventDate": "2025-10-01",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 10,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-why-language-models-hallucinate.webp",
+      "alt": "Reading Group: Why Language Models Hallucinate"
+    }
+  },
+  {
+    "slug": "ai-the-future-of-jobs",
+    "name": "AI & the future of jobs...",
+    "type": "other",
+    "eventDate": "2025-09-30",
+    "location": "Simonsberg Men's Residence",
+    "attendanceCount": 17,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-the-future-of-jobs.webp",
+      "alt": "AI & the future of jobs..."
+    }
+  },
+  {
+    "slug": "apply-with-me-cooperative-ai-research-fellowship",
+    "name": "Apply With Me: Cooperative AI Research Fellowship",
+    "type": "other",
+    "eventDate": "2025-09-27",
+    "location": "Google Meet",
+    "attendanceCount": 41,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/apply-with-me-cooperative-ai-research-fellowship.webp",
+      "alt": "Apply With Me: Cooperative AI Research Fellowship"
+    }
+  },
+  {
+    "slug": "project-day",
+    "name": "Project Day",
+    "type": "other",
+    "eventDate": "2025-09-27",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 10,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/project-day.webp",
+      "alt": "Project Day"
+    }
+  },
+  {
+    "slug": "office-hours-ai-safety-programs-aissa",
+    "name": "Office Hours: AI Safety Programs (AISSA)",
+    "type": "other",
+    "eventDate": "2025-09-26",
+    "location": "Google Meet",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/office-hours-ai-safety-programs-aissa.webp",
+      "alt": "Office Hours: AI Safety Programs (AISSA)"
+    }
+  },
+  {
+    "slug": "apply-with-me-cooperative-ai-research-fellowship-2",
+    "name": "Apply With Me: Cooperative AI Research Fellowship",
+    "type": "other",
+    "eventDate": "2025-09-22",
+    "location": "Google Meet",
+    "attendanceCount": 63,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/apply-with-me-cooperative-ai-research-fellowship-2.webp",
+      "alt": "Apply With Me: Cooperative AI Research Fellowship"
+    }
+  },
+  {
+    "slug": "acx-everywhere-meetup",
+    "name": "ACX Everywhere Meetup",
+    "type": "meetup",
+    "eventDate": "2025-09-21",
+    "location": "The Gardeners Cottage Restaurant",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/acx-everywhere-meetup.webp",
+      "alt": "ACX Everywhere Meetup"
+    }
+  },
+  {
+    "slug": "cooperative-ai-research-fellowship-info-session",
+    "name": "Cooperative AI Research Fellowship Info Session",
+    "type": "other",
+    "eventDate": "2025-09-18",
+    "location": "Zoom",
+    "attendanceCount": 483,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/cooperative-ai-research-fellowship-info-session.webp",
+      "alt": "Cooperative AI Research Fellowship Info Session"
+    }
+  },
+  {
+    "slug": "reading-group-on-the-biology-of-a-large-language-model",
+    "name": "Reading Group: On the Biology of a Large Language Model",
+    "type": "reading_group",
+    "eventDate": "2025-09-17",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-on-the-biology-of-a-large-language-model.webp",
+      "alt": "Reading Group: On the Biology of a Large Language Model"
+    }
+  },
+  {
+    "slug": "writing-meetup",
+    "name": "Writing Meetup",
+    "type": "meetup",
+    "eventDate": "2025-09-13",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writing-meetup.webp",
+      "alt": "Writing Meetup"
+    }
+  },
+  {
+    "slug": "ai-safety-south-africa-community-networking-virtual",
+    "name": "AI Safety South Africa Community Networking (Virtual)",
+    "type": "other",
+    "eventDate": "2025-09-11",
+    "location": "Google Meet",
+    "attendanceCount": 13,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-south-africa-community-networking-virtual.webp",
+      "alt": "AI Safety South Africa Community Networking (Virtual)"
+    }
+  },
+  {
+    "slug": "acx-ssc-meetup",
+    "name": "ACX/SSC Meetup",
+    "type": "meetup",
+    "eventDate": "2025-09-02",
+    "location": "Our Local Kloof Street",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/acx-ssc-meetup.webp",
+      "alt": "ACX/SSC Meetup"
+    }
+  },
+  {
+    "slug": "writing-meetup-2",
+    "name": "Writing Meetup",
+    "type": "meetup",
+    "eventDate": "2025-08-30",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writing-meetup-2.webp",
+      "alt": "Writing Meetup"
+    }
+  },
+  {
+    "slug": "lightning-talks-2",
+    "name": "⚡Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-08-28",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 13,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/lightning-talks-2.webp",
+      "alt": "⚡Lightning Talks"
+    }
+  },
+  {
+    "slug": "project-day-2",
+    "name": "Project Day",
+    "type": "other",
+    "eventDate": "2025-08-16",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/project-day-2.webp",
+      "alt": "Project Day"
+    }
+  },
+  {
+    "slug": "movie-night",
+    "name": "Movie Night",
+    "type": "other",
+    "eventDate": "2025-08-13",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 14,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/movie-night.webp",
+      "alt": "Movie Night"
+    }
+  },
+  {
+    "slug": "lightning-talks-3",
+    "name": "⚡Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-07-31",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 13,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/lightning-talks-3.webp",
+      "alt": "⚡Lightning Talks"
+    }
+  },
+  {
+    "slug": "aissa-x-apart-research-sprint",
+    "name": "AISSA x Apart Research Sprint",
+    "type": "other",
+    "eventDate": "2025-07-25",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 5,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/aissa-x-apart-research-sprint.webp",
+      "alt": "AISSA x Apart Research Sprint"
+    }
+  },
+  {
+    "slug": "dlix-2025-workshop",
+    "name": "DLIX 2025 Workshop",
+    "type": "other",
+    "eventDate": "2025-07-08",
+    "location": "Stellenbosch University",
+    "attendanceCount": 20,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/dlix-2025-workshop.webp",
+      "alt": "DLIX 2025 Workshop"
+    }
+  },
+  {
+    "slug": "ai-safety-course-meet-greet-jhb",
+    "name": "AI Safety Course Meet & Greet: JHB",
+    "type": "meetup",
+    "eventDate": "2025-07-07",
+    "location": "Randburg, Gauteng",
+    "attendanceCount": 14,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-course-meet-greet-jhb.webp",
+      "alt": "AI Safety Course Meet & Greet: JHB"
+    }
+  },
+  {
+    "slug": "ai-safety-course-meet-greet-ct",
+    "name": "AI Safety Course Meet & Greet: CT",
+    "type": "meetup",
+    "eventDate": "2025-07-05",
+    "location": "Col'Cacchio Foreshore",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-course-meet-greet-ct.webp",
+      "alt": "AI Safety Course Meet & Greet: CT"
+    }
+  },
+  {
+    "slug": "ai-safety-course-meet-greet-pta",
+    "name": "AI Safety Course Meet & Greet: PTA",
+    "type": "meetup",
+    "eventDate": "2025-07-05",
+    "location": "Pretoria, Gauteng",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/ai-safety-course-meet-greet-pta.webp",
+      "alt": "AI Safety Course Meet & Greet: PTA"
+    }
+  },
+  {
+    "slug": "writing-meetup-3",
+    "name": "Writing Meetup",
+    "type": "meetup",
+    "eventDate": "2025-07-05",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writing-meetup-3.webp",
+      "alt": "Writing Meetup"
+    }
+  },
+  {
+    "slug": "writing-meetup-4",
+    "name": "Writing Meetup",
+    "type": "meetup",
+    "eventDate": "2025-07-03",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writing-meetup-4.webp",
+      "alt": "Writing Meetup"
+    }
+  },
+  {
+    "slug": "lightning-talks-4",
+    "name": "⚡Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-06-26",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 7,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/lightning-talks-4.webp",
+      "alt": "⚡Lightning Talks"
+    }
+  },
+  {
+    "slug": "writer-s-meetup",
+    "name": "Writer's Meetup",
+    "type": "meetup",
+    "eventDate": "2025-06-21",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 1,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writer-s-meetup.webp",
+      "alt": "Writer's Meetup"
+    }
+  },
+  {
+    "slug": "lightning-talks-5",
+    "name": "⚡Lightning Talks",
+    "type": "talk",
+    "eventDate": "2025-05-22",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 8,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/lightning-talks-5.webp",
+      "alt": "⚡Lightning Talks"
+    }
+  },
+  {
+    "slug": "writer-s-meetup-2",
+    "name": "Writer's Meetup",
+    "type": "meetup",
+    "eventDate": "2025-05-19",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 2,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writer-s-meetup-2.webp",
+      "alt": "Writer's Meetup"
+    }
+  },
+  {
+    "slug": "community-meetup-astral-codex-ten-acx",
+    "name": "Community Meetup: Astral Codex Ten (ACX)",
+    "type": "meetup",
+    "eventDate": "2025-05-08",
+    "location": "Tiger's Milk Kloof Street",
+    "attendanceCount": 14,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/community-meetup-astral-codex-ten-acx.webp",
+      "alt": "Community Meetup: Astral Codex Ten (ACX)"
+    }
+  },
+  {
+    "slug": "writer-s-meetup-3",
+    "name": "Writer's Meetup",
+    "type": "meetup",
+    "eventDate": "2025-05-01",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/writer-s-meetup-3.webp",
+      "alt": "Writer's Meetup"
+    }
+  },
+  {
+    "slug": "reading-group-auditing-misaligned-models",
+    "name": "Reading Group: Auditing Misaligned Models",
+    "type": "reading_group",
+    "eventDate": "2025-03-26",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 8,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-auditing-misaligned-models.webp",
+      "alt": "Reading Group: Auditing Misaligned Models"
+    }
+  },
+  {
+    "slug": "reading-group-superintelligence-strategy",
+    "name": "Reading Group: Superintelligence Strategy",
+    "type": "reading_group",
+    "eventDate": "2025-03-19",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-superintelligence-strategy.webp",
+      "alt": "Reading Group: Superintelligence Strategy"
+    }
+  },
+  {
+    "slug": "community-update-shifting-landscapes-evaluating-ai-agents",
+    "name": "Community Update: Shifting Landscapes & Evaluating AI Agents",
+    "type": "talk",
+    "eventDate": "2025-03-12",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 15,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/community-update-shifting-landscapes-evaluating-ai-agents.webp",
+      "alt": "Community Update: Shifting Landscapes & Evaluating AI Agents"
+    }
+  },
+  {
+    "slug": "reading-group-model-organisms-of-misalignment",
+    "name": "Reading Group: Model Organisms of Misalignment",
+    "type": "reading_group",
+    "eventDate": "2025-02-26",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 4,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-model-organisms-of-misalignment.webp",
+      "alt": "Reading Group: Model Organisms of Misalignment"
+    }
+  },
+  {
+    "slug": "reading-group-cooperative-ai",
+    "name": "Reading Group: Cooperative AI",
+    "type": "reading_group",
+    "eventDate": "2025-02-19",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 3,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-cooperative-ai.webp",
+      "alt": "Reading Group: Cooperative AI"
+    }
+  },
+  {
+    "slug": "stellies-ai-safety-first-meetup",
+    "name": "Stellies AI Safety - First Meetup",
+    "type": "meetup",
+    "eventDate": "2025-02-05",
+    "location": "stellenbosch_university",
+    "attendanceCount": 12,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/stellies-ai-safety-first-meetup.webp",
+      "alt": "Stellies AI Safety - First Meetup"
+    }
+  },
+  {
+    "slug": "reading-group-deepseek-r1-and-its-implications",
+    "name": "Reading Group: DeepSeek-R1 and its Implications",
+    "type": "reading_group",
+    "eventDate": "2025-02-05",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-deepseek-r1-and-its-implications.webp",
+      "alt": "Reading Group: DeepSeek-R1 and its Implications"
+    }
+  },
+  {
+    "slug": "ai-safety-wits-first-meetup",
+    "name": "AI Safety WITS - First Meetup",
+    "type": "meetup",
+    "eventDate": "2025-02-01",
+    "location": "wits_university",
+    "attendanceCount": 23,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "reading-group-ai-governance",
+    "name": "Reading Group: AI Governance",
+    "type": "reading_group",
+    "eventDate": "2025-01-29",
+    "location": "Innovation City Cape Town",
+    "attendanceCount": 9,
+    "lumaPublicUrl": null,
+    "image": {
+      "url": "assets/images/events/reading-group-ai-governance.webp",
+      "alt": "Reading Group: AI Governance"
+    }
+  },
+  {
+    "slug": "ai-governance-faculty-meetup-early-2025",
+    "name": "AI Governance Faculty Meetup Early 2025",
+    "type": "meetup",
+    "eventDate": "2025-01-20",
+    "location": "cape_town",
+    "attendanceCount": 6,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "cooperative-ai-talk-and-discussion",
+    "name": "Cooperative AI Talk and Discussion",
+    "type": "talk",
+    "eventDate": "2025-01-15",
+    "location": "innovation_city",
+    "attendanceCount": 20,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "deep-learning-indabax-july-2024-an-introduction-to-ai-risk-k",
+    "name": "Deep Learning IndabaX (July 2024): An Introduction to AI-Risk, Key Concepts in AI Safety",
+    "type": "workshop",
+    "eventDate": "2024-07-15",
+    "location": "indabax_venue",
+    "attendanceCount": 50,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "deep-learning-indabax-july-2024-agi-horizons-utopia-dystopia",
+    "name": "Deep Learning IndabaX (July 2024): AGI Horizons: Utopia, Dystopia, and Everything in-Between",
+    "type": "panel",
+    "eventDate": "2024-07-15",
+    "location": "indabax_venue",
+    "attendanceCount": 125,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "ea-south-africa-x-ai-safety-cape-town-may-2024-ai-safety-vir",
+    "name": "EA South Africa x AI Safety Cape Town (May 2024): AI Safety Virtual Workshop (Pilot)",
+    "type": "workshop",
+    "eventDate": "2024-05-15",
+    "location": "online",
+    "attendanceCount": 10,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "indabaxs-march-2024-ai-safety-roundtable",
+    "name": "IndabaXS (March 2024): AI Safety Roundtable",
+    "type": "workshop",
+    "eventDate": "2024-03-20",
+    "location": "indabaxs_venue",
+    "attendanceCount": 15,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "easa-summit",
+    "name": "EASA Summit",
+    "type": "other",
+    "eventDate": "2024-01-01",
+    "location": "TBD",
+    "attendanceCount": null,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "g20-side-event-ai-governance-panel",
+    "name": "G20 Side Event: AI Governance Panel",
+    "type": "panel",
+    "eventDate": "2024-01-01",
+    "location": "Harvard Africa Office, Johannesburg",
+    "attendanceCount": null,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "sacair-november-2023-ai-safety-tutorial",
+    "name": "SACAIR (November 2023): AI Safety Tutorial",
+    "type": "workshop",
+    "eventDate": "2023-11-15",
+    "location": "sacair_venue",
+    "attendanceCount": 30,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "indabaxs-ai-risk-and-opportunity-in-africa",
+    "name": "IndabaXS: AI Risk and Opportunity in Africa",
+    "type": "workshop",
+    "eventDate": "2023-08-10",
+    "location": "indabaxs_venue",
+    "attendanceCount": 15,
+    "lumaPublicUrl": null,
+    "image": null
+  },
+  {
+    "slug": "deep-learning-indabax-july-2023-ai-safety-and-governance-wor",
+    "name": "Deep Learning IndabaX (July 2023): AI Safety and Governance Workshop",
+    "type": "workshop",
+    "eventDate": "2023-07-20",
+    "location": "indabax_venue",
+    "attendanceCount": 40,
+    "lumaPublicUrl": null,
+    "image": null
+  }
+]

@@ -106,6 +106,7 @@ h1, h2, h3, h4 {
 .section-title {
   font-size: clamp(28px, 4vw, 44px);
   max-width: 18ch;
+  text-wrap: balance;
 }
 
 .body-lead {
@@ -202,7 +203,7 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: var(--color-bg);
+  background-color: var(--color-page-bg);
   border-bottom: var(--border);
 }
 
@@ -212,7 +213,7 @@ h1, h2, h3, h4 {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: var(--color-bg);
+  background-color: var(--color-page-bg);
   z-index: -1;
 }
 
@@ -233,7 +234,7 @@ h1, h2, h3, h4 {
   height: var(--header-h);
   padding-left: 0;
   padding-right: 0;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
 }
 
 .logo-link {
@@ -329,7 +330,7 @@ h1, h2, h3, h4 {
   top: 100%;
   left: 0;
   min-width: 230px;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
   border: var(--border);
   z-index: 60;
 }
@@ -689,12 +690,6 @@ h1, h2, h3, h4 {
   height: 160px;
   margin: -28px -28px 4px;
   object-fit: cover;
-  filter: grayscale(1);
-  transition: filter 0.2s ease;
-}
-
-.card:hover .card__image {
-  filter: grayscale(0);
 }
 
 .card-grid--2 {
@@ -810,17 +805,24 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 55px;
-  width: 182px;
+  height: 64px;
   flex-shrink: 0;
 }
 
+/* Logos are sized by height so the gap between neighbours is constant;
+   wide wordmarks are capped, and near-square marks get extra height so
+   they don't read as tiny next to them. */
 .partners__row img {
-  height: 100%;
-  width: 100%;
+  height: 40px;
+  width: auto;
+  max-width: 220px;
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.75;
+}
+
+.partner-logo--tall img {
+  height: 64px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -864,12 +866,6 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(1);
-  transition: filter 0.2s ease;
-}
-
-.team-card:hover .team-card__photo img {
-  filter: grayscale(0);
 }
 
 .team-card h3 {
@@ -1197,7 +1193,7 @@ abbr.schelling-term:hover {
 .site-footer {
   position: relative;
   padding: 40px 0;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
   border-top: var(--border);
   border-bottom: var(--border);
 }
@@ -1208,7 +1204,7 @@ abbr.schelling-term:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
 }
 
 .site-footer .mono-label {
@@ -1283,7 +1279,7 @@ abbr.schelling-term:hover {
   position: fixed;
   inset: 78px 0 0 0;
   height: auto;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
   flex-direction: column;
   align-items: stretch;
   padding: 0;
@@ -1399,5 +1395,585 @@ abbr.schelling-term:hover {
     padding-left: 72px;
     margin-top: 100px;
     margin-bottom: -100px;
+  }
+}
+
+/* ==========================================================================
+   Structured content — programs / events / research
+   Rendered from content/*.json by scripts/build-content.mjs. Card and table
+   layouts mirror the predecessor AISSA site, restyled in the CISAI idiom.
+   ========================================================================== */
+
+/* Section heading row with a "View all" link beside it */
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+
+.section-head .section-title {
+  max-width: none;
+  font-size: clamp(22px, 2.6vw, 28px);
+}
+
+.section-head .card-meta {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--color-muted);
+  text-underline-offset: 3px;
+}
+
+.section-head .card-meta:hover {
+  color: var(--color-blue);
+  text-decoration-color: var(--color-blue);
+}
+
+.body-lead a {
+  color: var(--color-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.body-lead a:hover {
+  color: var(--color-red);
+}
+
+/* Type badge (fellowship / course / reading group / published ...) */
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 8px;
+  border: 1px solid var(--color-blue);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  color: var(--color-blue);
+  white-space: nowrap;
+}
+
+/* Inline icons + fact lists (date / location / attendance) */
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-blue);
+}
+
+.facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.fact .icon {
+  margin-top: 3px;
+}
+
+.btn--small {
+  padding: 8px 12px;
+  font-size: 13px;
+  gap: 6px;
+}
+
+.btn .icon {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+
+/* Media cards: image header + body. Extends .card, which supplies the
+   right/bottom hairlines when placed inside a .card-grid. */
+
+.card.card--media {
+  padding: 0;
+  min-height: 0;
+  gap: 0;
+}
+
+.card__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-faint);
+  border-bottom: var(--border);
+}
+
+.card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__media--fallback img {
+  object-fit: contain;
+  padding: 24px;
+}
+
+.card__logo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.92);
+  border: var(--border);
+}
+
+.card__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  padding: 22px 26px 26px;
+}
+
+.card__title {
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.card__text {
+  color: var(--color-muted);
+  font-size: 14.5px;
+  margin: 0;
+}
+
+/* Long descriptions: four lines, expandable via the "Read more" toggle
+   (main.js only shows the toggle when the text actually overflows). */
+.card__text--clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.card__text--clamp.is-expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.card__more {
+  align-self: flex-start;
+  margin: -4px 0 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.card__more:hover {
+  color: var(--color-blue);
+}
+
+.card__more .arrow {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.card__more[aria-expanded="true"] .arrow {
+  transform: rotate(180deg);
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.card__footer .facts:empty {
+  display: none;
+}
+
+/* Featured layout: one large card + a stacked column of horizontal cards
+   (legacy AISSA homepage programs section). Cards here sit outside a
+   .card-grid, so they carry their own top/left hairlines. */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 22px;
+}
+
+.featured-grid > .card,
+.featured-grid__stack > .card {
+  border-top: var(--border);
+  border-left: var(--border);
+}
+
+.featured-grid__stack {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+
+.card--featured .card__body {
+  padding: 28px 32px 32px;
+  gap: 14px;
+}
+
+.card--featured .card__title {
+  font-size: clamp(22px, 2.4vw, 30px);
+}
+
+.card--featured .card__text {
+  font-size: 15.5px;
+}
+
+.card.card--row {
+  display: grid;
+  grid-template-columns: 0.42fr 0.58fr;
+}
+
+.card--row .card__media {
+  aspect-ratio: auto;
+  height: 100%;
+  border-bottom: none;
+  border-right: var(--border);
+}
+
+.card--row .card__body {
+  padding: 18px 20px;
+  gap: 8px;
+}
+
+.card--row .card__title {
+  font-size: 16px;
+}
+
+.card--row .card__text {
+  font-size: 13.5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/* Data tables (event archive, research outputs) */
+
+.table-shell {
+  border: var(--border);
+  background: var(--color-bg);
+  margin-top: 22px;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: var(--border);
+  color: var(--color-muted);
+}
+
+.data-table thead th {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--color-faint);
+  white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover td {
+  background: var(--color-faint);
+}
+
+.data-table .nowrap {
+  white-space: nowrap;
+}
+
+.data-table .num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.table-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.table-thumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: var(--border);
+}
+
+.table-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.table-link:hover {
+  color: var(--color-red);
+}
+
+.table-link .icon {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .card.card--row {
+    grid-template-columns: 1fr;
+  }
+
+  .card--row .card__media {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-right: none;
+    border-bottom: var(--border);
+  }
+}
+
+/* Single full-width card inside the hairline grid wrapper */
+.card-grid.card-grid--1 {
+  grid-template-columns: 1fr;
+}
+
+/* Tighter seam between an intro section and the gallery/list section below it */
+.section--tight-bottom > .wrap {
+  padding-bottom: calc(var(--section-pad) * 0.4);
+}
+
+.section--tight-top > .wrap {
+  padding-top: calc(var(--section-pad) * 0.4);
+}
+
+/* Social links as an icon-bulleted list (icon boxes match .contact__socials) */
+.social-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-list a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.social-list__icon {
+  border: var(--border);
+  background: var(--color-bg);
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.social-list__icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.social-list a:hover .social-list__icon {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+/* #research puts its bottom padding on .research__bets, not the wrap */
+.section--tight-bottom .research__bets {
+  padding-bottom: calc(var(--section-pad) * 0.4);
+}
+
+/* Sub-section gaps on capacity-building: the intro already carries its own
+   bottom margin, so the first heading row shouldn't add another. */
+.section-head {
+  margin-top: 44px;
+}
+
+.capacity__intro + .section-head {
+  margin-top: 0;
+}
+
+/* Get-involved hero: let the image fill the full height of the text column
+   (form included) instead of a fixed 4:3 box; anchored left so any overflow
+   is cropped from the right edge. */
+.page-hero__image--fill {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 360px;
+}
+
+.page-hero__image--fill img {
+  object-position: left center;
+}
+
+@media (max-width: 900px) {
+  .page-hero__image--fill {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+  }
+}
+
+/* ---------- Follow-ups from design review ---------- */
+
+/* Current-page tab (set by main.js) */
+.site-nav a.is-active .nav-label::after {
+  background: var(--color-red);
+}
+
+/* Bordered call-to-action box (replaces the old mailing-list form) */
+.cta-box {
+  border: var(--border);
+  background: var(--color-bg);
+  padding: clamp(24px, 3vw, 40px);
+}
+
+/* Tables: keep the title column readable on narrow screens; the shell
+   scrolls horizontally instead. */
+.data-table td:first-child,
+.data-table th:first-child {
+  min-width: 280px;
+}
+
+.table-sublist {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13.5px;
+  color: var(--color-muted);
+}
+
+.table-sublist li::before {
+  content: "\2014\00a0";
+  color: var(--color-muted);
+}
+
+/* Event archive: paginated reveal */
+.archive-row.is-hidden {
+  display: none;
+}
+
+.archive-more {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.archive-more .btn .arrow {
+  transition: transform 0.15s ease;
+}
+
+.archive-more .btn:hover .arrow {
+  transform: translateY(3px);
+}
+
+/* Social list: body-font descriptor, mono only for the channel name */
+.social-list__label {
+  font-size: 15px;
+  color: var(--color-muted);
+}
+
+.social-list__label strong {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink);
+}
+
+.social-list a:hover .social-list__label strong {
+  color: var(--color-blue);
+}
+
+/* Hex mesh backdrop is off on small screens: text runs full-width there and
+   the pattern sits directly under it. */
+@media (max-width: 900px) {
+  body::before {
+    display: none;
   }
 }

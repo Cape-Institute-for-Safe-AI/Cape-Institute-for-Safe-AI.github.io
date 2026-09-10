@@ -100,4 +100,69 @@ document.addEventListener("DOMContentLoaded", function () {
   initTermPopup("abbr.dacc-term", "dacc-popup", "dacc-backdrop");
   initTermPopup("abbr.schelling-term", "schelling-popup", "schelling-backdrop");
 
+  // Mark the current page's tab. Sub-pages under the Capacity Building
+  // dropdown (programs, events) light up the parent tab.
+  (function markActiveNav() {
+    if (!nav) return;
+    var file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+    var parentOf = { "programs.html": "capacity-building.html", "events.html": "capacity-building.html" };
+    var target = parentOf[file] || file;
+    nav.querySelectorAll(":scope > a, .nav-item > a").forEach(function (link) {
+      var raw = link.getAttribute("href") || "";
+      // "#about" on the homepage is a same-page anchor, i.e. index.html
+      var href = (raw.charAt(0) === "#" ? "index.html" : raw.split("#")[0]).toLowerCase();
+      if (href === target) link.classList.add("is-active");
+    });
+  })();
+
+  // Program cards: clamped descriptions get a "Read more" toggle, but only
+  // when the text actually overflows its four-line clamp.
+  function initCardToggles() {
+    document.querySelectorAll("[data-card-more]").forEach(function (button) {
+      var text = button.previousElementSibling;
+      if (!text || !text.classList.contains("card__text--clamp")) return;
+      var overflows = text.scrollHeight > text.clientHeight + 1;
+      if (!overflows && !text.classList.contains("is-expanded")) {
+        button.hidden = true;
+        return;
+      }
+      button.hidden = false;
+      if (button.dataset.bound) return;
+      button.dataset.bound = "1";
+      button.addEventListener("click", function () {
+        var expanded = text.classList.toggle("is-expanded");
+        button.setAttribute("aria-expanded", expanded ? "true" : "false");
+        button.innerHTML = (expanded ? "Show less" : "Read more") + ' <span class="arrow">&darr;</span>';
+      });
+    });
+  }
+
+  initCardToggles();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(initCardToggles);
+  }
+
+  // Event archive: reveal the next batch of hidden rows per click.
+  document.querySelectorAll("[data-archive-more]").forEach(function (button) {
+    var step = parseInt(button.getAttribute("data-archive-step"), 10) || 10;
+    var shell = button.closest(".archive-more").previousElementSibling;
+    var count = button.parentElement.querySelector("[data-archive-count]");
+    var all = shell ? shell.querySelectorAll(".archive-row") : [];
+
+    function update() {
+      var hidden = shell.querySelectorAll(".archive-row.is-hidden");
+      if (count) count.textContent = (all.length - hidden.length) + " of " + all.length;
+      if (!hidden.length) button.hidden = true;
+    }
+
+    button.addEventListener("click", function () {
+      shell.querySelectorAll(".archive-row.is-hidden").forEach(function (row, i) {
+        if (i < step) row.classList.remove("is-hidden");
+      });
+      update();
+    });
+
+    update();
+  });
+
 });
