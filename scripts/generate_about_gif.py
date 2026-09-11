@@ -2,8 +2,13 @@
 CISAI logo reveal animation generator
 ======================================
 Generates assets/images/about-history.gif — the animated reveal of the
-CISAI icon showing awareness (black), technological progress (red), and
-the need for existential security (blue).
+CISAI icon showing awareness (grey outer loop + black dot), technological
+progress (red), and the need for existential security (blue).
+
+Path data below is extracted from
+cisai_thumbnail_10_with_backing.svg (the "backing" rect is ignored — the
+figure background stays transparent, matching every earlier version of
+this animation).
 
 Requirements:
     pip install numpy scipy matplotlib pillow
@@ -34,13 +39,19 @@ OUT_PATH = os.path.join(
 )
 
 # ---------- Raw path data extracted from the SVG ----------
-D_OUTER_LOOP = "m 1968.6169,-66.018575 c 0,0 -25.9405,-1.729379 -25.9405,15.564319 0,17.293689 25.9405,15.564331 25.9405,15.564331"
-D_INNER_HOOK = "m 1950.0935,-38.562664 c 0,0 4.531,-3.40596 4.6886,-13.611663 0.2404,-15.562476 13.8348,-13.834962 13.8348,-13.834962"
-D_RED  = "m 1939.2176,-34.880639 c 0,0 15.5645,1.729358 15.5645,-17.293688 0,-15.564331 13.8348,-13.834962 13.8348,-13.834962"
-D_BLUE = "m 1968.6169,-66.018574 v 31.128649"
-DOT_CENTER = (1962.0886, -50.454258)
-DOT_RADIUS  = 1.1319337
-OFFSET = (-1930.4847, 73.891439)
+# Grey path is a single <path> with two subpaths (separate "m" moves):
+# the inner hook, then the outer loop. Both render together with the dot.
+D_GREY = ("m 5413.9429,-197.81414 c 0,0 2.4503,-1.43097 2.4974,-6.84701 "
+          "0.069,-7.91831 6.9251,-6.92513 6.9251,-6.92513 "
+          "m -10e-5,0 c 0,0 -12.9846,-0.86565 -12.9846,7.79076 "
+          "0,8.65641 12.9846,7.79077 12.9846,7.79077")
+D_RED  = "m 5408.6495,-196.00475 c 0,0 7.7908,0.86564 7.7908,-8.6564 0,-7.79077 6.9251,-6.92513 6.9251,-6.92513"
+D_BLUE = "m 5423.3653,-211.58628 v 15.58153"
+DOT_CENTER = (5420.0977, -203.79553)
+DOT_RADIUS  = 0.56659263
+# Backing rect origin (x, y) from the SVG; offsetting by its negative moves
+# the icon's own coordinate space to start at (0, 0).
+OFFSET = (-5402.0576, 217.74757)
 
 # ---------- Path parser (m/c/v relative commands only) ----------
 def sample_cubic(p0, p1, p2, p3, n=60):
@@ -51,15 +62,20 @@ def sample_cubic(p0, p1, p2, p3, n=60):
     return list(zip(x, y))
 
 def parse_path(d):
+    """Parses m/c/v/M/C/V commands. Returns a list of subpaths (each a
+    numpy array of points) — a new subpath starts at every 'm'/'M'."""
     tokens = re.findall(r'([MmCcVvLl])([^MmCcVvLl]*)', d)
     cur = (0.0, 0.0)
+    subpaths = []
     poly = []
     for cmd, nums_str in tokens:
         nums = [float(n) for n in re.findall(r'-?\d*\.?\d+(?:e-?\d+)?', nums_str)]
-        if cmd == 'm':
-            cur = (cur[0]+nums[0], cur[1]+nums[1]); poly.append(cur)
-        elif cmd == 'M':
-            cur = (nums[0], nums[1]); poly.append(cur)
+        if cmd in ('m', 'M'):
+            if poly:
+                subpaths.append(np.array(poly))
+                poly = []
+            cur = (cur[0]+nums[0], cur[1]+nums[1]) if cmd == 'm' else (nums[0], nums[1])
+            poly.append(cur)
         elif cmd == 'v':
             for v in nums: cur = (cur[0], cur[1]+v); poly.append(cur)
         elif cmd == 'V':
@@ -73,17 +89,18 @@ def parse_path(d):
                     p1,p2,p3=(c1x,c1y),(c2x,c2y),(ex,ey)
                 seg = sample_cubic(cur, p1, p2, p3, n=60)
                 poly.extend(seg[1:]); cur = p3
-    return np.array(poly)
+    if poly:
+        subpaths.append(np.array(poly))
+    return subpaths
 
 def apply_offset(poly):
     return poly + np.array(OFFSET)
 
-poly_outer   = apply_offset(parse_path(D_OUTER_LOOP))
-poly_inner   = apply_offset(parse_path(D_INNER_HOOK))
-poly_red     = apply_offset(parse_path(D_RED))
-poly_blue    = apply_offset(parse_path(D_BLUE))
+poly_grey_subs = [apply_offset(sp) for sp in parse_path(D_GREY)]
+poly_red      = apply_offset(parse_path(D_RED)[0])
+poly_blue     = apply_offset(parse_path(D_BLUE)[0])
 poly_blue_rev = poly_blue[::-1]
-dot_center   = (DOT_CENTER[0]+OFFSET[0], DOT_CENTER[1]+OFFSET[1])
+dot_center    = (DOT_CENTER[0]+OFFSET[0], DOT_CENTER[1]+OFFSET[1])
 
 # ---------- Arc-length reveal ----------
 def reveal(poly, frac):
@@ -104,9 +121,13 @@ def ease_in_out_cubic(t):
     return 4*t*t*t if t < 0.5 else 1 - (-2*t+2)**3 / 2
 
 # ---------- Layout ----------
-DATA_W = 46.865479
-PAD = 5.0
-LEGEND_SPACE = 27.8  # gap reduced 35% further
+# The new icon (27.9mm viewBox) is smaller than the old one (46.9mm); scale
+# every layout constant proportionally so the composition (padding, legend
+# spacing, stroke widths) stays visually equivalent.
+DATA_W = 27.899689
+_SCALE = DATA_W / 46.865479
+PAD = 5.0 * _SCALE
+LEGEND_SPACE = 27.8 * _SCALE
 XLIM = (-PAD, DATA_W+PAD)
 YLIM = (-PAD, DATA_W+PAD+LEGEND_SPACE)
 FIG_W = 8.0
@@ -114,19 +135,22 @@ FIG_H = FIG_W * ((YLIM[1]-YLIM[0]) / (XLIM[1]-XLIM[0]))
 DPI = 100
 PT_PER_DATA_UNIT = FIG_W * 72 / (XLIM[1]-XLIM[0])
 
+# Grey outer loop/hook render together with the black dot (the "awareness"
+# stage); red and blue grow in afterward, as before.
 LEGEND_ITEMS = [
-    ("#000000", "AWARENESS"),
-    ("#e2231a", "TECHNOLOGICAL PROGRESS"),
-    ("#1c23e0", "NEED FOR EXISTENTIAL SECURITY"),
+    ("#aba5ab", "AWARENESS"),
+    ("#d40a12", "TECHNOLOGICAL PROGRESS"),
+    ("#0e4fe8", "NEED FOR EXISTENTIAL SECURITY"),
 ]
 LEGEND_FONT     = "JetBrains Mono"
-LEGEND_FONTSIZE = 22.0
-LEGEND_SQ       = 4.8
-LEGEND_ROW_PITCH = LEGEND_SQ + 4.0
-LW_MAIN = 3.24222 * PT_PER_DATA_UNIT
-LW_HOOK = 3.0     * PT_PER_DATA_UNIT
-DOT_R   = 1.6
-BLACK, RED, BLUE = "#000000", "#e2231a", "#1c23e0"
+LEGEND_FONTSIZE = 22.0 * _SCALE * 1.7   # text 70% bigger
+LEGEND_SQ       = 4.8 * _SCALE
+LEGEND_ROW_PITCH = LEGEND_SQ + 4.0 * _SCALE * 0.5   # gap between rows halved
+LW_MAIN = 1.6229 * PT_PER_DATA_UNIT
+LW_GREY = 1.6    * PT_PER_DATA_UNIT
+DOT_R   = 1.6 * _SCALE
+GREY, RED, BLUE = "#aba5ab", "#d40a12", "#0e4fe8"
+DOT_COLOR = "#000000"
 
 fig, ax = plt.subplots(figsize=(FIG_W, FIG_H), dpi=DPI)
 fig.patch.set_alpha(0.0); ax.patch.set_alpha(0.0)
@@ -157,7 +181,7 @@ ROUNDING  = LEGEND_SQ * 0.18
 
 frames_rgba = []
 
-def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alpha=None):
+def render_frame(grey_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alpha=None):
     if legend_alpha is None:
         legend_alpha = overall_alpha
     ax.clear()
@@ -166,12 +190,12 @@ def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alp
 
     oa = overall_alpha
 
-    if black_alpha > 0.001:
-        ax.plot(poly_outer[:,0], poly_outer[:,1], color=BLACK, alpha=black_alpha * oa,
-                linewidth=LW_MAIN, solid_capstyle="round", zorder=1)
-        ax.plot(poly_inner[:,0], poly_inner[:,1], color=BLACK, alpha=black_alpha * oa,
-                linewidth=LW_HOOK, solid_capstyle="round", zorder=1)
-        ax.add_patch(plt.Circle(dot_center, DOT_R, color=BLACK, alpha=black_alpha * oa, zorder=2))
+    # Awareness stage: grey outer loop/hook and the black dot appear together.
+    if grey_alpha > 0.001:
+        for sp in poly_grey_subs:
+            ax.plot(sp[:,0], sp[:,1], color=GREY, alpha=grey_alpha * oa,
+                    linewidth=LW_GREY, solid_capstyle="round", zorder=1)
+        ax.add_patch(plt.Circle(dot_center, DOT_R, color=DOT_COLOR, alpha=grey_alpha * oa, zorder=2))
 
     if red_frac > 0.001 and oa > 0.001:
         seg = reveal(poly_red, red_frac)
@@ -183,7 +207,7 @@ def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alp
         ax.plot(seg[:,0], seg[:,1], color=BLUE, linewidth=LW_MAIN, solid_capstyle="round",
                 alpha=oa, zorder=1)
 
-    legend_y0 = DATA_W + 2.81  # gap reduced 35% further
+    legend_y0 = DATA_W + 2.4 * _SCALE   # gap above the key trimmed slightly
     for i, (color, label) in enumerate(legend_layout):
         ly = legend_y0 + i * LEGEND_ROW_PITCH
         ax.add_patch(FancyBboxPatch(
@@ -197,16 +221,16 @@ def render_frame(black_alpha, red_frac, blue_frac, overall_alpha=1.0, legend_alp
     frames_rgba.append(np.asarray(fig.canvas.buffer_rgba()).copy())
 
 # ---------- Timeline ----------
-BLACK_FRAMES = 36
-BLACK_HOLD   = 12
+GREY_FRAMES = 36
+GREY_HOLD   = 12
 GROW_FRAMES  = 72
 FINAL_HOLD   = 108
 FADE_FRAMES  = 28
 
 render_frame(0.0, 0.0, 0.0)
-for i in range(BLACK_FRAMES):
-    render_frame(ease_in_out_cubic(i/(BLACK_FRAMES-1)), 0.0, 0.0)
-for _ in range(BLACK_HOLD):
+for i in range(GREY_FRAMES):
+    render_frame(ease_in_out_cubic(i/(GREY_FRAMES-1)), 0.0, 0.0)
+for _ in range(GREY_HOLD):
     render_frame(1.0, 0.0, 0.0)
 for i in range(GROW_FRAMES):
     te = ease_in_out_cubic(i/(GROW_FRAMES-1))

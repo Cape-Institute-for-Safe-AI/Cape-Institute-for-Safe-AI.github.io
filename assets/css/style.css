@@ -14,13 +14,13 @@
 
 :root {
   --color-bg: #ffffff;
-  --color-page-bg: #f7fdffff;
+  --color-page-bg: #f4f7fbff;
   --color-ink: #111111;
   --color-line: #111111;
   --color-muted: #494949;
   --color-faint: #f4f4f2;
-  --color-blue: #1c23e0;
-  --color-red: #d9000a;
+  --color-blue: #0e4fe8;
+  --color-red: #d40a12;
 
   /* One size for all running copy (leads, card text, list items). */
   --text-body: 17px;
@@ -38,7 +38,7 @@
 
   --hex-tile-size: 27.28px 47.25px;
   --hex-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2227.280%22%20height%3D%2247.250%22%20viewBox%3D%220%200%2027.280%2047.250%22%3E%3Cpolygon%20points%3D%22-13.64%2C-23.62%200.00%2C-15.75%200.00%2C-0.00%20-13.64%2C7.88%20-27.28%2C-0.00%20-27.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C-23.62%2027.28%2C-15.75%2027.28%2C-0.00%2013.64%2C7.88%20-0.00%2C-0.00%200.00%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C-23.62%2054.56%2C-15.75%2054.56%2C-0.00%2040.92%2C7.88%2027.28%2C-0.00%2027.28%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C-23.62%2081.84%2C-15.75%2081.84%2C-0.00%2068.20%2C7.88%2054.56%2C-0.00%2054.56%2C-15.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C0.00%20-13.64%2C7.88%20-13.64%2C23.62%20-27.28%2C31.50%20-40.92%2C23.62%20-40.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C0.00%2013.64%2C7.88%2013.64%2C23.62%200.00%2C31.50%20-13.64%2C23.62%20-13.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C0.00%2040.92%2C7.88%2040.92%2C23.62%2027.28%2C31.50%2013.64%2C23.62%2013.64%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C0.00%2068.20%2C7.88%2068.20%2C23.62%2054.56%2C31.50%2040.92%2C23.62%2040.92%2C7.87%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C23.62%200.00%2C31.50%200.00%2C47.25%20-13.64%2C55.12%20-27.28%2C47.25%20-27.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C23.62%2027.28%2C31.50%2027.28%2C47.25%2013.64%2C55.12%20-0.00%2C47.25%200.00%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C23.62%2054.56%2C31.50%2054.56%2C47.25%2040.92%2C55.12%2027.28%2C47.25%2027.28%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C23.62%2081.84%2C31.50%2081.84%2C47.25%2068.20%2C55.12%2054.56%2C47.25%2054.56%2C31.50%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-27.28%2C47.25%20-13.64%2C55.12%20-13.64%2C70.88%20-27.28%2C78.75%20-40.92%2C70.88%20-40.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%220.00%2C47.25%2013.64%2C55.12%2013.64%2C70.88%200.00%2C78.75%20-13.64%2C70.88%20-13.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2227.28%2C47.25%2040.92%2C55.12%2040.92%2C70.88%2027.28%2C78.75%2013.64%2C70.88%2013.64%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2254.56%2C47.25%2068.20%2C55.12%2068.20%2C70.88%2054.56%2C78.75%2040.92%2C70.88%2040.92%2C55.12%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%22-13.64%2C70.88%200.00%2C78.75%200.00%2C94.50%20-13.64%2C102.38%20-27.28%2C94.50%20-27.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2213.64%2C70.88%2027.28%2C78.75%2027.28%2C94.50%2013.64%2C102.38%20-0.00%2C94.50%200.00%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2240.92%2C70.88%2054.56%2C78.75%2054.56%2C94.50%2040.92%2C102.38%2027.28%2C94.50%2027.28%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3Cpolygon%20points%3D%2268.20%2C70.88%2081.84%2C78.75%2081.84%2C94.50%2068.20%2C102.38%2054.56%2C94.50%2054.56%2C78.75%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22/%3E%3C/svg%3E");
-  --hex-gradient: linear-gradient(to right, #2f609e 0%, #ecf7ff 12%, #ecf7ff 88%, #2f609e 100%);
+  --hex-gradient: linear-gradient(to right, #b7d3ed 0%, #e8f3fd 20%, #e8f3fd 50%, #e8f3fd 80%, #b7d3ed 100%);
 }
 
 * {
@@ -124,6 +124,26 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--color-muted);
+}
+
+/* Section eyebrow: small mono label above each section's h1/h2, marked with
+   a red asterisk. Sits on the mesh, same as the heading below it. */
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.14em;
+  color: var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.eyebrow::before {
+  content: "*";
+  color: var(--color-red);
+  font-family: var(--font-mono);
 }
 
 /* ---------- ASCII accents ---------- */
@@ -378,7 +398,8 @@ h1, h2, h3, h4 {
 /* ---------- Section shell ---------- */
 
 .section,
-#home {
+#home,
+#workspace-section {
   scroll-margin-top: var(--header-h);
 }
 
@@ -396,6 +417,14 @@ h1, h2, h3, h4 {
   right: var(--gutter);
   height: 1px;
   background: var(--color-line);
+}
+
+/* On subpages the first section sits directly under the sticky header,
+   which already has its own border-bottom; the section's top hairline
+   would otherwise double up right beneath it. Home page is unaffected —
+   its first section is the .hero, not a .section. */
+main > .section:first-child > .wrap::before {
+  display: none;
 }
 
 /* Hero flows straight into About, so this seam is intentionally tighter
@@ -575,7 +604,7 @@ h1, h2, h3, h4 {
 }
 
 .research__bets .card-grid {
-  margin-top: 44px;
+  margin-top: 22px;
 }
 
 .research__gif {
@@ -1706,6 +1735,12 @@ abbr.schelling-term:hover {
   overflow: hidden;
 }
 
+.card--row .card__text.is-expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
 /* Data tables (event archive, research outputs) */
 
 .table-shell {
@@ -2059,4 +2094,120 @@ abbr.schelling-term:hover {
 
 .prose-box .about__subheading:first-child {
   margin-top: 0;
+}
+
+/* ---------- Link bars ----------
+   Home page "what we work on" section: four full-width bars (icon, title +
+   description, arrow) linking out to the relevant page. Replaces the old
+   embedded Capacity Building / Research sections. */
+
+.link-bars {
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  margin-top: 28px;
+}
+
+.link-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  padding: clamp(18px, 2.6vw, 28px) clamp(20px, 2.4vw, 28px);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  transition: background-color 0.15s ease;
+}
+
+.link-bar + .link-bar {
+  border-top: var(--border);
+}
+
+.link-bar:hover {
+  background: var(--color-faint);
+}
+
+/* Invisible overlay covering the full bar; makes the whole row clickable
+   while letting inline text links (e.g. "PIBBSS" inside the description)
+   stay independently clickable above it. Nesting a real <a> inside another
+   <a> is invalid HTML and breaks the outer link, hence this pattern. */
+.link-bar__hit {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.link-bar__hit:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: -2px;
+}
+
+.link-bar__icon {
+  flex: none;
+  width: clamp(110px, 12.5vw, 150px);
+  height: clamp(110px, 12.5vw, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-bar__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.link-bar__body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.link-bar__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.link-bar__text {
+  font-size: var(--text-body);
+  color: var(--color-muted);
+}
+
+.link-bar__text a {
+  position: relative;
+  z-index: 2;
+  color: var(--color-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link-bar__text a:hover {
+  color: var(--color-red);
+}
+
+.link-bar__arrow {
+  flex: none;
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-muted);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.link-bar:hover .link-bar__arrow,
+.link-bar:has(.link-bar__hit:focus-visible) .link-bar__arrow {
+  color: var(--color-blue);
+  transform: translateX(4px);
+}
+
+@media (max-width: 700px) {
+  .link-bar {
+    align-items: flex-start;
+  }
+
+  .link-bar__arrow {
+    display: none;
+  }
 }

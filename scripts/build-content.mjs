@@ -141,9 +141,9 @@ function programCard(program, { variant = "grid", eager = false, text = true } =
 </article>`;
 }
 
-// Legacy AISSA homepage ProgramsSection: first program large, up to three
-// more stacked beside it as horizontal cards. The home page shows titles and
-// facts only; capacity-building keeps the descriptions.
+// Legacy AISSA ProgramsSection: first program large, up to three more
+// stacked beside it as horizontal cards. Used on capacity-building.html
+// (the home page links out to this instead of embedding cards).
 function programsFeatured({ text = true } = {}) {
   const [featured, ...rest] = programs.slice(0, 4);
   return `<div class="featured-grid">
@@ -271,10 +271,6 @@ ${rows}
 // --------------------------------------------------------------- apply
 
 const REGIONS = {
-  "index.html": {
-    "programs-featured": () => programsFeatured({ text: false }),
-    "events-highlighted": eventsHighlighted,
-  },
   "capacity-building.html": {
     "programs-featured": programsFeatured,
     "events-highlighted": eventsHighlighted,
