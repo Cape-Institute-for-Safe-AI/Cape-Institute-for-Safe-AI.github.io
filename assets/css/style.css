@@ -22,6 +22,9 @@
   --color-blue: #1c23e0;
   --color-red: #d9000a;
 
+  /* One size for all running copy (leads, card text, list items). */
+  --text-body: 17px;
+
   --font-display: "Axion", "Lato", sans-serif;
   --font-body: "Lato", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -110,7 +113,7 @@ h1, h2, h3, h4 {
 }
 
 .body-lead {
-  font-size: clamp(16px, 1.4vw, 19px);
+  font-size: var(--text-body);
   color: var(--color-muted);
   max-width: 62ch;
 }
@@ -450,7 +453,7 @@ h1, h2, h3, h4 {
   align-items: flex-start;
   gap: 10px;
   font-family: var(--font-body);
-  font-size: clamp(16px, 1.4vw, 19px);
+  font-size: var(--text-body);
   color: var(--color-muted);
 }
 
@@ -564,7 +567,11 @@ h1, h2, h3, h4 {
 
 .research__bets {
   grid-column: 1 / -1;
-  padding: 0 var(--gutter) var(--section-pad);
+  padding: 28px var(--gutter) var(--section-pad);
+}
+
+.research__bets > .about__subheading {
+  margin-top: 0;
 }
 
 .research__bets .card-grid {
@@ -577,8 +584,8 @@ h1, h2, h3, h4 {
   height: auto;
   max-width: 100%;
   position: relative;
-  left: -80px;
-  top: 30px;
+  left: -30px;
+  top: -70px;
 }
 
 /* ---------- Card grids (research / capacity) ---------- */
@@ -632,7 +639,7 @@ h1, h2, h3, h4 {
 
 .card p {
   color: var(--color-muted);
-  font-size: 14.5px;
+  font-size: var(--text-body);
   margin: 0;
 }
 
@@ -771,8 +778,6 @@ h1, h2, h3, h4 {
 .partners__carousel {
   position: relative;
   overflow: hidden;
-  border-top: var(--border);
-  padding-top: var(--partners-gap);
 }
 
 .partners__track {
@@ -805,7 +810,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
+  height: 80px;
   flex-shrink: 0;
 }
 
@@ -823,6 +828,10 @@ h1, h2, h3, h4 {
 
 .partner-logo--tall img {
   height: 64px;
+}
+
+.partner-logo--xl img {
+  height: 80px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1131,9 +1140,9 @@ abbr.schelling-term:hover {
 .term-popup__body {
   background: #f0f0f0;
   padding: 20px 20px 16px;
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
   line-height: 1.6;
 }
 
@@ -1264,7 +1273,7 @@ abbr.schelling-term:hover {
     grid-template-columns: 1fr;
   }
 
-  /* The -80px/30px offset is a desktop-only decorative nudge; below
+  /* The left/top offset is a desktop-only decorative nudge; below
      900px it just pushes the video into the text column since there's
      no longer enough spare width to absorb it. */
   .research__gif {
@@ -1569,7 +1578,7 @@ abbr.schelling-term:hover {
 
 .card__text {
   color: var(--color-muted);
-  font-size: 14.5px;
+  font-size: var(--text-body);
   margin: 0;
 }
 
@@ -1907,6 +1916,15 @@ abbr.schelling-term:hover {
   padding: clamp(24px, 3vw, 40px);
 }
 
+/* When nested inside a .prose-box (get-involved hero), the box shares its
+   parent's border instead of doubling up — just a divider line above. */
+.cta-box--joined {
+  border: none;
+  border-top: var(--border);
+  margin: 24px calc(-1 * clamp(20px, 2.4vw, 28px)) calc(-1 * clamp(20px, 2.4vw, 28px));
+  padding: 24px clamp(20px, 2.4vw, 28px) clamp(20px, 2.4vw, 28px);
+}
+
 /* Tables: keep the title column readable on narrow screens; the shell
    scrolls horizontally instead. */
 .data-table td:first-child,
@@ -1976,4 +1994,69 @@ abbr.schelling-term:hover {
   body::before {
     display: none;
   }
+}
+
+/* Events sit right above the partners strip within #capacity; tighten that
+   gap specifically on mobile (desktop spacing is unaffected). */
+@media (max-width: 900px) {
+  #capacity > .wrap {
+    padding-bottom: 20px;
+  }
+
+  .partners {
+    margin-top: 24px;
+  }
+}
+
+/* Research database (Authors/Venue columns): give them noticeably more room
+   on mobile so names and venue strings don't get squeezed to fit. */
+@media (max-width: 900px) {
+  #research-outputs .data-table td:nth-child(3),
+  #research-outputs .data-table th:nth-child(3) {
+    min-width: 190px;
+  }
+
+  #research-outputs .data-table td:nth-child(4),
+  #research-outputs .data-table th:nth-child(4) {
+    min-width: 190px;
+  }
+}
+
+/* Prose boxes: running copy sits on white paper, only h1/h2 sit on the mesh.
+   A box followed directly by a bordered grid (stats, cards) shares its bottom
+   edge with the grid's top edge. */
+.prose-box {
+  background: var(--color-bg);
+  border: var(--border);
+  padding: clamp(20px, 2.4vw, 28px);
+}
+
+.prose-box > :first-child {
+  margin-top: 0;
+}
+
+.prose-box > :last-child {
+  margin-bottom: 0;
+}
+
+.prose-box .body-lead + .body-lead {
+  margin-top: 1em;
+}
+
+.prose-box + .capacity__stats,
+.prose-box + .card-grid {
+  margin-top: -1px;
+}
+
+.hero__text .prose-box {
+  margin-top: 0;
+}
+
+.hero__text .prose-box .hero__focus {
+  margin-top: 28px;
+  padding-top: 20px;
+}
+
+.prose-box .about__subheading:first-child {
+  margin-top: 0;
 }

@@ -71,14 +71,6 @@ function formatDate(iso) {
   return `${MONTHS[Number(match[2]) - 1]} ${Number(match[3])}, ${match[1]}`;
 }
 
-function truncate(text, max) {
-  const clean = String(text ?? "").replace(/\s+/g, " ").trim();
-  if (clean.length <= max) return clean;
-  const cut = clean.slice(0, max);
-  const atWord = cut.lastIndexOf(" ");
-  return `${(atWord > max * 0.6 ? cut.slice(0, atWord) : cut).replace(/[\s,;:.-]+$/, "")}...`;
-}
-
 // Program card images: 800px variant for cards, full-size for the featured
 // slot on wide screens.
 function programImage(program, { eager = false, sizes }) {
@@ -118,10 +110,9 @@ const thumbFor = (image) =>
 
 // Mirrors the legacy AISSA ProgramCard: image header, type badge, title,
 // clamped description, participants count, optional "Visit website" button.
-function programCard(program, { variant = "grid", eager = false } = {}) {
+function programCard(program, { variant = "grid", eager = false, text = true } = {}) {
   const featured = variant === "featured";
-  const description =
-    variant === "row" ? truncate(program.description, 220) : String(program.description ?? "").trim();
+  const description = String(program.description ?? "").trim();
   const sizes = featured
     ? "(max-width: 900px) 100vw, 60vw"
     : variant === "row"
@@ -140,8 +131,8 @@ function programCard(program, { variant = "grid", eager = false } = {}) {
   <div class="card__body">
     ${badge(program.type)}
     <h3 class="card__title">${escape(program.name)}</h3>
-    <p class="card__text${variant === "row" ? "" : " card__text--clamp"}">${escape(description)}</p>
-    ${variant === "row" ? "" : `<button type="button" class="card__more" data-card-more hidden aria-expanded="false">Read more <span class="arrow">&darr;</span></button>`}
+    ${text ? `<p class="card__text card__text--clamp">${escape(description)}</p>
+    <button type="button" class="card__more" data-card-more hidden aria-expanded="false">Read more <span class="arrow">&darr;</span></button>` : ""}
     <div class="card__footer">
       <ul class="facts">${program.totalParticipants ? fact("users", plural(program.totalParticipants, "participant")) : ""}</ul>
       ${website ? `<a class="btn btn--small" href="${escape(website)}" target="_blank" rel="noopener">Visit website ${icon("external")}</a>` : ""}
@@ -151,13 +142,14 @@ function programCard(program, { variant = "grid", eager = false } = {}) {
 }
 
 // Legacy AISSA homepage ProgramsSection: first program large, up to three
-// more stacked beside it as horizontal cards.
-function programsFeatured() {
+// more stacked beside it as horizontal cards. The home page shows titles and
+// facts only; capacity-building keeps the descriptions.
+function programsFeatured({ text = true } = {}) {
   const [featured, ...rest] = programs.slice(0, 4);
   return `<div class="featured-grid">
-${programCard(featured, { variant: "featured", eager: true })}
+${programCard(featured, { variant: "featured", eager: true, text })}
   <div class="featured-grid__stack">
-${rest.map((program) => programCard(program, { variant: "row" })).join("\n")}
+${rest.map((program) => programCard(program, { variant: "row", text })).join("\n")}
   </div>
 </div>`;
 }
@@ -207,7 +199,6 @@ function eventsTable() {
       <td class="nowrap">${badge(event.type)}</td>
       <td class="nowrap">${escape(formatDate(event.eventDate) ?? "TBD")}</td>
       <td>${escape(event.location || "TBD")}</td>
-      <td class="num">${typeof event.attendanceCount === "number" ? event.attendanceCount.toLocaleString("en-ZA") : "-"}</td>
     </tr>`,
     )
     .join("\n");
@@ -220,7 +211,6 @@ function eventsTable() {
         <th>Type</th>
         <th>Date</th>
         <th>Location</th>
-        <th class="num">Attendance</th>
       </tr>
     </thead>
     <tbody>
@@ -282,7 +272,7 @@ ${rows}
 
 const REGIONS = {
   "index.html": {
-    "programs-featured": programsFeatured,
+    "programs-featured": () => programsFeatured({ text: false }),
     "events-highlighted": eventsHighlighted,
   },
   "capacity-building.html": {
