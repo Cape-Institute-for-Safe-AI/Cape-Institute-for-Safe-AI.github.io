@@ -2204,7 +2204,14 @@ abbr.schelling-term:hover {
 
 @media (max-width: 700px) {
   .link-bar {
+    flex-direction: column;
     align-items: flex-start;
+  }
+
+  .link-bar__icon {
+    align-self: center;
+    width: 133px;
+    height: 133px;
   }
 
   .link-bar__arrow {

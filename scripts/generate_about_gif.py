@@ -99,8 +99,26 @@ def apply_offset(poly):
 poly_grey_subs = [apply_offset(sp) for sp in parse_path(D_GREY)]
 poly_red      = apply_offset(parse_path(D_RED)[0])
 poly_blue     = apply_offset(parse_path(D_BLUE)[0])
-poly_blue_rev = poly_blue[::-1]
 dot_center    = (DOT_CENTER[0]+OFFSET[0], DOT_CENTER[1]+OFFSET[1])
+
+# Scale the mark up around its own bounding-box centre. Strokes scale with
+# it (see LW_MAIN/LW_GREY/DOT_R below) so proportions stay identical to the
+# source SVG, just bigger.
+MARK_SCALE = 1.4
+_all_pts = np.vstack(poly_grey_subs + [poly_red, poly_blue])
+_mark_center = np.array([
+    (_all_pts[:,0].min() + _all_pts[:,0].max()) / 2,
+    (_all_pts[:,1].min() + _all_pts[:,1].max()) / 2,
+])
+
+def scale_about_center(poly, center, scale):
+    return (poly - center) * scale + center
+
+poly_grey_subs = [scale_about_center(sp, _mark_center, MARK_SCALE) for sp in poly_grey_subs]
+poly_red       = scale_about_center(poly_red, _mark_center, MARK_SCALE)
+poly_blue      = scale_about_center(poly_blue, _mark_center, MARK_SCALE)
+poly_blue_rev  = poly_blue[::-1]
+dot_center     = tuple(scale_about_center(np.array([dot_center]), _mark_center, MARK_SCALE)[0])
 
 # ---------- Arc-length reveal ----------
 def reveal(poly, frac):
@@ -146,9 +164,9 @@ LEGEND_FONT     = "JetBrains Mono"
 LEGEND_FONTSIZE = 22.0 * _SCALE * 1.7   # text 70% bigger
 LEGEND_SQ       = 4.8 * _SCALE
 LEGEND_ROW_PITCH = LEGEND_SQ + 4.0 * _SCALE * 0.5   # gap between rows halved
-LW_MAIN = 1.6229 * PT_PER_DATA_UNIT
-LW_GREY = 1.6    * PT_PER_DATA_UNIT
-DOT_R   = 1.6 * _SCALE
+LW_MAIN = 1.6229 * PT_PER_DATA_UNIT * MARK_SCALE
+LW_GREY = 1.6    * PT_PER_DATA_UNIT * MARK_SCALE
+DOT_R   = 1.6 * _SCALE * MARK_SCALE
 GREY, RED, BLUE = "#aba5ab", "#d40a12", "#0e4fe8"
 DOT_COLOR = "#000000"
 
