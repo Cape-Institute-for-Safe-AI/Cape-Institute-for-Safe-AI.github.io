@@ -27,7 +27,7 @@
 
   --font-display: "Axion", "Lato", sans-serif;
   --font-body: "Lato", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-mono: var(--font-body);
 
   --border: 1px solid var(--color-line);
   --gutter: clamp(20px, 4vw, 60px);
@@ -288,9 +288,9 @@ h1, h2, h3, h4 {
   justify-content: center;
   height: 100%;
   min-width: calc(7ch + 2 * clamp(20px, 2.2vw, 30px) + 2px);
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12.75px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-decoration: none;
@@ -1247,6 +1247,7 @@ abbr.schelling-term:hover {
 
 .site-footer .mono-label {
   margin: 0;
+  font-family: var(--font-body);
 }
 
 .footer-links {
@@ -1256,7 +1257,7 @@ abbr.schelling-term:hover {
 }
 
 .footer-links a {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
