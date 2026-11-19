@@ -505,7 +505,7 @@ main > .section:first-child > .wrap::before {
   position: relative;
   overflow: visible;
   width: 100%;
-  padding-top: 48px;
+  padding-top: 24px;
   padding-left: 25px;
 }
 
